@@ -1,0 +1,30 @@
+name: bench
+on:
+  workflow_dispatch:
+    inputs:
+      runner: { description: "runner label, or 'both'", default: both }
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: ${{ fromJSON(inputs.runner == 'both' && '["ubuntu-latest","zode-4x8"]' || format('["{0}"]', inputs.runner)) }}
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - name: machine
+        run: |
+          echo "start $(date -u +%FT%T.%3NZ)"
+          nproc; free -m | head -2; uname -r
+      - uses: actions/setup-go@v5
+        with: { go-version: "1.23.4", cache: false }
+      - name: clone caddy v2.8.4
+        run: git clone -q --depth 1 --branch v2.8.4 https://github.com/caddyserver/caddy src
+      - name: go mod download
+        working-directory: src
+        run: time go mod download
+      - name: go build ./...
+        working-directory: src
+        run: time go build ./...
+      - name: go vet ./...
+        working-directory: src
+        run: time go vet ./...
