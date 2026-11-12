@@ -212,7 +212,7 @@ def run_one(repo, runner, mode, iteration, out, tok, split=False):
                        "started_at": s.get("started_at"), "completed_at": s.get("completed_at"),
                        "s": secs(s.get("started_at"), s.get("completed_at"))} for s in j.get("steps", [])],
             "zode": None if z is None else {k: z.get(k) for k in
-                                            ("id", "size", "status", "cache_hit", "cost_micros", "cost_final",
+                                            ("id", "size", "status", "cache_hit", "cache", "cost_micros", "cost_final",
                                              "phases", "phase_ms")},
         })
     ran = [j for j in rec_jobs if j["started_at"] and j["conclusion"] != "skipped"]
