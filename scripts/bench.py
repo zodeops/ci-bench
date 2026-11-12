@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run the ci-bench set on GitHub-hosted runners and on Zode, cold and warm.
 
-  scripts/bench.py [--repos helm,fzf] [--runners ubuntu-latest,zode-4x8]
+  scripts/bench.py [--repos helm,fzf] [--runners ubuntu-24.04,zode-4x8]
                    [--runs 5] [--modes cold,warm] [--out results/<date>]
 
 For every repository, iteration and mode, the providers run side by side at
@@ -29,7 +29,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ZODE_API = os.environ.get("ZODE_API", "https://api.zode.dev")
-POLL_S = 15
+POLL_S = 60  # one shared GitHub user token: 5,000 calls an hour across every run
 RUN_TIMEOUT_S = 90 * 60
 _print_lock = threading.Lock()
 _write_lock = threading.Lock()
@@ -68,14 +68,28 @@ def gh(*args, method="GET", fields=None, paginate=False):
     for k, v in (fields or {}).items():
         cmd += ["-F" if isinstance(v, bool) else "-f", "%s=%s" % (k, str(v).lower() if isinstance(v, bool) else v)]
     cmd += list(args)
-    for attempt in range(5):
+    for attempt in range(8):
         p = subprocess.run(cmd, capture_output=True, text=True)
         if p.returncode == 0:
             return json.loads(p.stdout) if p.stdout.strip() else None
-        if attempt < 4 and ("HTTP 5" in p.stderr or "timeout" in p.stderr.lower() or "rate limit" in p.stderr.lower()):
+        if attempt < 7 and "rate limit" in p.stderr.lower():
+            wait_for_rate_limit()
+            continue
+        if attempt < 7 and ("HTTP 5" in p.stderr or "timeout" in p.stderr.lower()):
             time.sleep(10 * (attempt + 1))
             continue
         raise RuntimeError("gh api %s: %s" % (" ".join(args), p.stderr.strip()[:300]))
+
+
+def wait_for_rate_limit():
+    """Sleep until GitHub's core rate limit resets (the rate_limit call is free)."""
+    p = subprocess.run(["gh", "api", "rate_limit", "-q", ".resources.core.reset"], capture_output=True, text=True)
+    try:
+        reset = int(p.stdout.strip())
+    except ValueError:
+        reset = int(time.time()) + 300
+    log("GitHub API rate limit reached; waiting %d s" % max(0, reset - int(time.time())))
+    time.sleep(max(30, reset - int(time.time()) + 5))
 
 
 def zode_token():
@@ -130,10 +144,24 @@ def delete_caches(mirror, branch):
             n += 1
 
 
-def run_one(repo, runner, mode, iteration, out, tok):
+def ensure_branch(mirror, base, branch):
+    """Make branch point where base does (a per-iteration branch)."""
+    sha = gh("repos/%s/git/ref/heads/%s" % (mirror, base))["object"]["sha"]
+    try:
+        gh("repos/%s/git/ref/heads/%s" % (mirror, branch))
+    except RuntimeError:
+        gh("repos/%s/git/refs" % mirror, method="POST", fields={"ref": "refs/heads/" + branch, "sha": sha})
+
+
+def run_one(repo, runner, mode, iteration, out, tok, split=False):
     mirror = repo.get("mirror") or "zodeops/bench-" + repo["name"]
     own = repo.get("own_workflow", False)
     branch = "main" if own else "bench-" + provider_of(runner)
+    if split and not own:
+        # iterations run at once, each on its own branch: own caches,
+        # own concurrency group
+        base, branch = branch, "%s-i%d" % (branch, iteration)
+        ensure_branch(mirror, base, branch)
     deleted = delete_caches(mirror, branch) if mode == "cold" else 0
     dispatched = now()
     res = gh("repos/%s/actions/workflows/%s/dispatches" % (mirror, repo["workflow"]), method="POST",
@@ -141,11 +169,25 @@ def run_one(repo, runner, mode, iteration, out, tok):
     run_id = res["workflow_run_id"]
     log("%-11s %-13s %-4s #%d run %d" % (repo["name"], runner, mode, iteration, run_id))
     deadline = time.time() + RUN_TIMEOUT_S
+    zode_failed = None
     while True:
         time.sleep(POLL_S)
         run = gh("repos/%s/actions/runs/%d" % (mirror, run_id))
         if run["status"] == "completed":
             break
+        if provider_of(runner) == "zode" and tok and zode_failed is None:
+            # A runner Zode could not start leaves GitHub's job queued for
+            # hours; stop the run and record why.
+            try:
+                bad = [j for j in zode_jobs(tok).values() if j.get("run_id") == run_id and
+                       j["status"] in ("failed", "refused")]
+            except Exception:
+                bad = []
+            if bad:
+                zode_failed = bad[0]["reason"]
+                log("%s %s run %d: Zode %s (%s); cancelling" % (repo["name"], runner, run_id, bad[0]["status"],
+                                                               zode_failed))
+                gh("repos/%s/actions/runs/%d/cancel" % (mirror, run_id), method="POST")
         if time.time() > deadline:
             gh("repos/%s/actions/runs/%d/cancel" % (mirror, run_id), method="POST")
             log("%s %s run %d timed out; cancelled" % (repo["name"], runner, run_id))
@@ -180,7 +222,7 @@ def run_one(repo, runner, mode, iteration, out, tok):
         "schema": 1, "repo": repo["name"], "upstream": repo["upstream"], "commit": repo["commit"],
         "mirror": mirror, "workflow": repo["workflow"], "branch": branch,
         "provider": provider_of(runner), "runner": runner, "mode": mode, "iteration": iteration,
-        "caches_deleted": deleted, "run_id": run_id, "run_url": run["html_url"], "conclusion": run["conclusion"],
+        "caches_deleted": deleted, "zode_failed": zode_failed, "run_id": run_id, "run_url": run["html_url"], "conclusion": run["conclusion"],
         "dispatched_at": iso(dispatched), "first_job_created_at": iso(first_created), "completed_at": iso(last_done),
         "wall_s": secs(dispatched, last_done),
         "queue_s_max": max((j["queue_s"] for j in ran if j["queue_s"] is not None), default=None),
@@ -193,34 +235,62 @@ def run_one(repo, runner, mode, iteration, out, tok):
     return rec
 
 
-def bench_repo(repo, runners, modes, runs, out, tok, budget, start):
-    for it in range(start, start + runs):
-        for mode in modes:
-            zjobs = sum(repo.get("jobs", 1) for r in runners if provider_of(r) == "zode")
-            took = budget.take(zjobs) if zjobs else 0
-            try:
-                with ThreadPoolExecutor(len(runners)) as ex:
-                    futs = [ex.submit(run_one, repo, r, mode, it, out, tok) for r in runners]
-                    for f in futs:
-                        try:
-                            f.result()
-                        except Exception as e:
-                            log("%s #%d %s failed: %s" % (repo["name"], it, mode, e))
-            finally:
-                if took:
-                    budget.give(took)
+def done_runs(out):
+    """(repo, runner, mode, iteration) already recorded in out/runs.jsonl."""
+    path = os.path.join(out, "runs.jsonl")
+    if not os.path.exists(path):
+        return set()
+    seen = set()
+    for line in open(path):
+        if line.strip():
+            r = json.loads(line)
+            seen.add((r["repo"], r["runner"], r["mode"], r["iteration"]))
+    return seen
+
+
+def bench_iteration(repo, runners, modes, it, out, tok, budget, done, split):
+    for mode in modes:
+        todo = [r for r in runners if (repo["name"], r, mode, it) not in done]
+        if not todo:
+            continue
+        zjobs = sum(repo.get("jobs", 1) for r in todo if provider_of(r) == "zode")
+        took = budget.take(zjobs) if zjobs else 0
+        try:
+            with ThreadPoolExecutor(len(todo)) as ex:
+                futs = [ex.submit(run_one, repo, r, mode, it, out, tok, split) for r in todo]
+                for f in futs:
+                    try:
+                        f.result()
+                    except Exception as e:
+                        log("%s #%d %s failed: %s" % (repo["name"], it, mode, e))
+        finally:
+            if took:
+                budget.give(took)
+
+
+def bench_repo(repo, runners, modes, runs, out, tok, budget, start, done, split):
+    its = range(start, start + runs)
+    if not split:
+        for it in its:
+            bench_iteration(repo, runners, modes, it, out, tok, budget, done, False)
+        return
+    with ThreadPoolExecutor(len(its)) as ex:
+        for f in [ex.submit(bench_iteration, repo, runners, modes, it, out, tok, budget, done, True) for it in its]:
+            f.result()
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--repos", default="all")
-    ap.add_argument("--runners", default="ubuntu-latest,zode-4x8")
+    ap.add_argument("--runners", default="ubuntu-24.04,zode-4x8")
     ap.add_argument("--runs", type=int, default=5)
     ap.add_argument("--start", type=int, default=1, help="first iteration number (to resume)")
     ap.add_argument("--modes", default="cold,warm")
     ap.add_argument("--out", default=os.path.join(HERE, "results", now().strftime("%Y-%m-%d")))
     ap.add_argument("--parallel", type=int, default=4, help="repositories at once")
     ap.add_argument("--zode-jobs", type=int, default=8, help="Zode jobs at once, to leave room for real CI")
+    ap.add_argument("--resume", action="store_true", help="skip runs already in <out>/runs.jsonl")
+    ap.add_argument("--split", default="", help="repos whose iterations run at once, each on its own branch")
     a = ap.parse_args()
     repos = json.load(open(os.path.join(HERE, "repos.json")))["repos"]
     if a.repos != "all":
@@ -236,8 +306,10 @@ def main():
     order = {"saleor": 0, "nginx-proxy": 1, "fzf": 2, "alpine": 3, "helm": 4, "excalidraw": 5}
     repos.sort(key=lambda r: order.get(r["name"], 9))
     with ThreadPoolExecutor(a.parallel) as ex:
-        for f in [ex.submit(bench_repo, r, runners, a.modes.split(","), a.runs, a.out, tok, budget, a.start)
-                  for r in repos]:
+        done = done_runs(a.out) if a.resume else set()
+        split = set(a.split.split(",")) - {""}
+        for f in [ex.submit(bench_repo, r, runners, a.modes.split(","), a.runs, a.out, tok, budget, a.start, done,
+                            r["name"] in split) for r in repos]:
             f.result()
     log("done: %s" % os.path.join(a.out, "runs.jsonl"))
 

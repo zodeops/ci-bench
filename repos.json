@@ -20,7 +20,7 @@
      "workflow": "tests.yaml", "lang": "Python", "jobs": 1,
      "why": "The long suite (about 17 min on ubuntu-latest): Django pytest with -n logical in a python:3.12 container job with Postgres and Valkey service containers."},
     {"name": "fzf", "upstream": "junegunn/fzf", "commit": "4499615fe9c06c0651aa5650e5d0d0a5face99a8",
-     "workflow": "linux.yml", "lang": "Go", "jobs": 1,
+     "workflow": "linux.yml", "lang": "Go", "jobs": 1, "tag": "v0.75.0",
      "why": "Go build and tests plus Ruby, apt packages (zsh, fish, tmux) and tmux integration tests: a parity check as much as a speed one."},
     {"name": "helm", "upstream": "helm/helm", "commit": "6234f6228f3134e087739e5c2eb79650b2c0b99d",
      "workflow": "build-test.yml", "lang": "Go", "jobs": 1,

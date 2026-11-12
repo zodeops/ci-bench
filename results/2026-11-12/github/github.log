@@ -1,0 +1,256 @@
+10:16:56 excalidraw  ubuntu-24.04  cold #1 run 43198961080
+10:16:56 saleor      ubuntu-24.04  cold #1 run 43198961072
+10:16:56 fzf         ubuntu-24.04  cold #1 run 43198961201
+10:16:56 nginx-proxy ubuntu-24.04  cold #1 run 43198961871
+10:16:57 helm        ubuntu-24.04  cold #1 run 43198961949
+10:16:57 alpine      ubuntu-24.04  cold #1 run 43198962207
+10:17:43 fzf         ubuntu-24.04  cold #1 failure wall 42.987s
+10:17:45 fzf         ubuntu-24.04  warm #1 run 43199079495
+10:18:32 fzf         ubuntu-24.04  warm #1 failure wall 42.181s
+10:18:43 fzf #2 cold failed: gh api repos/zodeops/bench-fzf/actions/workflows/linux.yml/dispatches: stream error: stream ID 1; CANCEL; received from peer
+10:18:45 fzf         ubuntu-24.04  warm #2 run 43199231573
+10:19:33 fzf         ubuntu-24.04  warm #2 failure wall 40.5s
+10:19:35 fzf         ubuntu-24.04  cold #3 run 43199350805
+10:20:22 fzf         ubuntu-24.04  cold #3 failure wall 41.041s
+10:20:23 fzf         ubuntu-24.04  warm #3 run 43199475711
+10:21:10 fzf         ubuntu-24.04  warm #3 failure wall 37.678s
+10:21:13 fzf         ubuntu-24.04  cold #4 run 43199600175
+10:22:21 excalidraw  ubuntu-24.04  cold #1 success wall 310.932s
+10:22:22 excalidraw  ubuntu-24.04  warm #1 run 43199775276
+10:22:52 alpine      ubuntu-24.04  cold #1 success wall 348.943s
+10:22:54 alpine      ubuntu-24.04  warm #1 run 43199853338
+10:25:27 helm        ubuntu-24.04  cold #1 success wall 501.949s
+10:25:28 helm        ubuntu-24.04  warm #1 run 43200243311
+10:26:45 excalidraw  ubuntu-24.04  warm #1 success wall 253.605s
+10:26:47 excalidraw  ubuntu-24.04  cold #2 run 43200432961
+10:28:03 helm        ubuntu-24.04  warm #1 success wall 146.816s
+10:28:05 helm        ubuntu-24.04  cold #2 run 43200623118
+10:28:18 alpine      ubuntu-24.04  warm #1 success wall 317.367s
+10:28:20 alpine      ubuntu-24.04  cold #2 run 43200656803
+10:28:40 fzf         ubuntu-24.04  cold #4 success wall 440.939s
+10:28:42 fzf         ubuntu-24.04  warm #4 run 43200708464
+10:28:47 nginx-proxy ubuntu-24.04  cold #1 success wall 702.918s
+10:28:48 nginx-proxy ubuntu-24.04  warm #1 run 43200723917
+10:31:40 excalidraw  ubuntu-24.04  cold #2 success wall 291.422s
+10:31:42 excalidraw  ubuntu-24.04  warm #2 run 43201153214
+10:33:14 alpine      ubuntu-24.04  cold #2 success wall 288.433s
+10:33:15 alpine      ubuntu-24.04  warm #2 run 43201381583
+10:33:47 helm        ubuntu-24.04  cold #2 success wall 332.741s
+10:33:49 helm        ubuntu-24.04  warm #2 run 43201465027
+10:35:40 fzf         ubuntu-24.04  warm #4 success wall 405.08s
+10:35:42 fzf         ubuntu-24.04  cold #5 run 43201747606
+10:36:39 helm        ubuntu-24.04  warm #2 success wall 155.564s
+10:36:41 helm        ubuntu-24.04  cold #3 run 43201892880
+10:36:51 excalidraw  ubuntu-24.04  warm #2 success wall 295.635s
+10:36:53 excalidraw  ubuntu-24.04  cold #3 run 43201922828
+10:38:24 alpine      ubuntu-24.04  warm #2 success wall 301.937s
+10:38:26 alpine      ubuntu-24.04  cold #3 run 43202147650
+10:39:04 saleor      ubuntu-24.04  cold #1 success wall 1322.91s
+10:39:06 saleor      ubuntu-24.04  warm #1 run 43202239184
+10:40:53 nginx-proxy ubuntu-24.04  warm #1 success wall 710.862s
+10:40:55 nginx-proxy ubuntu-24.04  cold #2 run 43202503262
+10:41:00 excalidraw  ubuntu-24.04  cold #3 success wall 242.812s
+10:41:02 excalidraw  ubuntu-24.04  warm #3 run 43202519889
+10:43:10 fzf         ubuntu-24.04  cold #5 success wall 437.96s
+10:43:12 fzf         ubuntu-24.04  warm #5 run 43202832447
+10:43:22 helm        ubuntu-24.04  cold #3 success wall 392.755s
+10:43:24 helm        ubuntu-24.04  warm #3 run 43202861352
+10:43:34 alpine      ubuntu-24.04  cold #3 success wall 299.041s
+10:43:36 alpine      ubuntu-24.04  warm #3 run 43202890841
+10:45:09 excalidraw  ubuntu-24.04  warm #3 success wall 245.19s
+10:45:10 excalidraw  ubuntu-24.04  cold #4 run 43203118433
+10:46:13 helm        ubuntu-24.04  warm #3 success wall 162.321s
+10:46:16 helm        ubuntu-24.04  cold #4 run 43203281647
+10:49:17 excalidraw  ubuntu-24.04  cold #4 success wall 237.56s
+10:49:19 excalidraw  ubuntu-24.04  warm #4 run 43203724181
+10:49:31 alpine      ubuntu-24.04  warm #3 success wall 347.007s
+10:49:33 alpine      ubuntu-24.04  cold #4 run 43203756219
+10:50:09 fzf         ubuntu-24.04  warm #5 success wall 404.453s
+10:50:11 jquery      ubuntu-24.04  cold #1 run 43203849408
+10:51:29 jquery      ubuntu-24.04  cold #1 success wall 63.694s
+10:51:30 jquery      ubuntu-24.04  warm #1 run 43204044721
+10:52:33 jquery      ubuntu-24.04  warm #1 success wall 55.403s
+10:52:35 jquery      ubuntu-24.04  cold #2 run 43204200505
+10:52:45 nginx-proxy ubuntu-24.04  cold #2 success wall 701.793s
+10:52:47 nginx-proxy ubuntu-24.04  warm #2 run 43204227619
+10:53:27 excalidraw  ubuntu-24.04  warm #4 success wall 238.054s
+10:53:29 excalidraw  ubuntu-24.04  cold #5 run 43204326956
+10:53:38 jquery      ubuntu-24.04  cold #2 success wall 56.569s
+10:53:40 jquery      ubuntu-24.04  warm #2 run 43204354097
+10:54:33 nginx-proxy ubuntu-24.04  warm #2 run 43204481817
+10:54:33 jquery      ubuntu-24.04  warm #2 run 43204481982
+10:54:33 alpine      ubuntu-24.04  cold #4 run 43204482633
+10:54:33 fzf         ubuntu-24.04  cold #2 run 43204482762
+10:54:34 excalidraw  ubuntu-24.04  cold #5 run 43204482904
+10:54:34 starlette   ubuntu-24.04  cold #1 run 43204483220
+10:54:34 helm        ubuntu-24.04  cold #4 run 43204484088
+10:54:35 saleor      ubuntu-24.04  cold #4 run 43204486253
+10:54:35 saleor      ubuntu-24.04  cold #3 run 43204486472
+10:54:35 saleor      ubuntu-24.04  warm #1 run 43204486504
+10:54:35 saleor      ubuntu-24.04  cold #5 run 43204486769
+10:54:36 saleor      ubuntu-24.04  cold #2 run 43204487308
+10:55:36 jquery      ubuntu-24.04  warm #2 success wall 58.871s
+10:55:38 jquery      ubuntu-24.04  cold #3 run 43204640778
+10:55:52 starlette   ubuntu-24.04  cold #1 success wall 69.499s
+10:55:53 starlette   ubuntu-24.04  warm #1 run 43204677174
+10:56:41 jquery      ubuntu-24.04  cold #3 success wall 60.579s
+10:56:47 jquery      ubuntu-24.04  warm #3 run 43204799791
+10:57:11 starlette   ubuntu-24.04  warm #1 success wall 68.81s
+10:57:15 starlette   ubuntu-24.04  cold #2 run 43204869538
+10:57:49 jquery      ubuntu-24.04  warm #3 success wall 60.836s
+10:57:52 jquery      ubuntu-24.04  cold #4 run 43204954328
+10:58:18 starlette   ubuntu-24.04  cold #2 success wall 55.91s
+10:58:19 starlette   ubuntu-24.04  warm #2 run 43205019656
+10:58:42 excalidraw  ubuntu-24.04  cold #5 success wall 236.459s
+10:58:43 excalidraw  ubuntu-24.04  warm #5 run 43205074846
+10:58:54 jquery      ubuntu-24.04  cold #4 success wall 56.541s
+10:58:56 jquery      ubuntu-24.04  warm #4 run 43205103487
+10:59:22 starlette   ubuntu-24.04  warm #2 success wall 57.789s
+10:59:26 starlette   ubuntu-24.04  cold #3 run 43205172534
+10:59:43 alpine      ubuntu-24.04  cold #4 success wall 306.486s
+10:59:45 alpine      ubuntu-24.04  warm #4 run 43205216279
+10:59:59 jquery      ubuntu-24.04  warm #4 success wall 59.404s
+11:00:02 jquery      ubuntu-24.04  cold #5 run 43205256377
+11:00:29 starlette   ubuntu-24.04  cold #3 success wall 58.931s
+11:00:31 starlette   ubuntu-24.04  warm #3 run 43205333740
+11:01:05 jquery      ubuntu-24.04  cold #5 success wall 60.505s
+11:01:06 jquery      ubuntu-24.04  warm #5 run 43205431016
+11:01:49 starlette   ubuntu-24.04  warm #3 success wall 69.378s
+11:01:53 starlette   ubuntu-24.04  cold #4 run 43205549136
+11:02:04 fzf         ubuntu-24.04  cold #2 success wall 438.476s
+11:02:06 httpx       ubuntu-24.04  cold #1 run 43205582840
+11:02:21 excalidraw  ubuntu-24.04  warm #5 success wall 206.737s
+11:02:23 petclinic   ubuntu-24.04  cold #1 run 43205622991
+11:02:25 jquery      ubuntu-24.04  warm #5 success wall 64.666s
+11:02:27 caddy       ubuntu-24.04  cold #1 run 43205632391
+11:02:34 helm        ubuntu-24.04  cold #4 success wall 475.889s
+11:02:36 helm        ubuntu-24.04  warm #4 run 43205654421
+11:02:55 starlette   ubuntu-24.04  cold #4 success wall 61.271s
+11:02:57 starlette   ubuntu-24.04  warm #4 run 43205705060
+11:03:10 httpx       ubuntu-24.04  cold #1 failure wall 50.262s
+11:03:11 httpx       ubuntu-24.04  warm #1 run 43205741885
+11:03:59 starlette   ubuntu-24.04  warm #4 success wall 50.296s
+11:04:03 starlette   ubuntu-24.04  cold #5 run 43205872749
+11:04:13 httpx       ubuntu-24.04  warm #1 failure wall 45.901s
+11:04:15 httpx       ubuntu-24.04  cold #2 run 43205903536
+11:04:27 petclinic   ubuntu-24.04  cold #1 success wall 111.443s
+11:04:28 petclinic   ubuntu-24.04  warm #1 run 43205935713
+11:04:31 caddy       ubuntu-24.04  cold #1 success wall 119.402s
+11:04:32 caddy       ubuntu-24.04  warm #1 run 43205945664
+11:05:02 httpx       ubuntu-24.04  cold #2 failure wall 41.942s
+11:05:03 httpx       ubuntu-24.04  warm #2 run 43206022471
+11:05:11 helm        ubuntu-24.04  warm #4 success wall 151.116s
+11:05:13 helm        ubuntu-24.04  cold #5 run 43206049400
+11:05:22 starlette   ubuntu-24.04  cold #5 success wall 63.241s
+11:05:23 starlette   ubuntu-24.04  warm #5 run 43206077790
+11:05:43 alpine      ubuntu-24.04  warm #4 success wall 347.174s
+11:05:45 alpine      ubuntu-24.04  cold #5 run 43206132245
+11:05:50 httpx       ubuntu-24.04  warm #2 failure wall 45.639s
+11:05:52 httpx       ubuntu-24.04  cold #3 run 43206150324
+11:06:16 petclinic   ubuntu-24.04  warm #1 success wall 93.915s
+11:06:19 petclinic   ubuntu-24.04  cold #2 run 43206219412
+11:06:39 httpx       ubuntu-24.04  cold #3 failure wall 42.185s
+11:06:40 httpx       ubuntu-24.04  warm #3 run 43206272818
+11:06:41 starlette   ubuntu-24.04  warm #5 success wall 69.439s
+11:06:42 nginx-proxy ubuntu-24.04  warm #2 success wall 713.878s
+11:06:44 nginx-proxy ubuntu-24.04  cold #3 run 43206280740
+11:06:51 caddy       ubuntu-24.04  warm #1 success wall 125.969s
+11:06:53 caddy       ubuntu-24.04  cold #2 run 43206305744
+11:07:43 httpx       ubuntu-24.04  warm #3 failure wall 51.737s
+11:07:44 httpx       ubuntu-24.04  cold #4 run 43206436591
+11:08:23 petclinic   ubuntu-24.04  cold #2 success wall 114.063s
+11:08:24 petclinic   ubuntu-24.04  warm #2 run 43206537257
+11:10:26 saleor #4 cold failed: gh api repos/zodeops/bench-saleor/actions/runs/43204486253: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 0645:11052D:C141E15:121CFBAA:6AF59EA2 and timestamp 2026-11-12 11:10:26 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:26 saleor #3 cold failed: gh api repos/zodeops/bench-saleor/actions/runs/43204486472: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 0647:BE4BD:3028E492:480406D8:6AF59EA2 and timestamp 2026-11-12 11:10:26 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:26 saleor #5 cold failed: gh api repos/zodeops/bench-saleor/actions/runs/43204486769: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 064A:19CA00:BE58601:11D7DFCE:6AF59EA2 and timestamp 2026-11-12 11:10:26 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:27 httpx #4 cold failed: gh api repos/zodeops/bench-httpx/actions/runs/43206436591: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 064C:BE4BD:3028F2BD:48041CD8:6AF59EA3 and timestamp 2026-11-12 11:10:27 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:28 nginx-proxy #3 cold failed: gh api repos/zodeops/bench-nginx-proxy/actions/runs/43206280740: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 064E:1B5170:C8E8AB4:12D2A916:6AF59EA3 and timestamp 2026-11-12 11:10:28 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:29 httpx       ubuntu-24.04  warm #4 run 43206840522
+11:10:29 saleor #2 cold failed: gh api repos/zodeops/bench-saleor/actions/runs/43204487308: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 0650:256DDA:BF5757C:11E7641B:6AF59EA5 and timestamp 2026-11-12 11:10:29 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:30 nginx-proxy ubuntu-24.04  warm #3 run 43206842351
+11:10:30 helm #5 cold failed: gh api repos/zodeops/bench-helm/actions/runs/43206049400: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 0652:331561:C4DF2EF:127031F8:6AF59EA6 and timestamp 2026-11-12 11:10:30 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:30 alpine #5 cold failed: gh api repos/zodeops/bench-alpine/actions/runs/43206132245: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 0654:1243E1:BEDCB08:11E23610:6AF59EA6 and timestamp 2026-11-12 11:10:30 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:32 helm        ubuntu-24.04  warm #5 run 43206847935
+11:10:32 alpine      ubuntu-24.04  warm #5 run 43206848988
+11:10:36 petclinic #2 warm failed: gh api repos/zodeops/bench-petclinic/actions/runs/43206537257: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 065F:2F2F4F:C1CD68F:1226738C:6AF59EAC and timestamp 2026-11-12 11:10:36 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:37 caddy #2 cold failed: gh api repos/zodeops/ci-bench/actions/runs/43206305744: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 06A7:19CA00:BE61296:11D8AF59:6AF59EAD and timestamp 2026-11-12 11:10:37 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:39 caddy       ubuntu-24.04  warm #2 run 43206866377
+11:10:39 petclinic   ubuntu-24.04  cold #3 run 43206866635
+11:10:40 saleor #1 warm failed: gh api repos/zodeops/bench-saleor/actions/runs/43204486504: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 06B0:256DDA:BF5FD10:11E82BBA:6AF59EB0 and timestamp 2026-11-12 11:10:40 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:35:48 petclinic   ubuntu-24.04  warm #2 run 43210511113
+11:35:48 alpine      ubuntu-24.04  cold #5 run 43210511854
+11:35:48 caddy       ubuntu-24.04  cold #2 run 43210511934
+11:35:49 httpx       ubuntu-24.04  cold #4 run 43210512047
+11:35:49 saleor      ubuntu-24.04  warm #1 run 43210512960
+11:35:49 helm        ubuntu-24.04  cold #5 run 43210513535
+11:35:50 saleor      ubuntu-24.04  cold #4 run 43210515053
+11:35:50 saleor      ubuntu-24.04  cold #3 run 43210515143
+11:35:50 saleor      ubuntu-24.04  cold #2 run 43210515326
+11:35:50 nginx-proxy ubuntu-24.04  cold #3 run 43210514942
+11:35:50 saleor      ubuntu-24.04  cold #5 run 43210515594
+11:36:49 httpx       ubuntu-24.04  cold #4 failure wall 50.43s
+11:36:51 httpx       ubuntu-24.04  warm #4 run 43210659253
+11:37:49 petclinic   ubuntu-24.04  warm #2 success wall 90.83s
+11:37:50 caddy       ubuntu-24.04  cold #2 success wall 110.456s
+11:37:51 caddy       ubuntu-24.04  warm #2 run 43210802589
+11:37:52 petclinic   ubuntu-24.04  cold #3 run 43210803617
+11:37:52 httpx       ubuntu-24.04  warm #4 failure wall 44.018s
+11:37:54 httpx       ubuntu-24.04  cold #5 run 43210808333
+11:38:55 httpx       ubuntu-24.04  cold #5 failure wall 47.124s
+11:38:56 httpx       ubuntu-24.04  warm #5 run 43210952141
+11:39:53 caddy       ubuntu-24.04  warm #2 success wall 93.709s
+11:39:55 caddy       ubuntu-24.04  cold #3 run 43211084295
+11:39:57 httpx       ubuntu-24.04  warm #5 failure wall 44.532s
+11:40:53 petclinic   ubuntu-24.04  cold #3 success wall 122.21s
+11:40:55 petclinic   ubuntu-24.04  warm #3 run 43211227704
+11:41:51 alpine      ubuntu-24.04  cold #5 success wall 355.428s
+11:41:53 alpine      ubuntu-24.04  warm #5 run 43211360349
+11:41:56 caddy       ubuntu-24.04  cold #3 success wall 107.519s
+11:41:57 caddy       ubuntu-24.04  warm #3 run 43211371025
+11:42:53 helm        ubuntu-24.04  cold #5 success wall 406.734s
+11:42:54 helm        ubuntu-24.04  warm #5 run 43211505948
+11:42:56 petclinic   ubuntu-24.04  warm #3 success wall 102.011s
+11:42:59 petclinic   ubuntu-24.04  cold #4 run 43211517348
+11:43:58 caddy       ubuntu-24.04  warm #3 success wall 112.7s
+11:44:00 caddy       ubuntu-24.04  cold #4 run 43211663070
+11:45:00 petclinic   ubuntu-24.04  cold #4 success wall 106.265s
+11:45:02 petclinic   ubuntu-24.04  warm #4 run 43211809523
+11:45:56 helm        ubuntu-24.04  warm #5 success wall 157.728s
+11:46:02 caddy       ubuntu-24.04  cold #4 success wall 109.734s
+11:46:03 caddy       ubuntu-24.04  warm #4 run 43211958703
+11:46:55 alpine      ubuntu-24.04  warm #5 success wall 283.361s
+11:47:03 petclinic   ubuntu-24.04  warm #4 success wall 91.299s
+11:47:06 petclinic   ubuntu-24.04  cold #5 run 43212107433
+11:47:56 nginx-proxy ubuntu-24.04  cold #3 success wall 697.452s
+11:47:57 nginx-proxy ubuntu-24.04  warm #3 run 43212232580
+11:48:05 caddy       ubuntu-24.04  warm #4 success wall 115.875s
+11:48:06 caddy       ubuntu-24.04  cold #5 run 43212254124
+11:48:54 saleor      ubuntu-24.04  warm #1 success wall 785.074s
+11:49:07 petclinic   ubuntu-24.04  cold #5 success wall 109.311s
+11:49:08 petclinic   ubuntu-24.04  warm #5 run 43212403122
+11:50:56 saleor      ubuntu-24.04  cold #3 success wall 901.13s
+11:50:59 saleor      ubuntu-24.04  warm #3 run 43212667027
+11:51:08 caddy       ubuntu-24.04  cold #5 success wall 133.688s
+11:51:09 petclinic   ubuntu-24.04  warm #5 success wall 98.811s
+11:51:10 caddy       ubuntu-24.04  warm #5 run 43212692761
+11:52:57 saleor      ubuntu-24.04  cold #2 success wall 1003.042s
+11:52:57 saleor      ubuntu-24.04  cold #4 success wall 1018.061s
+11:52:59 saleor      ubuntu-24.04  warm #4 run 43212946634
+11:52:59 saleor      ubuntu-24.04  warm #2 run 43212946773
+11:53:11 caddy       ubuntu-24.04  warm #5 success wall 100.336s
+11:53:57 saleor      ubuntu-24.04  cold #5 success wall 1030.975s
+11:54:00 saleor      ubuntu-24.04  warm #5 run 43213092748
+12:00:03 nginx-proxy ubuntu-24.04  warm #3 success wall 704.99s
+12:00:05 nginx-proxy ubuntu-24.04  cold #4 run 43213946740
+12:08:06 saleor      ubuntu-24.04  warm #4 success wall 889.755s
+12:11:07 saleor      ubuntu-24.04  warm #5 success wall 988.367s
+12:11:08 saleor      ubuntu-24.04  warm #3 success wall 1161.32s
+12:12:10 nginx-proxy ubuntu-24.04  cold #4 success wall 718.499s
+12:12:12 nginx-proxy ubuntu-24.04  warm #4 run 43215750445
+12:15:09 saleor      ubuntu-24.04  warm #2 success wall 1308.708s
+12:24:18 nginx-proxy ubuntu-24.04  warm #4 success wall 695.328s
+12:24:20 nginx-proxy ubuntu-24.04  cold #5 run 43217576878
+12:36:26 nginx-proxy ubuntu-24.04  cold #5 success wall 697.276s
+12:36:27 nginx-proxy ubuntu-24.04  warm #5 run 43219447598
+12:48:33 nginx-proxy ubuntu-24.04  warm #5 success wall 713.828s
+12:48:33 done: results/2026-11-12/runs.jsonl

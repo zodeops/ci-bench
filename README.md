@@ -2,8 +2,12 @@
 
 The repeatable benchmark every Zode CI speed task is measured against (PRD
 REQ-050, task 35; the public page of REQ-062 grows from it). The same
-workflow at the same commit runs on GitHub-hosted `ubuntu-latest` and on Zode
+workflow at the same commit runs on GitHub-hosted `ubuntu-24.04` and on Zode
 `zode-<size>`, cold and warm, 5 runs each, and every run is written as JSON.
+
+GitHub's `ubuntu-latest` moved to Ubuntu 26.04 by 12 Nov 2026 (fzf's pinned
+Ruby has no 26.04 build there), while Zode's CI image is `ci-ubuntu-24.04`, so
+the GitHub side runs `ubuntu-24.04`: same OS on both sides.
 
 ## The set (pinned 12 Nov 2026)
 
@@ -35,7 +39,9 @@ then the bench edit made by `scripts/benchify.py`:
 
 - every `runs-on:` becomes `${{ inputs.runner }}`;
 - the trigger becomes `workflow_dispatch` with a `runner` input;
-- every other workflow file is removed, so nothing else runs.
+- every other workflow file is removed, so nothing else runs;
+- a build that runs `git describe` gets the upstream release tag on the
+  unchanged tree (`tag` in `repos.json`; fzf).
 
 Nothing else in the workflow changes. `git show HEAD` in a mirror is the
 whole difference from upstream. Branches `main`, `bench-github` and
@@ -45,10 +51,19 @@ so its Actions caches and concurrency group never meet the other provider's.
 ## Running it
 
 ```sh
-scripts/bench.py                              # every repo, ubuntu-latest and zode-4x8, cold and warm, 5 runs
+scripts/bench.py                              # every repo, ubuntu-24.04 and zode-4x8, cold and warm, 5 runs
 scripts/bench.py --repos helm,fzf --runs 1    # a quick check
+scripts/bench.py --resume --split saleor      # skip recorded runs; saleor's iterations run at once
 scripts/report.py results/<date>              # summary.json and report.md
+scripts/phase-check.py --since <time>         # REQ-050: stored phases vs GitHub's own job times
 ```
+
+`--split` runs a repository's iterations at the same time, each on its own
+branch (`bench-zode-i3`), so a 17-minute suite does not take 3 hours. The
+harness polls once a minute and waits out GitHub's API rate limit (one user
+token, 5,000 calls an hour, shared with every other tool). When Zode marks a
+job `failed` or `refused`, the harness cancels the GitHub run at once and
+records `zode_failed` with Zode's reason.
 
 `cold` deletes the branch's Actions caches before the run; `warm` runs right
 after, with what the cold run saved. Both providers run side by side for each
@@ -85,7 +100,7 @@ started); `run_s_sum` is the jobs' summed run time.
 
 ## Caveats
 
-- `ubuntu-latest` on a public repository is 4 vCPUs and 16 GB; `zode-4x8` is
+- `ubuntu-24.04` on a public repository is 4 vCPUs and 16 GB; `zode-4x8` is
   4 vCPUs and 8 GB.
 - Zode runs share the region with real CI. A full region shows up as the
   `dispatch` phase (waiting for room), not as runner time.

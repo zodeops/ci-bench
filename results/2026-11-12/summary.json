@@ -1,0 +1,539 @@
+{
+ "results": "results/2026-11-12",
+ "records": 202,
+ "rows": [
+  {
+   "repo": "alpine",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 306.5,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 302.0
+  },
+  {
+   "repo": "alpine",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 317.4,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 313.0
+  },
+  {
+   "repo": "alpine",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 5,
+   "success": 2,
+   "wall_s_median": 840.9,
+   "queue_s_max_median": 21.5,
+   "run_s_sum_median": 816.5
+  },
+  {
+   "repo": "alpine",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 5,
+   "success": 1,
+   "wall_s_median": 673.8,
+   "queue_s_max_median": 20.0,
+   "run_s_sum_median": 652.0
+  },
+  {
+   "repo": "caddy",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 110.5,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 106.0
+  },
+  {
+   "repo": "caddy",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 112.7,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 109.0
+  },
+  {
+   "repo": "caddy",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 3,
+   "success": 3,
+   "wall_s_median": 217.9,
+   "queue_s_max_median": 49.0,
+   "run_s_sum_median": 120.0
+  },
+  {
+   "repo": "caddy",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 3,
+   "success": 3,
+   "wall_s_median": 296.5,
+   "queue_s_max_median": 88.0,
+   "run_s_sum_median": 137.0
+  },
+  {
+   "repo": "excalidraw",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 242.8,
+   "queue_s_max_median": 1.0,
+   "run_s_sum_median": 239.0
+  },
+  {
+   "repo": "excalidraw",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 245.2,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 241.0
+  },
+  {
+   "repo": "excalidraw",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 5,
+   "success": 3,
+   "wall_s_median": 481.0,
+   "queue_s_max_median": 25.0,
+   "run_s_sum_median": 463.0
+  },
+  {
+   "repo": "excalidraw",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 5,
+   "success": 0,
+   "wall_s_median": 921.5,
+   "queue_s_max_median": 34.0,
+   "run_s_sum_median": 902.0
+  },
+  {
+   "repo": "fzf",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 6,
+   "success": 6,
+   "wall_s_median": 436.3,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 431.5
+  },
+  {
+   "repo": "fzf",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 391.2,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 387.0
+  },
+  {
+   "repo": "fzf",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 5,
+   "success": 4,
+   "wall_s_median": 719.2,
+   "queue_s_max_median": 26.0,
+   "run_s_sum_median": 669.5
+  },
+  {
+   "repo": "fzf",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 5,
+   "success": 2,
+   "wall_s_median": 604.8,
+   "queue_s_max_median": 22.5,
+   "run_s_sum_median": 580.0
+  },
+  {
+   "repo": "helm",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 406.7,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 401.0
+  },
+  {
+   "repo": "helm",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 155.6,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 151.0
+  },
+  {
+   "repo": "helm",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 5,
+   "success": 0,
+   "wall_s_median": 809.5,
+   "queue_s_max_median": 23.0,
+   "run_s_sum_median": 700.0
+  },
+  {
+   "repo": "helm",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 5,
+   "success": 0,
+   "wall_s_median": 688.8,
+   "queue_s_max_median": 26.0,
+   "run_s_sum_median": 660.0
+  },
+  {
+   "repo": "httpx",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 5,
+   "success": 0,
+   "wall_s_median": 47.1,
+   "queue_s_max_median": 3.0,
+   "run_s_sum_median": 189.0
+  },
+  {
+   "repo": "httpx",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 0,
+   "wall_s_median": 45.6,
+   "queue_s_max_median": 3.0,
+   "run_s_sum_median": 171.0
+  },
+  {
+   "repo": "httpx",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 3,
+   "success": 0,
+   "wall_s_median": 259.0,
+   "queue_s_max_median": 161.0,
+   "run_s_sum_median": 705.0
+  },
+  {
+   "repo": "httpx",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 3,
+   "success": 0,
+   "wall_s_median": 147.8,
+   "queue_s_max_median": 81.0,
+   "run_s_sum_median": 536.0
+  },
+  {
+   "repo": "jquery",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 60.5,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 176.0
+  },
+  {
+   "repo": "jquery",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 59.4,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 168.0
+  },
+  {
+   "repo": "jquery",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 3,
+   "success": 2,
+   "wall_s_median": 354.1,
+   "queue_s_max_median": 230.0,
+   "run_s_sum_median": 461.5
+  },
+  {
+   "repo": "jquery",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 3,
+   "success": 3,
+   "wall_s_median": 429.3,
+   "queue_s_max_median": 260.0,
+   "run_s_sum_median": 509.0
+  },
+  {
+   "repo": "nginx-proxy",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 701.8,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 1379.0
+  },
+  {
+   "repo": "nginx-proxy",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 710.9,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 1386.0
+  },
+  {
+   "repo": "nginx-proxy",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 5,
+   "success": 0,
+   "wall_s_median": 811.6,
+   "queue_s_max_median": 27.0,
+   "run_s_sum_median": 1204.0
+  },
+  {
+   "repo": "nginx-proxy",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 5,
+   "success": 0,
+   "wall_s_median": 1504.8,
+   "queue_s_max_median": 26.0,
+   "run_s_sum_median": 2860.0
+  },
+  {
+   "repo": "petclinic",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 111.4,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 105.0
+  },
+  {
+   "repo": "petclinic",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 93.9,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 87.0
+  },
+  {
+   "repo": "petclinic",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 3,
+   "success": 3,
+   "wall_s_median": 297.9,
+   "queue_s_max_median": 109.0,
+   "run_s_sum_median": 234.0
+  },
+  {
+   "repo": "petclinic",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 3,
+   "success": 3,
+   "wall_s_median": 222.2,
+   "queue_s_max_median": 28.0,
+   "run_s_sum_median": 192.0
+  },
+  {
+   "repo": "saleor",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 1018.1,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 1015.0
+  },
+  {
+   "repo": "saleor",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 988.4,
+   "queue_s_max_median": 2.0,
+   "run_s_sum_median": 985.0
+  },
+  {
+   "repo": "saleor",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 5,
+   "success": 2,
+   "wall_s_median": 2599.8,
+   "queue_s_max_median": 24.5,
+   "run_s_sum_median": 2569.5
+  },
+  {
+   "repo": "saleor",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 5,
+   "success": 2,
+   "wall_s_median": 2310.7,
+   "queue_s_max_median": 280.0,
+   "run_s_sum_median": 2028.5
+  },
+  {
+   "repo": "starlette",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "cold",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 61.3,
+   "queue_s_max_median": 3.0,
+   "run_s_sum_median": 203.0
+  },
+  {
+   "repo": "starlette",
+   "provider": "github",
+   "runner": "ubuntu-24.04",
+   "mode": "warm",
+   "runs": 5,
+   "success": 5,
+   "wall_s_median": 68.8,
+   "queue_s_max_median": 3.0,
+   "run_s_sum_median": 179.0
+  },
+  {
+   "repo": "starlette",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "cold",
+   "runs": 4,
+   "success": 0,
+   "wall_s_median": 203.5,
+   "queue_s_max_median": 65.0,
+   "run_s_sum_median": 573.5
+  },
+  {
+   "repo": "starlette",
+   "provider": "zode",
+   "runner": "zode-4x8",
+   "mode": "warm",
+   "runs": 3,
+   "success": 0,
+   "wall_s_median": 220.7,
+   "queue_s_max_median": 93.0,
+   "run_s_sum_median": 633.0
+  }
+ ],
+ "zode_phases_ms_median": {
+  "cold": {
+   "webhook": 3150.5,
+   "dispatch": 8.0,
+   "sandbox": 11793.5,
+   "runner_boot": 12840.5,
+   "assign": 930.5,
+   "setup": 3000.0,
+   "steps": 128000.0,
+   "queue": 41000,
+   "total": 274500.0,
+   "queue_p95": 465000,
+   "jobs": 92
+  },
+  "warm": {
+   "webhook": 3240.0,
+   "dispatch": 6.0,
+   "sandbox": 10530.5,
+   "runner_boot": 12125,
+   "assign": 892,
+   "setup": 3000,
+   "steps": 161000,
+   "queue": 28000.0,
+   "total": 199500.0,
+   "queue_p95": 348000,
+   "jobs": 86
+  }
+ },
+ "github_queue": {
+  "cold": {
+   "median_s": 2.0,
+   "p95_s": 3.0,
+   "jobs": 121
+  },
+  "warm": {
+   "median_s": 2.0,
+   "p95_s": 5.0,
+   "jobs": 120
+  }
+ },
+ "req050_check": {
+  "jobs_checked": 123,
+  "within_1s": 123,
+  "worst_diff_s": 0.004,
+  "jobs_missing_a_phase": 55,
+  "negative_phases": {
+   "assign": 5
+  }
+ }
+}

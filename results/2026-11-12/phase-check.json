@@ -1,0 +1,1991 @@
+[
+ {
+  "id": "cij_mn7maucdklbbb7m2",
+  "repo": "zodeops/bench-petclinic",
+  "complete": true,
+  "github_total_s": 220.0,
+  "zode_phase_sum_s": 219.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3473,
+   "dispatch": 5,
+   "sandbox": 10165,
+   "runner_boot": 13701,
+   "assign": 654,
+   "setup": 5000,
+   "steps": 187000,
+   "queue": 28000,
+   "total": 220000
+  }
+ },
+ {
+  "id": "cij_6z7smibbnoajrjaw",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 161.0,
+  "zode_phase_sum_s": 160.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3971,
+   "dispatch": 5,
+   "sandbox": 7229,
+   "runner_boot": 11682,
+   "assign": 1110,
+   "setup": 4000,
+   "steps": 133000,
+   "queue": 24000,
+   "total": 161000
+  }
+ },
+ {
+  "id": "cij_vc4cpleeqw6wuex4",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 424.0,
+  "zode_phase_sum_s": 423.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3468,
+   "dispatch": 4,
+   "sandbox": 10440,
+   "runner_boot": 11046,
+   "assign": 1039,
+   "setup": 3000,
+   "steps": 395000,
+   "queue": 26000,
+   "total": 424000
+  }
+ },
+ {
+  "id": "cij_hptkt4qxvsbz7slz",
+  "repo": "zodeops/bench-petclinic",
+  "complete": true,
+  "github_total_s": 259.0,
+  "zode_phase_sum_s": 258.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2580,
+   "dispatch": 5,
+   "sandbox": 8134,
+   "runner_boot": 13198,
+   "assign": 1080,
+   "setup": 5000,
+   "steps": 229000,
+   "queue": 25000,
+   "total": 259000
+  }
+ },
+ {
+  "id": "cij_hpvyt7j3k3uxgg4c",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 164.0,
+  "zode_phase_sum_s": 163.999,
+  "diff_s": -0.001,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3000,
+   "dispatch": 28908,
+   "sandbox": 7377,
+   "runner_boot": 8832,
+   "assign": 882,
+   "setup": 3000,
+   "steps": 112000,
+   "queue": 49000,
+   "total": 164000
+  }
+ },
+ {
+  "id": "cij_3lhx7lgdaooc4ehf",
+  "repo": "zodeops/bench-httpx",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_yrd6xarflwmcppyk",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 155.0,
+  "zode_phase_sum_s": 154.999,
+  "diff_s": -0.001,
+  "negative": [
+   "assign"
+  ],
+  "phase_ms": {
+   "webhook": 3410,
+   "dispatch": 48494,
+   "sandbox": 13037,
+   "runner_boot": 14517,
+   "assign": -17459,
+   "setup": 2000,
+   "steps": 91000,
+   "queue": 62000,
+   "total": 155000
+  }
+ },
+ {
+  "id": "cij_qb5xdkha4rbdbh6k",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 213.0,
+  "zode_phase_sum_s": 212.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3088,
+   "dispatch": 4,
+   "sandbox": 12758,
+   "runner_boot": 18019,
+   "assign": 47129,
+   "setup": 3000,
+   "steps": 129000,
+   "queue": 81000,
+   "total": 213000
+  }
+ },
+ {
+  "id": "cij_izoby6qpcxyydmep",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 426.0,
+  "zode_phase_sum_s": 425.996,
+  "diff_s": -0.004,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3194,
+   "dispatch": 234811,
+   "sandbox": 8611,
+   "runner_boot": 12153,
+   "assign": 1227,
+   "setup": 5000,
+   "steps": 161000,
+   "queue": 260000,
+   "total": 426000
+  }
+ },
+ {
+  "id": "cij_7mw4qkhquijwc7wb",
+  "repo": "zodeops/bench-jquery",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_6is7ou2wyqf7cdff",
+  "repo": "zodeops/bench-petclinic",
+  "complete": true,
+  "github_total_s": 284.0,
+  "zode_phase_sum_s": 283.996,
+  "diff_s": -0.004,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3256,
+   "dispatch": 4,
+   "sandbox": 11457,
+   "runner_boot": 12469,
+   "assign": 810,
+   "setup": 3000,
+   "steps": 253000,
+   "queue": 28000,
+   "total": 284000
+  }
+ },
+ {
+  "id": "cij_r3thwgy3ekjja3cq",
+  "repo": "zodeops/bench-httpx",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_6blrts5x4ipcy5cf",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 305.0,
+  "zode_phase_sum_s": 304.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3130,
+   "dispatch": 167867,
+   "sandbox": 7285,
+   "runner_boot": 8822,
+   "assign": 893,
+   "setup": 3000,
+   "steps": 114000,
+   "queue": 188000,
+   "total": 305000
+  }
+ },
+ {
+  "id": "cij_vwzj5lonwtx4mvsd",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 170.0,
+  "zode_phase_sum_s": 169.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2750,
+   "dispatch": 4,
+   "sandbox": 14991,
+   "runner_boot": 21911,
+   "assign": 42341,
+   "setup": 2000,
+   "steps": 86000,
+   "queue": 82000,
+   "total": 170000
+  }
+ },
+ {
+  "id": "cij_lu46tikugkmb5l4t",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 196.0,
+  "zode_phase_sum_s": 195.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2474,
+   "dispatch": 5,
+   "sandbox": 14178,
+   "runner_boot": 13338,
+   "assign": 33002,
+   "setup": 12000,
+   "steps": 121000,
+   "queue": 63000,
+   "total": 196000
+  }
+ },
+ {
+  "id": "cij_etkkqmgjgdsr4cog",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 205.0,
+  "zode_phase_sum_s": 204.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3387,
+   "dispatch": 5,
+   "sandbox": 14213,
+   "runner_boot": 13209,
+   "assign": 34184,
+   "setup": 12000,
+   "steps": 128000,
+   "queue": 65000,
+   "total": 205000
+  }
+ },
+ {
+  "id": "cij_5sblcoepfx5t5ohz",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 151.0,
+  "zode_phase_sum_s": 150.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2812,
+   "dispatch": 4,
+   "sandbox": 8621,
+   "runner_boot": 10758,
+   "assign": 57802,
+   "setup": 2000,
+   "steps": 69000,
+   "queue": 80000,
+   "total": 151000
+  }
+ },
+ {
+  "id": "cij_7u74sntwhb7xg3pd",
+  "repo": "zodeops/bench-petclinic",
+  "complete": true,
+  "github_total_s": 295.0,
+  "zode_phase_sum_s": 294.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3037,
+   "dispatch": 87960,
+   "sandbox": 6529,
+   "runner_boot": 10309,
+   "assign": 1162,
+   "setup": 3000,
+   "steps": 183000,
+   "queue": 109000,
+   "total": 295000
+  }
+ },
+ {
+  "id": "cij_gzpk4ezaffjdsxpx",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 589.0,
+  "zode_phase_sum_s": 588.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2932,
+   "dispatch": 27070,
+   "sandbox": 17803,
+   "runner_boot": 14178,
+   "assign": 1014,
+   "setup": 2000,
+   "steps": 524000,
+   "queue": 63000,
+   "total": 589000
+  }
+ },
+ {
+  "id": "cij_nm75wxy7bszgkezc",
+  "repo": "zodeops/bench-httpx",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_zw3sc22oegmauxqv",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 215.0,
+  "zode_phase_sum_s": 214.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2353,
+   "dispatch": 20646,
+   "sandbox": 11996,
+   "runner_boot": 11371,
+   "assign": 631,
+   "setup": 3000,
+   "steps": 165000,
+   "queue": 47000,
+   "total": 215000
+  }
+ },
+ {
+  "id": "cij_m27emxnn6nymxiq7",
+  "repo": "zodeops/bench-jquery",
+  "complete": false,
+  "missing": [
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_gt5vraenowitbojr",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 245.0,
+  "zode_phase_sum_s": 244.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2183,
+   "dispatch": 81823,
+   "sandbox": 9881,
+   "runner_boot": 10326,
+   "assign": 5784,
+   "setup": 3000,
+   "steps": 132000,
+   "queue": 110000,
+   "total": 245000
+  }
+ },
+ {
+  "id": "cij_cqv6dpt377ewlfkj",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 274.0,
+  "zode_phase_sum_s": 273.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3217,
+   "dispatch": 80785,
+   "sandbox": 10391,
+   "runner_boot": 15200,
+   "assign": 8404,
+   "setup": 4000,
+   "steps": 152000,
+   "queue": 118000,
+   "total": 274000
+  }
+ },
+ {
+  "id": "cij_7atjbqic44ak3rea",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 187.0,
+  "zode_phase_sum_s": 186.996,
+  "diff_s": -0.004,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2850,
+   "dispatch": 31149,
+   "sandbox": 14909,
+   "runner_boot": 14354,
+   "assign": 734,
+   "setup": 3000,
+   "steps": 120000,
+   "queue": 64000,
+   "total": 187000
+  }
+ },
+ {
+  "id": "cij_hqn2a7jk5ho5og4m",
+  "repo": "zodeops/bench-petclinic",
+  "complete": true,
+  "github_total_s": 216.0,
+  "zode_phase_sum_s": 215.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2977,
+   "dispatch": 10026,
+   "sandbox": 7475,
+   "runner_boot": 7873,
+   "assign": 646,
+   "setup": 2000,
+   "steps": 185000,
+   "queue": 29000,
+   "total": 216000
+  }
+ },
+ {
+  "id": "cij_xowehrlv7vlzv4n2",
+  "repo": "zodeops/bench-httpx",
+  "complete": true,
+  "github_total_s": 136.0,
+  "zode_phase_sum_s": 135.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1925,
+   "dispatch": 4,
+   "sandbox": 8732,
+   "runner_boot": 7088,
+   "assign": 1248,
+   "setup": 3000,
+   "steps": 114000,
+   "queue": 19000,
+   "total": 136000
+  }
+ },
+ {
+  "id": "cij_oadrn7ad4nznuxy7",
+  "repo": "zodeops/bench-httpx",
+  "complete": true,
+  "github_total_s": 241.0,
+  "zode_phase_sum_s": 240.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3291,
+   "dispatch": 141709,
+   "sandbox": 6744,
+   "runner_boot": 8697,
+   "assign": 556,
+   "setup": 3000,
+   "steps": 77000,
+   "queue": 161000,
+   "total": 241000
+  }
+ },
+ {
+  "id": "cij_okzrszqy6ozxtmyw",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 294.0,
+  "zode_phase_sum_s": 293.996,
+  "diff_s": -0.004,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3898,
+   "dispatch": 47003,
+   "sandbox": 15260,
+   "runner_boot": 20850,
+   "assign": 985,
+   "setup": 7000,
+   "steps": 199000,
+   "queue": 88000,
+   "total": 294000
+  }
+ },
+ {
+  "id": "cij_o4sio5ce74ctv626",
+  "repo": "zodeops/bench-httpx",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_tdoig73ufeg6pljz",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 471.0,
+  "zode_phase_sum_s": 470.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3395,
+   "dispatch": 299506,
+   "sandbox": 14412,
+   "runner_boot": 13756,
+   "assign": 929,
+   "setup": 3000,
+   "steps": 136000,
+   "queue": 332000,
+   "total": 471000
+  }
+ },
+ {
+  "id": "cij_rvocjpxqt32ggjd5",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 296.0,
+  "zode_phase_sum_s": 295.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3319,
+   "dispatch": 115684,
+   "sandbox": 12934,
+   "runner_boot": 16363,
+   "assign": 697,
+   "setup": 3000,
+   "steps": 144000,
+   "queue": 149000,
+   "total": 296000
+  }
+ },
+ {
+  "id": "cij_ptyzug6p6eqeosck",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 497.0,
+  "zode_phase_sum_s": 496.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3450,
+   "dispatch": 355548,
+   "sandbox": 8431,
+   "runner_boot": 9642,
+   "assign": 927,
+   "setup": 2000,
+   "steps": 117000,
+   "queue": 378000,
+   "total": 497000
+  }
+ },
+ {
+  "id": "cij_3fzn5v2kcvkx6u4y",
+  "repo": "zodeops/bench-jquery",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_ubpya2sz6f7pkup3",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 272.0,
+  "zode_phase_sum_s": 271.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2551,
+   "dispatch": 127446,
+   "sandbox": 9054,
+   "runner_boot": 11536,
+   "assign": 1411,
+   "setup": 2000,
+   "steps": 118000,
+   "queue": 152000,
+   "total": 272000
+  }
+ },
+ {
+  "id": "cij_rdodt7u6imrrf7l7",
+  "repo": "zodeops/bench-petclinic",
+  "complete": true,
+  "github_total_s": 454.0,
+  "zode_phase_sum_s": 453.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3822,
+   "dispatch": 150081,
+   "sandbox": 14495,
+   "runner_boot": 16998,
+   "assign": 601,
+   "setup": 3000,
+   "steps": 265000,
+   "queue": 186000,
+   "total": 454000
+  }
+ },
+ {
+  "id": "cij_4ijw4vibf3qetzwp",
+  "repo": "zodeops/bench-httpx",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_rtortprtuog6oeqk",
+  "repo": "zodeops/bench-starlette",
+  "complete": false,
+  "missing": [
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_rn6z3opwra277uvu",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 26.0,
+  "zode_phase_sum_s": 25.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2248,
+   "dispatch": 4,
+   "sandbox": 6994,
+   "runner_boot": 7807,
+   "assign": 944,
+   "setup": 2000,
+   "steps": 6000,
+   "queue": 18000,
+   "total": 26000
+  }
+ },
+ {
+  "id": "cij_mc5w5xkh3imzs5sc",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 674.0,
+  "zode_phase_sum_s": 673.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2877,
+   "dispatch": 38120,
+   "sandbox": 12333,
+   "runner_boot": 10587,
+   "assign": 1080,
+   "setup": 2000,
+   "steps": 607000,
+   "queue": 65000,
+   "total": 674000
+  }
+ },
+ {
+  "id": "cij_qk5hblw3xauf7a2l",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 77.0,
+  "zode_phase_sum_s": 76.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 4463,
+   "dispatch": 24439,
+   "sandbox": 8210,
+   "runner_boot": 10582,
+   "assign": 3303,
+   "setup": 2000,
+   "steps": 24000,
+   "queue": 51000,
+   "total": 77000
+  }
+ },
+ {
+  "id": "cij_zg6idscb3plaepg4",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 40.0,
+  "zode_phase_sum_s": 39.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3249,
+   "dispatch": 5,
+   "sandbox": 10603,
+   "runner_boot": 14305,
+   "assign": 836,
+   "setup": 3000,
+   "steps": 8000,
+   "queue": 29000,
+   "total": 40000
+  }
+ },
+ {
+  "id": "cij_feg4rhacudud5am4",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 124.0,
+  "zode_phase_sum_s": 123.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1377,
+   "dispatch": 16621,
+   "sandbox": 6050,
+   "runner_boot": 8358,
+   "assign": 592,
+   "setup": 2000,
+   "steps": 89000,
+   "queue": 33000,
+   "total": 124000
+  }
+ },
+ {
+  "id": "cij_f4n4g4lyebdj55h3",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 126.0,
+  "zode_phase_sum_s": 125.998,
+  "diff_s": -0.002,
+  "negative": [
+   "assign"
+  ],
+  "phase_ms": {
+   "webhook": 2238,
+   "dispatch": 39664,
+   "sandbox": 12203,
+   "runner_boot": 14566,
+   "assign": -11673,
+   "setup": 3000,
+   "steps": 66000,
+   "queue": 57000,
+   "total": 126000
+  }
+ },
+ {
+  "id": "cij_b63ek57ezjjps2tf",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 183.0,
+  "zode_phase_sum_s": 182.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1905,
+   "dispatch": 29997,
+   "sandbox": 10274,
+   "runner_boot": 14036,
+   "assign": 13786,
+   "setup": 2000,
+   "steps": 111000,
+   "queue": 70000,
+   "total": 183000
+  }
+ },
+ {
+  "id": "cij_4oxzsqc76jnnpdmc",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 132.0,
+  "zode_phase_sum_s": 131.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1357,
+   "dispatch": 10545,
+   "sandbox": 6492,
+   "runner_boot": 10928,
+   "assign": 675,
+   "setup": 3000,
+   "steps": 99000,
+   "queue": 30000,
+   "total": 132000
+  }
+ },
+ {
+  "id": "cij_hbwl63bsj5wxrw7f",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 155.0,
+  "zode_phase_sum_s": 154.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 4232,
+   "dispatch": 107670,
+   "sandbox": 6563,
+   "runner_boot": 7404,
+   "assign": 1129,
+   "setup": 2000,
+   "steps": 26000,
+   "queue": 127000,
+   "total": 155000
+  }
+ },
+ {
+  "id": "cij_fvc6i367abibq3hg",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 588.0,
+  "zode_phase_sum_s": 587.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3171,
+   "dispatch": 9827,
+   "sandbox": 11227,
+   "runner_boot": 11173,
+   "assign": 1599,
+   "setup": 2000,
+   "steps": 549000,
+   "queue": 37000,
+   "total": 588000
+  }
+ },
+ {
+  "id": "cij_abivtxum5vkkktty",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 37.0,
+  "zode_phase_sum_s": 36.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2600,
+   "dispatch": 4,
+   "sandbox": 9790,
+   "runner_boot": 14056,
+   "assign": 547,
+   "setup": 3000,
+   "steps": 7000,
+   "queue": 27000,
+   "total": 37000
+  }
+ },
+ {
+  "id": "cij_x7sbpdzn3jgb534p",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 156.0,
+  "zode_phase_sum_s": 155.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2996,
+   "dispatch": 24004,
+   "sandbox": 6783,
+   "runner_boot": 9782,
+   "assign": 432,
+   "setup": 3000,
+   "steps": 109000,
+   "queue": 44000,
+   "total": 156000
+  }
+ },
+ {
+  "id": "cij_r2eszd72eeasq5rv",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 105.0,
+  "zode_phase_sum_s": 104.996,
+  "diff_s": -0.004,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3692,
+   "dispatch": 56213,
+   "sandbox": 16025,
+   "runner_boot": 15804,
+   "assign": 1262,
+   "setup": 4000,
+   "steps": 8000,
+   "queue": 93000,
+   "total": 105000
+  }
+ },
+ {
+  "id": "cij_z3viwffkemynagim",
+  "repo": "zodeops/bench-jquery",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_vmd6jkxjg6tfsqnc",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 195.0,
+  "zode_phase_sum_s": 194.998,
+  "diff_s": -0.002,
+  "negative": [
+   "assign"
+  ],
+  "phase_ms": {
+   "webhook": 2236,
+   "dispatch": 10763,
+   "sandbox": 15383,
+   "runner_boot": 20227,
+   "assign": -1611,
+   "setup": 8000,
+   "steps": 140000,
+   "queue": 47000,
+   "total": 195000
+  }
+ },
+ {
+  "id": "cij_myofyhy3y6yb6lac",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 511.0,
+  "zode_phase_sum_s": 510.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3701,
+   "dispatch": 319297,
+   "sandbox": 15344,
+   "runner_boot": 8391,
+   "assign": 1265,
+   "setup": 3000,
+   "steps": 160000,
+   "queue": 348000,
+   "total": 511000
+  }
+ },
+ {
+  "id": "cij_dqzw52pdn5icywc4",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 178.0,
+  "zode_phase_sum_s": 177.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3669,
+   "dispatch": 103233,
+   "sandbox": 7637,
+   "runner_boot": 10716,
+   "assign": 743,
+   "setup": 3000,
+   "steps": 49000,
+   "queue": 126000,
+   "total": 178000
+  }
+ },
+ {
+  "id": "cij_7n22jzjmgilctiba",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 726.0,
+  "zode_phase_sum_s": 725.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3343,
+   "dispatch": 130659,
+   "sandbox": 6991,
+   "runner_boot": 12445,
+   "assign": 1560,
+   "setup": 3000,
+   "steps": 568000,
+   "queue": 155000,
+   "total": 726000
+  }
+ },
+ {
+  "id": "cij_36tihrfdldh6tqiy",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 158.0,
+  "zode_phase_sum_s": 157.999,
+  "diff_s": -0.001,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3404,
+   "dispatch": 6,
+   "sandbox": 9517,
+   "runner_boot": 14352,
+   "assign": 720,
+   "setup": 3000,
+   "steps": 127000,
+   "queue": 28000,
+   "total": 158000
+  }
+ },
+ {
+  "id": "cij_vk6fbj3cvy6fj5k4",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 27.0,
+  "zode_phase_sum_s": 26.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2901,
+   "dispatch": 4,
+   "sandbox": 6379,
+   "runner_boot": 6950,
+   "assign": 763,
+   "setup": 3000,
+   "steps": 7000,
+   "queue": 17000,
+   "total": 27000
+  }
+ },
+ {
+  "id": "cij_ji7doqrgle6vks3y",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 144.0,
+  "zode_phase_sum_s": 143.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1957,
+   "dispatch": 4,
+   "sandbox": 19020,
+   "runner_boot": 13594,
+   "assign": 6422,
+   "setup": 3000,
+   "steps": 100000,
+   "queue": 41000,
+   "total": 144000
+  }
+ },
+ {
+  "id": "cij_jih7ltjvcij7lpyf",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 32.0,
+  "zode_phase_sum_s": 31.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3000,
+   "dispatch": 4,
+   "sandbox": 9960,
+   "runner_boot": 10193,
+   "assign": 840,
+   "setup": 3000,
+   "steps": 5000,
+   "queue": 24000,
+   "total": 32000
+  }
+ },
+ {
+  "id": "cij_yplyquvavztzuemk",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 65.0,
+  "zode_phase_sum_s": 64.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3498,
+   "dispatch": 3,
+   "sandbox": 10181,
+   "runner_boot": 11555,
+   "assign": 761,
+   "setup": 3000,
+   "steps": 36000,
+   "queue": 26000,
+   "total": 65000
+  }
+ },
+ {
+  "id": "cij_wbtf6lzvd4sjpqfu",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 24.0,
+  "zode_phase_sum_s": 23.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3000,
+   "dispatch": 5,
+   "sandbox": 6074,
+   "runner_boot": 6848,
+   "assign": 1071,
+   "setup": 2000,
+   "steps": 5000,
+   "queue": 17000,
+   "total": 24000
+  }
+ },
+ {
+  "id": "cij_vgjymgbzbt3ruwr5",
+  "repo": "zodeops/ci-proof-ufo",
+  "complete": true,
+  "github_total_s": 87.0,
+  "zode_phase_sum_s": 86.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2843,
+   "dispatch": 41077,
+   "sandbox": 6812,
+   "runner_boot": 6315,
+   "assign": 950,
+   "setup": 2000,
+   "steps": 27000,
+   "queue": 58000,
+   "total": 87000
+  }
+ },
+ {
+  "id": "cij_6ojqhikzgt6ijbzb",
+  "repo": "zodeops/ci-proof-markupsafe",
+  "complete": true,
+  "github_total_s": 38.0,
+  "zode_phase_sum_s": 37.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2076,
+   "dispatch": 5,
+   "sandbox": 7591,
+   "runner_boot": 5878,
+   "assign": 1448,
+   "setup": 1000,
+   "steps": 20000,
+   "queue": 17000,
+   "total": 38000
+  }
+ },
+ {
+  "id": "cij_kngjprsebwbrq6kh",
+  "repo": "zodeops/ci-proof-click",
+  "complete": true,
+  "github_total_s": 111.0,
+  "zode_phase_sum_s": 110.999,
+  "diff_s": -0.001,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3577,
+   "dispatch": 25433,
+   "sandbox": 17362,
+   "runner_boot": 19791,
+   "assign": 836,
+   "setup": 3000,
+   "steps": 41000,
+   "queue": 67000,
+   "total": 111000
+  }
+ },
+ {
+  "id": "cij_35tkp23chlrwz4ub",
+  "repo": "zodeops/ci-proof-chi",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_cz5ws3a6wk2sukrb",
+  "repo": "zodeops/bench-starlette",
+  "complete": true,
+  "github_total_s": 320.0,
+  "zode_phase_sum_s": 319.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2529,
+   "dispatch": 241375,
+   "sandbox": 13727,
+   "runner_boot": 13964,
+   "assign": 7402,
+   "setup": 11000,
+   "steps": 30000,
+   "queue": 279000,
+   "total": 320000
+  }
+ },
+ {
+  "id": "cij_v2v2hrkkg3jl7zor",
+  "repo": "zodeops/bench-jquery",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_udfqlosgjq237rar",
+  "repo": "zodeops/bench-jquery",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_lj2sxzth5gtl46uh",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 885.0,
+  "zode_phase_sum_s": 884.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2763,
+   "dispatch": 738239,
+   "sandbox": 10214,
+   "runner_boot": 11768,
+   "assign": 1014,
+   "setup": 2000,
+   "steps": 119000,
+   "queue": 764000,
+   "total": 885000
+  }
+ },
+ {
+  "id": "cij_kj52q4xiypuqhmyh",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 645.0,
+  "zode_phase_sum_s": 644.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1706,
+   "dispatch": 4,
+   "sandbox": 24343,
+   "runner_boot": 21974,
+   "assign": 416970,
+   "setup": 2000,
+   "steps": 178000,
+   "queue": 465000,
+   "total": 645000
+  }
+ },
+ {
+  "id": "cij_fny5chqoo2t4dsb3",
+  "repo": "zodeops/ci-proof-chi",
+  "complete": true,
+  "github_total_s": 429.0,
+  "zode_phase_sum_s": 428.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3580,
+   "dispatch": 322322,
+   "sandbox": 5724,
+   "runner_boot": 5596,
+   "assign": 775,
+   "setup": 2000,
+   "steps": 89000,
+   "queue": 338000,
+   "total": 429000
+  }
+ },
+ {
+  "id": "cij_u7gvra25ldf6ox2f",
+  "repo": "zodeops/ci-proof-markupsafe",
+  "complete": true,
+  "github_total_s": 85.0,
+  "zode_phase_sum_s": 84.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3229,
+   "dispatch": 6,
+   "sandbox": 17010,
+   "runner_boot": 18017,
+   "assign": 736,
+   "setup": 4000,
+   "steps": 42000,
+   "queue": 39000,
+   "total": 85000
+  }
+ },
+ {
+  "id": "cij_inb3wtbafq4e7p6i",
+  "repo": "zodeops/ci-proof-click",
+  "complete": true,
+  "github_total_s": 105.0,
+  "zode_phase_sum_s": 104.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3656,
+   "dispatch": 5,
+   "sandbox": 26916,
+   "runner_boot": 20502,
+   "assign": 918,
+   "setup": 3000,
+   "steps": 50000,
+   "queue": 52000,
+   "total": 105000
+  }
+ },
+ {
+  "id": "cij_vd275k6yfjvfks4m",
+  "repo": "zodeops/ci-proof-zustand",
+  "complete": true,
+  "github_total_s": 83.0,
+  "zode_phase_sum_s": 82.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3437,
+   "dispatch": 4,
+   "sandbox": 8537,
+   "runner_boot": 8637,
+   "assign": 1383,
+   "setup": 2000,
+   "steps": 59000,
+   "queue": 22000,
+   "total": 83000
+  }
+ },
+ {
+  "id": "cij_zlm4dfcggx2cgqkv",
+  "repo": "zodeops/ci-proof-ufo",
+  "complete": true,
+  "github_total_s": 54.0,
+  "zode_phase_sum_s": 53.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3408,
+   "dispatch": 4,
+   "sandbox": 7739,
+   "runner_boot": 8443,
+   "assign": 1403,
+   "setup": 2000,
+   "steps": 31000,
+   "queue": 21000,
+   "total": 54000
+  }
+ },
+ {
+  "id": "cij_sj33anbmn2aeam5k",
+  "repo": "zodeops/ci-proof-jest-extended",
+  "complete": true,
+  "github_total_s": 200.0,
+  "zode_phase_sum_s": 199.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3738,
+   "dispatch": 103164,
+   "sandbox": 7596,
+   "runner_boot": 8846,
+   "assign": 653,
+   "setup": 13000,
+   "steps": 63000,
+   "queue": 124000,
+   "total": 200000
+  }
+ },
+ {
+  "id": "cij_mia3xrdptpcpfnfe",
+  "repo": "zodeops/ci-proof-dayjs",
+  "complete": true,
+  "github_total_s": 230.0,
+  "zode_phase_sum_s": 229.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2513,
+   "dispatch": 95398,
+   "sandbox": 11606,
+   "runner_boot": 8522,
+   "assign": 959,
+   "setup": 2000,
+   "steps": 109000,
+   "queue": 119000,
+   "total": 230000
+  }
+ },
+ {
+  "id": "cij_sz24f3ryn7jsm27y",
+  "repo": "zodeops/cache-proof",
+  "complete": true,
+  "github_total_s": 664.0,
+  "zode_phase_sum_s": 663.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2845,
+   "dispatch": 6,
+   "sandbox": 14904,
+   "runner_boot": 15662,
+   "assign": 28581,
+   "setup": 6000,
+   "steps": 596000,
+   "queue": 62000,
+   "total": 664000
+  }
+ },
+ {
+  "id": "cij_j2e6d3mrj6oumqn5",
+  "repo": "zodeops/cache-proof",
+  "complete": true,
+  "github_total_s": 877.0,
+  "zode_phase_sum_s": 876.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2971,
+   "dispatch": 731035,
+   "sandbox": 10002,
+   "runner_boot": 13635,
+   "assign": 355,
+   "setup": 3000,
+   "steps": 116000,
+   "queue": 758000,
+   "total": 877000
+  }
+ },
+ {
+  "id": "cij_g6bpxtf75knkwx4z",
+  "repo": "zodeops/cache-proof",
+  "complete": true,
+  "github_total_s": 239.0,
+  "zode_phase_sum_s": 238.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3014,
+   "dispatch": 134895,
+   "sandbox": 7372,
+   "runner_boot": 8505,
+   "assign": 1212,
+   "setup": 2000,
+   "steps": 82000,
+   "queue": 155000,
+   "total": 239000
+  }
+ },
+ {
+  "id": "cij_edrrl34sfwiifkab",
+  "repo": "zodeops/cache-proof",
+  "complete": true,
+  "github_total_s": 55.0,
+  "zode_phase_sum_s": 54.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3045,
+   "dispatch": 4,
+   "sandbox": 15465,
+   "runner_boot": 15223,
+   "assign": 1260,
+   "setup": 4000,
+   "steps": 16000,
+   "queue": 35000,
+   "total": 55000
+  }
+ },
+ {
+  "id": "cij_2ltcwpekn3cpdonq",
+  "repo": "zodeops/cache-proof",
+  "complete": true,
+  "github_total_s": 88.0,
+  "zode_phase_sum_s": 87.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 4240,
+   "dispatch": 4,
+   "sandbox": 21051,
+   "runner_boot": 19557,
+   "assign": 1146,
+   "setup": 3000,
+   "steps": 39000,
+   "queue": 46000,
+   "total": 88000
+  }
+ },
+ {
+  "id": "cij_ysh6mqntpfx5a2bl",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 235.0,
+  "zode_phase_sum_s": 234.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3738,
+   "dispatch": 174259,
+   "sandbox": 12807,
+   "runner_boot": 13231,
+   "assign": 962,
+   "setup": 3000,
+   "steps": 27000,
+   "queue": 205000,
+   "total": 235000
+  }
+ },
+ {
+  "id": "cij_r6yh7xygiskgvvzc",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 111.0,
+  "zode_phase_sum_s": 110.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3425,
+   "dispatch": 4,
+   "sandbox": 15012,
+   "runner_boot": 10466,
+   "assign": 53091,
+   "setup": 2000,
+   "steps": 27000,
+   "queue": 82000,
+   "total": 111000
+  }
+ },
+ {
+  "id": "cij_peditoihwekpu6uo",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 152.0,
+  "zode_phase_sum_s": 151.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3262,
+   "dispatch": 4,
+   "sandbox": 15672,
+   "runner_boot": 15554,
+   "assign": 1506,
+   "setup": 3000,
+   "steps": 113000,
+   "queue": 36000,
+   "total": 152000
+  }
+ },
+ {
+  "id": "cij_ny2krjnunwqx7eiw",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 624.0,
+  "zode_phase_sum_s": 623.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3127,
+   "dispatch": 4,
+   "sandbox": 16513,
+   "runner_boot": 18547,
+   "assign": 12807,
+   "setup": 2000,
+   "steps": 571000,
+   "queue": 51000,
+   "total": 624000
+  }
+ },
+ {
+  "id": "cij_hrnq7rfce7tde4de",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 58.0,
+  "zode_phase_sum_s": 57.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3350,
+   "dispatch": 4,
+   "sandbox": 9867,
+   "runner_boot": 9344,
+   "assign": 7433,
+   "setup": 3000,
+   "steps": 25000,
+   "queue": 30000,
+   "total": 58000
+  }
+ },
+ {
+  "id": "cij_zcfrydfrhtbhsbju",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 78.0,
+  "zode_phase_sum_s": 77.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3748,
+   "dispatch": 4,
+   "sandbox": 10149,
+   "runner_boot": 10413,
+   "assign": 14683,
+   "setup": 3000,
+   "steps": 36000,
+   "queue": 39000,
+   "total": 78000
+  }
+ },
+ {
+  "id": "cij_yjj5b6ddxdc3xpr7",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 618.0,
+  "zode_phase_sum_s": 617.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3920,
+   "dispatch": 4,
+   "sandbox": 15687,
+   "runner_boot": 21291,
+   "assign": 10095,
+   "setup": 2000,
+   "steps": 565000,
+   "queue": 51000,
+   "total": 618000
+  }
+ },
+ {
+  "id": "cij_fctatw6t4gjh6omq",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 54.0,
+  "zode_phase_sum_s": 53.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3790,
+   "dispatch": 4,
+   "sandbox": 10160,
+   "runner_boot": 10409,
+   "assign": 634,
+   "setup": 3000,
+   "steps": 26000,
+   "queue": 25000,
+   "total": 54000
+  }
+ },
+ {
+  "id": "cij_5iqifnga2hq4ibde",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_3v5mrvanmai73fko",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 55.0,
+  "zode_phase_sum_s": 54.998,
+  "diff_s": -0.002,
+  "negative": [
+   "assign"
+  ],
+  "phase_ms": {
+   "webhook": 4131,
+   "dispatch": 4,
+   "sandbox": 15857,
+   "runner_boot": 18130,
+   "assign": -12124,
+   "setup": 3000,
+   "steps": 26000,
+   "queue": 26000,
+   "total": 55000
+  }
+ },
+ {
+  "id": "cij_5xktzjxpahquptmr",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 303.0,
+  "zode_phase_sum_s": 302.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1688,
+   "dispatch": 4,
+   "sandbox": 7927,
+   "runner_boot": 10056,
+   "assign": 1322,
+   "setup": 3000,
+   "steps": 279000,
+   "queue": 21000,
+   "total": 303000
+  }
+ },
+ {
+  "id": "cij_oleithrnne3vzoz7",
+  "repo": "zodeops/cache-proof",
+  "complete": true,
+  "github_total_s": 59.0,
+  "zode_phase_sum_s": 58.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2988,
+   "dispatch": 4,
+   "sandbox": 18004,
+   "runner_boot": 15936,
+   "assign": 1065,
+   "setup": 3000,
+   "steps": 18000,
+   "queue": 38000,
+   "total": 59000
+  }
+ },
+ {
+  "id": "cij_g4sbmy55hirfww7g",
+  "repo": "zodeops/cache-proof",
+  "complete": true,
+  "github_total_s": 57.0,
+  "zode_phase_sum_s": 56.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2470,
+   "dispatch": 5,
+   "sandbox": 6077,
+   "runner_boot": 7775,
+   "assign": 671,
+   "setup": 2000,
+   "steps": 38000,
+   "queue": 17000,
+   "total": 57000
+  }
+ },
+ {
+  "id": "cij_3ssq3ug367le65al",
+  "repo": "zodeops/cache-proof",
+  "complete": true,
+  "github_total_s": 72.0,
+  "zode_phase_sum_s": 71.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3391,
+   "dispatch": 5,
+   "sandbox": 18388,
+   "runner_boot": 15436,
+   "assign": 778,
+   "setup": 3000,
+   "steps": 31000,
+   "queue": 38000,
+   "total": 72000
+  }
+ },
+ {
+  "id": "cij_pkqatna46wv3s7qv",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 1082.0,
+  "zode_phase_sum_s": 1081.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1451,
+   "dispatch": 557546,
+   "sandbox": 4797,
+   "runner_boot": 5986,
+   "assign": 1218,
+   "setup": 2000,
+   "steps": 509000,
+   "queue": 571000,
+   "total": 1082000
+  }
+ },
+ {
+  "id": "cij_lulioq7fawfe6hgd",
+  "repo": "zodeops/bench-httpx",
+  "complete": true,
+  "github_total_s": 102.0,
+  "zode_phase_sum_s": 101.998,
+  "diff_s": -0.002,
+  "negative": [
+   "assign"
+  ],
+  "phase_ms": {
+   "webhook": 3434,
+   "dispatch": 22551,
+   "sandbox": 8019,
+   "runner_boot": 11316,
+   "assign": -21322,
+   "setup": 3000,
+   "steps": 75000,
+   "queue": 24000,
+   "total": 102000
+  }
+ },
+ {
+  "id": "cij_diktan26qndardct",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 221.0,
+  "zode_phase_sum_s": 220.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3939,
+   "dispatch": 5,
+   "sandbox": 16952,
+   "runner_boot": 16183,
+   "assign": 918,
+   "setup": 3000,
+   "steps": 180000,
+   "queue": 38000,
+   "total": 221000
+  }
+ },
+ {
+  "id": "cij_trmu5pcvem6mnlur",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 169.0,
+  "zode_phase_sum_s": 168.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1442,
+   "dispatch": 4,
+   "sandbox": 10396,
+   "runner_boot": 12586,
+   "assign": 570,
+   "setup": 3000,
+   "steps": 141000,
+   "queue": 25000,
+   "total": 169000
+  }
+ },
+ {
+  "id": "cij_qrwdsctqbn47kdtl",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_dktsrm6wgvfqtxiw",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 66.0,
+  "zode_phase_sum_s": 65.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3969,
+   "dispatch": 11774,
+   "sandbox": 11867,
+   "runner_boot": 9791,
+   "assign": 597,
+   "setup": 3000,
+   "steps": 25000,
+   "queue": 38000,
+   "total": 66000
+  }
+ },
+ {
+  "id": "cij_5ik7gsdz7hehlmtl",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 424.0,
+  "zode_phase_sum_s": 423.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3177,
+   "dispatch": 379358,
+   "sandbox": 7390,
+   "runner_boot": 7177,
+   "assign": 896,
+   "setup": 2000,
+   "steps": 24000,
+   "queue": 398000,
+   "total": 424000
+  }
+ },
+ {
+  "id": "cij_mpguwlmuudj7axjo",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 210.0,
+  "zode_phase_sum_s": 209.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 4101,
+   "dispatch": 42732,
+   "sandbox": 9872,
+   "runner_boot": 10655,
+   "assign": 638,
+   "setup": 4000,
+   "steps": 138000,
+   "queue": 68000,
+   "total": 210000
+  }
+ },
+ {
+  "id": "cij_ofaycviiymel5qhn",
+  "repo": "zodeops/bench-petclinic",
+  "complete": true,
+  "github_total_s": 228.0,
+  "zode_phase_sum_s": 227.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2744,
+   "dispatch": 11506,
+   "sandbox": 9275,
+   "runner_boot": 14157,
+   "assign": 1316,
+   "setup": 3000,
+   "steps": 186000,
+   "queue": 39000,
+   "total": 228000
+  }
+ }
+]

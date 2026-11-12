@@ -13,13 +13,13 @@
 set -euo pipefail
 here=$(cd "$(dirname "$0")/.." && pwd)
 name=$1
-read -r upstream commit workflow < <(python3 - "$here/repos.json" "$name" <<'PY'
+read -r upstream commit workflow tag < <(python3 - "$here/repos.json" "$name" <<'PY'
 import json, sys
 d = json.load(open(sys.argv[1]))
 r = next(r for r in d["repos"] if r["name"] == sys.argv[2])
 if r.get("own_workflow"):
     sys.exit("%s is ci-bench's own workflow; nothing to mirror" % r["name"])
-print(r["upstream"], r["commit"], r["workflow"])
+print(r["upstream"], r["commit"], r["workflow"], r.get("tag", "-"))
 PY
 )
 mirror="zodeops/bench-$name"
@@ -36,6 +36,11 @@ root=$(git commit-tree "$tree" -m "$upstream@$commit, unchanged
 
 Upstream tree at https://github.com/$upstream/commit/$commit.")
 git reset -q --hard "$root"
+# Builds that run `git describe` (fzf's Makefile) need the upstream release
+# tag the commit descends from; it goes on the unchanged upstream tree.
+if [ "$tag" != "-" ]; then
+  git tag -a "$tag" -m "$tag: nearest upstream release tag of $commit" "$root"
+fi
 wf=".github/workflows/$workflow"
 [ -f "$wf" ] || { echo "no $wf in $upstream@$commit" >&2; exit 1; }
 find .github/workflows -maxdepth 1 -type f \( -name '*.yml' -o -name '*.yaml' \) ! -name "$workflow" -print0 | xargs -0r git rm -q
@@ -52,4 +57,5 @@ if ! gh repo view "$mirror" >/dev/null 2>&1; then
 fi
 git remote add origin "https://github.com/$mirror.git"
 git push -q -f origin HEAD:main HEAD:bench-github HEAD:bench-zode
+[ "$tag" = "-" ] || git push -q -f origin "refs/tags/$tag"
 echo "$mirror $(git rev-parse --short HEAD) $upstream@${commit:0:12}"

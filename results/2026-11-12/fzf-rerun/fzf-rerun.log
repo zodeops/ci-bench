@@ -1,0 +1,16 @@
+10:50:38 fzf         ubuntu-24.04  cold #1 run 43203917096
+10:57:35 fzf         ubuntu-24.04  cold #1 success wall 413.006s
+10:57:37 fzf         ubuntu-24.04  warm #1 run 43204918573
+11:04:19 fzf         ubuntu-24.04  warm #1 success wall 391.221s
+11:04:22 fzf         ubuntu-24.04  cold #2 run 43205920339
+11:10:41 fzf #2 cold failed: gh api repos/zodeops/bench-fzf/actions/runs/43205920339: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 06B2:BE4BD:30299D16:48051844:6AF59EB0 and timestamp 2026-11-12 11:10:40 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:42 fzf         ubuntu-24.04  warm #2 run 43206874021
+11:35:49 fzf         ubuntu-24.04  cold #2 run 43210513409
+11:42:52 fzf         ubuntu-24.04  cold #2 success wall 399.944s
+11:42:54 fzf         ubuntu-24.04  warm #2 run 43211505163
+11:49:57 fzf         ubuntu-24.04  warm #2 success wall 384.161s
+11:49:59 fzf         ubuntu-24.04  cold #3 run 43212522813
+11:58:03 fzf         ubuntu-24.04  cold #3 success wall 434.568s
+11:58:05 fzf         ubuntu-24.04  warm #3 run 43213669071
+12:05:08 fzf         ubuntu-24.04  warm #3 success wall 378.445s
+12:05:08 done: results/2026-11-12/fzf-rerun/runs.jsonl
