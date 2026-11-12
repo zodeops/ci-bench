@@ -1,0 +1,65 @@
+16:41:07 jquery      zode-4x8      cold #1 run 43261342219
+16:41:07 starlette   zode-4x8      cold #1 run 43261342820
+16:47:19 starlette   zode-4x8      cold #1 failure wall 363.291s
+16:47:20 starlette   zode-4x8      warm #1 run 43262466265
+16:49:30 starlette   zode-4x8      warm #1 failure wall 111.617s
+16:49:32 starlette   zode-4x8      cold #2 run 43262858417
+16:53:43 starlette   zode-4x8      cold #2 failure wall 190.183s
+16:53:44 starlette   zode-4x8      warm #2 run 43263604923
+16:56:23 jquery      zode-4x8      cold #1 failure wall 887.393s
+16:56:25 jquery      zode-4x8      warm #1 run 43264083198
+16:58:55 starlette   zode-4x8      warm #2 failure wall 274.791s
+16:58:57 starlette   zode-4x8      cold #3 run 43264525509
+17:03:08 starlette   zode-4x8      cold #3 failure wall 216.811s
+17:03:10 starlette   zode-4x8      warm #3 run 43265285070
+17:05:38 jquery      zode-4x8      warm #1 success wall 513.572s
+17:05:40 jquery      zode-4x8      cold #2 run 43265740227
+17:07:21 starlette   zode-4x8      warm #3 failure wall 220.652s
+17:07:23 starlette   zode-4x8      cold #4 run 43266046948
+17:09:33 starlette   zode-4x8      cold #4 failure wall 112.353s
+17:09:34 starlette   zode-4x8      warm #4 run 43266429456
+17:09:48 caddy       zode-4x8      cold #1 run 43266467643
+17:09:48 jquery      zode-4x8      cold #2 run 43266467733
+17:09:48 httpx       zode-4x8      cold #1 run 43266468367
+17:09:48 petclinic   zode-4x8      cold #1 run 43266468425
+17:12:58 httpx       zode-4x8      cold #1 failure wall 143.34s
+17:13:01 httpx       zode-4x8      warm #1 run 43267041445
+17:14:59 caddy       zode-4x8      cold #1 success wall 274.404s
+17:15:01 caddy       zode-4x8      warm #1 run 43267397014
+17:16:11 httpx       zode-4x8      warm #1 failure wall 180.004s
+17:16:13 httpx       zode-4x8      cold #2 run 43267618469
+17:18:02 petclinic   zode-4x8      cold #1 success wall 456.339s
+17:18:04 petclinic   zode-4x8      warm #1 run 43267948112
+17:19:01 jquery      zode-4x8      cold #2 success wall 500.362s
+17:19:03 jquery      zode-4x8      warm #2 run 43268127288
+17:20:12 caddy       zode-4x8      warm #1 success wall 296.463s
+17:20:14 caddy       zode-4x8      cold #2 run 43268337515
+17:21:25 httpx       zode-4x8      cold #2 failure wall 259.01s
+17:21:26 httpx       zode-4x8      warm #2 run 43268559242
+17:22:14 petclinic   zode-4x8      warm #1 success wall 219.396s
+17:22:16 petclinic   zode-4x8      cold #2 run 43268708719
+17:24:14 jquery      zode-4x8      warm #2 success wall 277.3s
+17:24:16 jquery      zode-4x8      cold #3 run 43269062658
+17:24:25 caddy       zode-4x8      cold #2 success wall 217.911s
+17:24:26 caddy       zode-4x8      warm #2 run 43269092714
+17:24:37 httpx       zode-4x8      warm #2 failure wall 147.758s
+17:24:39 httpx       zode-4x8      cold #3 run 43269128612
+17:27:27 petclinic   zode-4x8      cold #2 success wall 297.851s
+17:27:29 petclinic   zode-4x8      warm #2 run 43269625140
+17:28:27 jquery      zode-4x8      cold #3 success wall 207.798s
+17:28:29 jquery      zode-4x8      warm #3 run 43269800025
+17:29:50 httpx       zode-4x8      cold #3 failure wall 284.488s
+17:29:52 httpx       zode-4x8      warm #3 run 43270041028
+17:30:38 caddy       zode-4x8      warm #2 success wall 307.658s
+17:30:40 caddy       zode-4x8      cold #3 run 43270191624
+17:32:02 httpx       zode-4x8      warm #3 failure wall 116.515s
+17:32:39 petclinic   zode-4x8      warm #2 success wall 286.407s
+17:32:41 petclinic   zode-4x8      cold #3 run 43270553794
+17:33:50 caddy       zode-4x8      cold #3 success wall 166.505s
+17:33:52 caddy       zode-4x8      warm #3 run 43270762954
+17:36:41 jquery      zode-4x8      warm #3 success wall 429.29s
+17:37:01 caddy       zode-4x8      warm #3 success wall 163.684s
+17:37:52 petclinic   zode-4x8      cold #3 success wall 261.689s
+17:37:54 petclinic   zode-4x8      warm #3 run 43271477776
+17:42:04 petclinic   zode-4x8      warm #3 success wall 222.214s
+17:42:04 done: results/2026-11-12/zode-post/runs.jsonl

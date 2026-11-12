@@ -1,0 +1,223 @@
+10:52:18 nginx-proxy zode-4x8      cold #1 run 43204159062
+10:52:18 saleor      zode-4x8      cold #1 run 43204159252
+10:52:18 alpine      zode-4x8      cold #1 run 43204159364
+10:52:18 fzf         zode-4x8      cold #1 run 43204159393
+10:54:33 fzf         zode-4x8      cold #1 run 43204482392
+10:54:33 nginx-proxy zode-4x8      cold #1 run 43204482410
+10:54:34 helm        zode-4x8      cold #1 run 43204482813
+10:54:34 alpine      zode-4x8      cold #1 run 43204482746
+10:54:36 saleor      zode-4x8      cold #1 run 43204487670
+11:00:38 alpine      zode-4x8      cold #1 failure wall 342.523s
+11:00:40 alpine      zode-4x8      warm #1 run 43205358687
+11:01:11 saleor      zode-4x8      cold #1 failure wall 374.433s
+11:01:15 saleor      zode-4x8      warm #1 run 43205452978
+11:08:21 helm        zode-4x8      cold #1 cancelled wall 809.502s
+11:08:22 nginx-proxy zode-4x8      cold #1 cancelled wall 811.552s
+11:08:22 helm        zode-4x8      warm #1 run 43206532005
+11:08:24 nginx-proxy zode-4x8      warm #1 run 43206536245
+11:10:34 helm #1 warm failed: gh api repos/zodeops/bench-helm/actions/runs/43206532005: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 0656:17BB0C:C2ACE75:12388D72:6AF59EAA and timestamp 2026-11-12 11:10:34 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:34 alpine #1 warm failed: gh api repos/zodeops/bench-alpine/actions/runs/43205358687: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 0659:1243E1:BEDFBE1:11E27F5D:6AF59EAA and timestamp 2026-11-12 11:10:34 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:36 nginx-proxy #1 warm failed: gh api repos/zodeops/bench-nginx-proxy/actions/runs/43206536245: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 065D:2F2F4F:C1CD2C8:12266DD8:6AF59EAB and timestamp 2026-11-12 11:10:36 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:36 helm        zode-4x8      cold #2 run 43206859287
+11:10:36 alpine      zode-4x8      cold #2 run 43206859863
+11:10:38 nginx-proxy zode-4x8      cold #2 run 43206864010
+11:10:38 saleor #1 warm failed: gh api repos/zodeops/bench-saleor/actions/runs/43205452978: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 06AA:1B5170:C8F1525:12D374F2:6AF59EAE and timestamp 2026-11-12 11:10:38 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:40 fzf #1 cold failed: gh api repos/zodeops/bench-fzf/actions/runs/43204482392: gh: API rate limit exceeded for user ID 88687066. If you reach out to GitHub Support for help, please include the request ID 06B1:18CD24:C5B4C5A:128E314D:6AF59EB0 and timestamp 2026-11-12 11:10:40 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service 
+11:10:43 fzf         zode-4x8      warm #1 run 43206874872
+11:35:48 helm        zode-4x8      warm #1 run 43210510984
+11:35:48 alpine      zode-4x8      warm #1 run 43210511043
+11:35:48 fzf         zode-4x8      cold #1 run 43210511889
+11:35:48 nginx-proxy zode-4x8      warm #1 run 43210511840
+11:35:49 saleor      zode-4x8      warm #1 run 43210512760
+11:45:00 alpine      zode-4x8      warm #1 failure wall 498.837s
+11:45:02 alpine      zode-4x8      cold #2 run 43211810934
+11:47:01 helm        zode-4x8      warm #1 failure wall 617.836s
+11:47:03 helm        zode-4x8      cold #2 run 43212101183
+11:50:03 fzf         zode-4x8      cold #1 success wall 802.43s
+11:50:04 fzf         zode-4x8      warm #1 run 43212534946
+12:00:17 helm        zode-4x8      cold #2 failure wall 724.873s
+12:00:18 alpine      zode-4x8      cold #2 success wall 853.727s
+12:00:19 helm        zode-4x8      warm #2 run 43213984952
+12:00:19 alpine      zode-4x8      warm #2 run 43213985749
+12:01:08 nginx-proxy zode-4x8      warm #1 failure wall 1504.835s
+12:01:10 nginx-proxy zode-4x8      cold #2 run 43214119419
+12:01:17 fzf         zode-4x8      warm #1 success wall 649.727s
+12:01:20 fzf         zode-4x8      cold #2 run 43214144999
+12:03:29 alpine      zode-4x8      warm #2 failure wall 135.918s
+12:03:31 alpine      zode-4x8      cold #3 run 43214465160
+12:06:41 alpine      zode-4x8      cold #3 failure wall 165.064s
+12:06:42 alpine      zode-4x8      warm #3 run 43214942301
+12:09:12 saleor      zode-4x8      warm #1 success wall 1980.056s
+12:09:15 saleor      zode-4x8      cold #5 run 43215314318
+12:11:32 helm        zode-4x8      warm #2 failure wall 608.255s
+12:11:34 helm        zode-4x8      cold #3 run 43215657865
+12:12:33 fzf         zode-4x8      cold #2 success wall 636.036s
+12:12:35 fzf         zode-4x8      warm #2 run 43215808691
+12:14:44 fzf         zode-4x8      warm #2 failure wall 92.318s
+12:14:47 fzf         zode-4x8      cold #3 run 43216136973
+12:18:56 alpine      zode-4x8      warm #3 success wall 673.784s
+12:18:58 alpine      zode-4x8      cold #4 run 43216773302
+12:20:47 helm        zode-4x8      cold #3 failure wall 532.854s
+12:20:48 helm        zode-4x8      warm #3 run 43217049223
+12:23:29 nginx-proxy zode-4x8      cold #2 failure wall 1314.148s
+12:23:30 nginx-proxy zode-4x8      warm #2 run 43217454477
+12:26:02 fzf         zode-4x8      cold #3 success wall 609.168s
+12:26:03 fzf         zode-4x8      warm #3 run 43217840529
+12:33:02 helm        zode-4x8      warm #3 failure wall 713.749s
+12:33:04 helm        zode-4x8      cold #4 run 43218916084
+12:33:13 alpine      zode-4x8      cold #4 success wall 828.169s
+12:33:15 alpine      zode-4x8      warm #4 run 43218944267
+12:36:17 fzf         zode-4x8      warm #3 success wall 559.889s
+12:36:20 fzf         zode-4x8      cold #4 run 43219427946
+12:44:28 alpine      zode-4x8      warm #4 failure wall 633.374s
+12:44:30 alpine      zode-4x8      cold #5 run 43220678265
+12:48:19 helm        zode-4x8      cold #4 failure wall 876.9s
+12:48:21 helm        zode-4x8      warm #4 run 43221276561
+12:49:34 fzf         zode-4x8      cold #4 failure wall 776.442s
+12:49:35 fzf         zode-4x8      warm #4 run 43221466074
+12:51:43 saleor      zode-4x8      cold #5 success wall 2526.694s
+12:51:45 saleor      zode-4x8      warm #5 run 43221804512
+12:52:52 nginx-proxy zode-4x8      warm #2 failure wall 1738.748s
+12:52:54 nginx-proxy zode-4x8      cold #3 run 43221983341
+12:59:45 alpine      zode-4x8      cold #5 failure wall 887.887s
+12:59:47 alpine      zode-4x8      warm #5 run 43223032461
+13:08:39 helm        zode-4x8      warm #4 failure wall 1185.009s
+13:08:41 helm        zode-4x8      cold #5 run 43224475512
+13:11:54 fzf         zode-4x8      warm #4 failure wall 1278.664s
+13:11:56 fzf         zode-4x8      cold #5 run 43224992352
+13:16:03 alpine      zode-4x8      warm #5 failure wall 937.063s
+13:16:05 excalidraw  zode-4x8      cold #1 run 43225664366
+13:25:58 helm        zode-4x8      cold #5 failure wall 1010.195s
+13:25:59 helm        zode-4x8      warm #5 run 43227231012
+13:28:12 fzf         zode-4x8      cold #5 success wall 958.346s
+13:28:13 fzf         zode-4x8      warm #5 run 43227584552
+13:30:23 fzf         zode-4x8      warm #5 failure wall 119.592s
+13:30:27 saleor      zode-4x8      cold #2 run 43227937809
+13:35:14 excalidraw zode-4x8 run 43225664366: Zode failed (the runner did not finish starting); cancelling
+13:36:16 saleor      zode-4x8      warm #5 success wall 2641.244s
+13:36:20 saleor      zode-4x8      cold #4 run 43228891674
+13:36:23 nginx-proxy zode-4x8      cold #3 failure wall 2556.115s
+13:36:25 nginx-proxy zode-4x8      warm #3 run 43228904440
+13:36:25 excalidraw  zode-4x8      cold #1 cancelled wall 1152.517s
+13:36:27 excalidraw  zode-4x8      warm #1 run 43228910795
+13:38:14 helm        zode-4x8      warm #5 failure wall 688.842s
+13:38:20 saleor      zode-4x8      cold #3 run 43229197095
+13:52:41 nginx-proxy zode-4x8      warm #3 failure wall 922.419s
+13:52:43 nginx-proxy zode-4x8      cold #4 run 43231511299
+13:52:43 excalidraw  zode-4x8      warm #1 failure wall 921.507s
+13:52:45 excalidraw  zode-4x8      cold #2 run 43231515849
+13:53:43 nginx-proxy zode-4x8 run 43231511299: Zode failed (the runner did not start in its sandbox (the sandbox could not run the command)); cancelling
+13:53:45 excalidraw zode-4x8 run 43231515849: Zode failed (the runner did not start in its sandbox (the sandbox could not run the command)); cancelling
+13:54:53 nginx-proxy zode-4x8      cold #4 cancelled wall 62.546s
+13:54:55 nginx-proxy zode-4x8      warm #4 run 43231868070
+13:54:55 excalidraw  zode-4x8      cold #2 cancelled wall 62.279s
+13:54:57 excalidraw  zode-4x8      warm #2 run 43231873069
+14:12:13 excalidraw  zode-4x8      warm #2 failure wall 1017.383s
+14:12:15 excalidraw  zode-4x8      cold #3 run 43234754137
+14:16:47 saleor      zode-4x8      cold #3 failure wall 2255.47s
+14:16:50 saleor      zode-4x8      warm #3 run 43235537815
+14:16:58 saleor      zode-4x8      cold #2 failure wall 2748.77s
+14:17:00 saleor      zode-4x8      warm #2 run 43235569889
+14:21:50 saleor      zode-4x8      cold #4 success wall 2672.974s
+14:21:53 saleor      zode-4x8      warm #4 run 43236401939
+14:23:30 excalidraw  zode-4x8      cold #3 success wall 646.85s
+14:23:32 excalidraw  zode-4x8      warm #3 run 43236686521
+14:28:06 saleor      zode-4x8      warm #3 failure wall 648.997s
+14:28:15 saleor      zode-4x8      warm #2 failure wall 644.913s
+14:28:20 nginx-proxy zode-4x8      warm #4 failure wall 1951.234s
+14:28:22 nginx-proxy zode-4x8      cold #5 run 43237525240
+14:33:46 excalidraw  zode-4x8      warm #3 failure wall 572.496s
+14:33:48 excalidraw  zode-4x8      cold #4 run 43238476242
+14:39:37 nginx-proxy zode-4x8      cold #5 failure wall 656.169s
+14:39:39 nginx-proxy zode-4x8      warm #5 run 43239494714
+14:40:11 saleor      zode-4x8      warm #4 failure wall 1041.434s
+14:42:00 excalidraw  zode-4x8      cold #4 success wall 480.553s
+14:42:02 excalidraw  zode-4x8      warm #4 run 43239904431
+14:48:13 excalidraw  zode-4x8      warm #4 failure wall 335.623s
+14:48:15 excalidraw  zode-4x8      cold #5 run 43240990236
+14:56:29 excalidraw  zode-4x8      cold #5 success wall 480.965s
+14:56:30 excalidraw  zode-4x8      warm #5 run 43242430716
+14:56:57 nginx-proxy zode-4x8      warm #5 failure wall 991.49s
+14:56:59 petclinic   zode-4x8      cold #1 run 43242513030
+14:56:59 jquery      zode-4x8      cold #1 run 43242513102
+15:04:11 petclinic   zode-4x8      cold #1 success wall 412.645s
+15:04:13 petclinic   zode-4x8      warm #1 run 43243787615
+15:05:12 jquery      zode-4x8      cold #1 success wall 461.624s
+15:05:14 jquery      zode-4x8      warm #1 run 43243970574
+15:08:24 petclinic   zode-4x8      warm #1 success wall 224.311s
+15:08:28 petclinic   zode-4x8      cold #2 run 43244557610
+15:09:25 jquery      zode-4x8      warm #1 success wall 203.348s
+15:09:28 jquery      zode-4x8      cold #2 run 43244734620
+15:12:39 jquery      zode-4x8      cold #2 success wall 127.574s
+15:12:39 petclinic   zode-4x8      cold #2 success wall 239.626s
+15:12:41 jquery      zode-4x8      warm #2 run 43245311265
+15:12:42 petclinic   zode-4x8      warm #2 run 43245314207
+15:15:52 jquery      zode-4x8      warm #2 success wall 139.345s
+15:15:52 excalidraw  zode-4x8      warm #5 failure wall 1128.824s
+15:15:54 jquery      zode-4x8      cold #3 run 43245899905
+15:15:54 caddy       zode-4x8      cold #1 run 43245901388
+15:17:54 petclinic   zode-4x8      warm #2 success wall 289.057s
+15:17:57 petclinic   zode-4x8      cold #3 run 43246267461
+15:19:05 jquery      zode-4x8      cold #3 success wall 170.361s
+15:19:06 jquery      zode-4x8      warm #3 run 43246473255
+15:30:12 caddy       zode-4x8      cold #1 failure wall 816.151s
+15:30:14 petclinic   zode-4x8      cold #3 failure wall 691.831s
+15:30:15 caddy       zode-4x8      warm #1 run 43248479963
+15:30:16 petclinic   zode-4x8      warm #3 run 43248484538
+15:30:23 jquery      zode-4x8      warm #3 failure wall 652.91s
+15:30:26 jquery      zode-4x8      cold #4 run 43248514719
+15:34:17 caddy zode-4x8 run 43248479963: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:34:28 jquery zode-4x8 run 43248514719: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:35:19 petclinic zode-4x8 run 43248484538: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:35:27 caddy       zode-4x8      warm #1 cancelled wall 245.042s
+15:35:30 caddy       zode-4x8      cold #2 run 43249448281
+15:35:39 jquery      zode-4x8      cold #4 cancelled wall 244.75s
+15:35:41 jquery      zode-4x8      warm #4 run 43249482887
+15:36:30 petclinic   zode-4x8      warm #3 cancelled wall 305.583s
+15:36:30 caddy zode-4x8 run 43249448281: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:36:32 petclinic   zode-4x8      cold #4 run 43249637724
+15:36:41 jquery zode-4x8 run 43249482887: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:37:40 caddy       zode-4x8      cold #2 cancelled wall 62.798s
+15:37:42 caddy       zode-4x8      warm #2 run 43249850552
+15:37:52 jquery      zode-4x8      warm #4 cancelled wall 62.544s
+15:37:54 jquery      zode-4x8      cold #5 run 43249885304
+15:38:33 petclinic zode-4x8 run 43249637724: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:38:43 caddy zode-4x8 run 43249850552: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:38:55 jquery zode-4x8 run 43249885304: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:39:43 petclinic   zode-4x8      cold #4 cancelled wall 123.158s
+15:39:45 petclinic   zode-4x8      warm #4 run 43250206307
+15:39:53 caddy       zode-4x8      warm #2 cancelled wall 63.125s
+15:39:55 caddy       zode-4x8      cold #3 run 43250236768
+15:40:05 jquery      zode-4x8      cold #5 cancelled wall 75.329s
+15:40:06 jquery      zode-4x8      warm #5 run 43250268630
+15:40:56 caddy zode-4x8 run 43250236768: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:41:07 jquery zode-4x8 run 43250268630: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:42:06 caddy       zode-4x8      cold #3 cancelled wall 61.869s
+15:42:07 caddy       zode-4x8      warm #3 run 43250632322
+15:42:17 jquery      zode-4x8      warm #5 cancelled wall 67.986s
+15:43:55 petclinic   zode-4x8      warm #4 success wall 230.375s
+15:43:57 petclinic   zode-4x8      cold #5 run 43250963380
+15:44:58 petclinic zode-4x8 run 43250963380: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:46:08 petclinic   zode-4x8      cold #5 cancelled wall 61.92s
+15:46:10 petclinic   zode-4x8      warm #5 run 43251361644
+15:46:18 caddy       zode-4x8      warm #3 success wall 212.914s
+15:46:20 caddy       zode-4x8      cold #4 run 43251394476
+15:47:10 petclinic zode-4x8 run 43251361644: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:48:20 petclinic   zode-4x8      warm #5 cancelled wall 62.88s
+15:48:22 httpx       zode-4x8      cold #1 run 43251753250
+15:49:23 httpx zode-4x8 run 43251753250: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:49:30 caddy       zode-4x8      cold #4 success wall 171.868s
+15:49:32 caddy       zode-4x8      warm #4 run 43251959455
+15:50:32 caddy zode-4x8 run 43251959455: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:50:33 httpx       zode-4x8      cold #1 cancelled wall 79.044s
+15:50:35 httpx       zode-4x8      warm #1 run 43252148986
+15:51:35 httpx zode-4x8 run 43252148986: Zode failed (no runner sandbox: the node could not create the sandbox (after 3 tries)); cancelling
+15:51:42 caddy       zode-4x8      warm #4 cancelled wall 62.227s
+15:51:44 caddy       zode-4x8      cold #5 run 43252361619
+15:52:45 httpx       zode-4x8      warm #1 cancelled wall 79.464s
+15:52:47 httpx       zode-4x8      cold #2 run 43252551096
+15:53:48 httpx zode-4x8 run 43252551096: Zode failed (the runner did not start in its sandbox (the sandbox could not run the command)); cancelling
+15:54:58 httpx       zode-4x8      cold #2 cancelled wall 78.894s
+15:54:59 httpx       zode-4x8      warm #2 run 43252940135
+15:55:55 caddy       zode-4x8      cold #5 success wall 223.864s
+15:55:57 caddy       zode-4x8      warm #5 run 43253112325

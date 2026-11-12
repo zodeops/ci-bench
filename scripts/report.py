@@ -48,10 +48,11 @@ def main(d):
     for r in recs:
         groups[(r["repo"], r["provider"], r["mode"])].append(r)
     rows = []
-    for (repo, prov, mode), rs in sorted(groups.items()):
+    for (repo, prov, mode), all_rs in sorted(groups.items()):
+        rs = [r for r in all_rs if r["conclusion"] == "success"] or all_rs
         rows.append({
-            "repo": repo, "provider": prov, "runner": rs[0]["runner"], "mode": mode, "runs": len(rs),
-            "success": sum(1 for r in rs if r["conclusion"] == "success"),
+            "repo": repo, "provider": prov, "runner": rs[0]["runner"], "mode": mode, "runs": len(all_rs),
+            "success": sum(1 for r in all_rs if r["conclusion"] == "success"),
             "wall_s_median": med([r["wall_s"] for r in rs]),
             "queue_s_max_median": med([r["queue_s_max"] for r in rs]),
             "run_s_sum_median": med([r["run_s_sum"] for r in rs]),
@@ -100,7 +101,8 @@ def main(d):
 
     out = ["# ci-bench results: %s" % os.path.basename(os.path.normpath(d)), "",
            "%d runs. Wall is dispatch to the last job done; queue is the longest job's GitHub queue time; "
-           "run is the jobs' summed run time. Medians." % len(recs), "",
+           "run is the jobs' summed run time. Medians over the runs that passed (over all runs when none "
+           "passed)." % len(recs), "",
            "| Repo | Mode | GitHub wall | Zode wall | GitHub queue | Zode queue | GitHub run | Zode run | Passed (GitHub / Zode) |",
            "|---|---|---|---|---|---|---|---|---|"]
     by = {(r["repo"], r["provider"], r["mode"]): r for r in rows}
