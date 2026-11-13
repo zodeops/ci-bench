@@ -3,8 +3,12 @@
 # The results land in results/<date>/ and site/ci.json, which zode.dev/benchmark
 # reads. The harness polls GitHub once a minute per run (scripts/bench.py).
 #
-# Secrets: BENCH_GH_TOKEN (dispatch, cancel and cache rights on the
-# zodeops/bench-* mirrors) and ZODE_TOKEN (read the jobs' phases and cost).
+# Secrets: BENCH_GH_TOKEN, a fine-grained token whose resource owner is the
+# zodeops organisation only (Actions and Contents read and write on the
+# zodeops/bench-* mirrors; never a personal token that reaches other
+# organisations), and ZODE_TOKEN (read the jobs' phases and cost). The plan
+# job checks the token sees no repository outside zodeops and stops if it
+# does.
 name: weekly
 on:
   schedule:
@@ -34,6 +38,13 @@ jobs:
       date: ${{ steps.p.outputs.date }}
     steps:
       - uses: actions/checkout@v4
+      - name: token reaches zodeops only
+        env:
+          GH_TOKEN: ${{ secrets.BENCH_GH_TOKEN }}
+        run: |
+          owners=$(gh api --paginate '/user/repos?per_page=100' -q '.[].owner.login' | sort -u)
+          echo "repository owners the token can reach: $owners"
+          [ "$owners" = "zodeops" ] || { echo "BENCH_GH_TOKEN reaches outside zodeops; refusing to run"; exit 1; }
       - id: p
         env:
           WANT: ${{ inputs.repos || 'all' }}
