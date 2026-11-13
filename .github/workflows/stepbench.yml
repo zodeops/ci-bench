@@ -1,0 +1,17 @@
+name: stepbench
+on:
+  push:
+    branches: [je/stepbench]
+jobs:
+  bench:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-24.04, zode-4x8]
+        i: [1, 2, 3, 4, 5]
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: stepbench
+        run: bash stepbench/stepbench.sh "${{ matrix.runner }}#${{ matrix.i }}"
