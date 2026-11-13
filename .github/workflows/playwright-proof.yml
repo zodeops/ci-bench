@@ -16,7 +16,7 @@ jobs:
           id
           echo "PLAYWRIGHT_BROWSERS_PATH=$PLAYWRIGHT_BROWSERS_PATH ImageVersion=$ImageVersion"
           for p in /ms-playwright /opt /opt/pipx /opt/google /usr/share /usr/lib/jvm /usr/local/lib/node_modules /usr/local/bin /opt/hostedtoolcache /usr/local/lib/android/sdk /usr/local/share/vcpkg; do
-            [ -e "$p" ] && printf '%-32s %s %s files=%s\n' "$p" "$(stat -c '%U:%G %a' "$p")" "$( [ -w "$p" ] && echo writable || echo NOT-writable)" "$(sudo find "$p" -xdev 2>/dev/null | wc -l)"
+            [ ! -e "$p" ] || printf '%-32s %s %s files=%s\n' "$p" "$(stat -c '%U:%G %a' "$p")" "$( [ -w "$p" ] && echo writable || echo NOT-writable)" "$(sudo find "$p" -xdev 2>/dev/null | wc -l)"
           done
       - name: Write into every GitHub-writable path as the runner user
         run: |
