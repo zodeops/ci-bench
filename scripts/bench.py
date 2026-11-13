@@ -170,6 +170,7 @@ def run_one(repo, runner, mode, iteration, out, tok, split=False):
     log("%-11s %-13s %-4s #%d run %d" % (repo["name"], runner, mode, iteration, run_id))
     deadline = time.time() + RUN_TIMEOUT_S
     zode_failed = None
+    cancels = 0
     while True:
         time.sleep(POLL_S)
         run = gh("repos/%s/actions/runs/%d" % (mirror, run_id))
@@ -189,8 +190,20 @@ def run_one(repo, runner, mode, iteration, out, tok, split=False):
                                                                zode_failed))
                 gh("repos/%s/actions/runs/%d/cancel" % (mirror, run_id), method="POST")
         if time.time() > deadline:
-            gh("repos/%s/actions/runs/%d/cancel" % (mirror, run_id), method="POST")
-            log("%s %s run %d timed out; cancelled" % (repo["name"], runner, run_id))
+            # A job GitHub never handed a runner ignores a plain cancel and
+            # stays queued; force-cancel the second time, and stop waiting
+            # after the third so one stuck run cannot eat the matrix job.
+            cancels += 1
+            if cancels >= 3:
+                log("%s %s run %d still not completed after force-cancel; recording it" % (repo["name"], runner, run_id))
+                run = dict(run, conclusion="timed_out")
+                break
+            action = "cancel" if cancels == 1 else "force-cancel"
+            try:
+                gh("repos/%s/actions/runs/%d/%s" % (mirror, run_id, action), method="POST")
+            except RuntimeError as e:
+                log("%s: %s" % (action, e))
+            log("%s %s run %d timed out; %s" % (repo["name"], runner, run_id, action))
             deadline = time.time() + 600
     jobs = gh("repos/%s/actions/runs/%d/jobs?per_page=100&filter=latest" % (mirror, run_id))["jobs"]
     zj = {}
