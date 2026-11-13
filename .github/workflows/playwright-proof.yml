@@ -1,0 +1,42 @@
+name: playwright-proof
+# Proof that a job running as the runner user can install Playwright browsers
+# and write every path GitHub's ubuntu-24.04 leaves writable.
+on:
+  push:
+    branches: [je/playwright-writable-proof]
+  workflow_dispatch:
+jobs:
+  proof:
+    runs-on: zode-4x8
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Who and what
+        run: |
+          id
+          echo "PLAYWRIGHT_BROWSERS_PATH=$PLAYWRIGHT_BROWSERS_PATH ImageVersion=$ImageVersion"
+          for p in /ms-playwright /opt /opt/pipx /opt/google /usr/share /usr/lib/jvm /usr/local/lib/node_modules /usr/local/bin /opt/hostedtoolcache /usr/local/lib/android/sdk /usr/local/share/vcpkg; do
+            [ -e "$p" ] && printf '%-32s %s %s files=%s\n' "$p" "$(stat -c '%U:%G %a' "$p")" "$( [ -w "$p" ] && echo writable || echo NOT-writable)" "$(sudo find "$p" -xdev 2>/dev/null | wc -l)"
+          done
+      - name: Write into every GitHub-writable path as the runner user
+        run: |
+          fail=0
+          for p in "$PLAYWRIGHT_BROWSERS_PATH" /opt /opt/hostedtoolcache /usr/share /usr/lib/jvm /usr/local/lib/node_modules /usr/local/bin; do
+            [ -d "$p" ] || continue
+            if mkdir "$p/.zode-write-check-$$" 2>/dev/null && rmdir "$p/.zode-write-check-$$"; then echo "ok   $p"; else echo "FAIL $p"; fail=1; fi
+          done
+          exit $fail
+      - name: Playwright install and a tiny test
+        working-directory: pwproof
+        run: |
+          npm init -y >/dev/null
+          npm install --no-audit --no-fund @playwright/test@1.56.1
+          timeout 300 npx playwright install chromium
+          cat > t.spec.js <<'JS'
+          const { test, expect } = require('@playwright/test');
+          test('renders a page', async ({ page }) => {
+            await page.setContent('<h1>zode</h1>');
+            await expect(page.locator('h1')).toHaveText('zode');
+          });
+          JS
+          npx playwright test t.spec.js --reporter=line
