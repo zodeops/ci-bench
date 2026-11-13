@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13T00:51:26Z",
+ "generated_at": "2026-11-13T01:01:00Z",
  "results": "results/2026-11-12",
- "harness_commit": "03854497c6f6f7297d1033651766d13002cb1ec1",
+ "harness_commit": "460501da959d4969f8cef9c92b048f6a4659139f",
  "source": "https://github.com/zodeops/ci-bench",
  "window": {
   "from": "2026-11-12T10:16:55Z",
@@ -22,7 +22,7 @@
    "hardware": "4 vCPU, 8 GB RAM (zode-4x8) in a microVM on a GCE n2-standard-16 node in europe-west1, nested virtualisation, shared with real CI",
    "price": "What the run was billed: each job's runner compute from creation to deletion, per second, from the Zode API, at $0.045 an hour for zode-4x8. When a job ran on a runner started for another run, its bill sits on that run, so the price shown is an estimate: the jobs' run time at the list price.",
    "price_source": "https://zode.dev/#pricing",
-   "hardware_source": "https://github.com/zodeops/zoded/blob/main/docs/ci-acceptance.md"
+   "hardware_source": "https://docs.zode.dev/ci/benchmark"
   }
  },
  "tally": {
@@ -40,8 +40,8 @@
   }
  },
  "pending": {
-  "selected": "Every run on this page runs the full suite. Test selection is in Shadow on Zode: it runs everything and records what it would have skipped. Selected runs need Enforce, which opens per repository after 200 clean Shadow runs (task 43). This column fills then.",
-  "shards": "zode-ci test --shards splits a suite across forks of the job's machine. The benchmark workflows run unchanged, without the wrapper, so their numbers here are single-machine. Sharded numbers follow once the shard proof on saleor is published (task 41)."
+  "selected": "Every run on this page runs the full suite. Test selection is in Shadow on Zode: it runs everything and records what it would have skipped. Selected runs need Enforce, which opens per repository after 200 clean Shadow runs. This column fills then.",
+  "shards": "zode-ci test --shards splits a suite across forks of the job's machine. The benchmark workflows run unchanged, without the wrapper, so their numbers here are single-machine. Sharded numbers follow once the shard proof on saleor is published."
  },
  "repos": [
   {

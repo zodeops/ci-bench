@@ -52,17 +52,17 @@ PROVIDERS = {
                  "runner started for another run, its bill sits on that run, so the price shown is "
                  "an estimate: the jobs' run time at the list price.",
         "price_source": "https://zode.dev/#pricing",
-        "hardware_source": "https://github.com/zodeops/zoded/blob/main/docs/ci-acceptance.md",
+        "hardware_source": "https://docs.zode.dev/ci/benchmark",
     },
 }
 
 PENDING = {
     "selected": "Every run on this page runs the full suite. Test selection is in Shadow on Zode: it runs "
                 "everything and records what it would have skipped. Selected runs need Enforce, which "
-                "opens per repository after 200 clean Shadow runs (task 43). This column fills then.",
+                "opens per repository after 200 clean Shadow runs. This column fills then.",
     "shards": "zode-ci test --shards splits a suite across forks of the job's machine. The benchmark "
               "workflows run unchanged, without the wrapper, so their numbers here are single-machine. "
-              "Sharded numbers follow once the shard proof on saleor is published (task 41).",
+              "Sharded numbers follow once the shard proof on saleor is published.",
 }
 
 
