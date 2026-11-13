@@ -42,9 +42,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.BENCH_GH_TOKEN }}
         run: |
-          owners=$(gh api --paginate '/user/repos?per_page=100' -q '.[].owner.login' | sort -u)
-          echo "repository owners the token can reach: $owners"
-          [ "$owners" = "zodeops" ] || { echo "BENCH_GH_TOKEN reaches outside zodeops; refusing to run"; exit 1; }
+          # Every token reads public repositories; what matters is private
+          # ones. Counts only, no names.
+          gh api --paginate '/user/repos?per_page=100' -q '.[] | [.owner.login == "zodeops", .private] | @tsv' > reach.tsv
+          inside=$(grep -c $'^true\ttrue$' reach.tsv || true)
+          outside=$(grep -c $'^false\ttrue$' reach.tsv || true)
+          echo "private repositories the token reaches: zodeops $inside, elsewhere $outside"
+          [ "$outside" = 0 ] || { echo "BENCH_GH_TOKEN reaches private repositories outside zodeops; refusing to run"; exit 1; }
+          [ "$inside" -gt 0 ] || { echo "BENCH_GH_TOKEN reaches no private zodeops repository"; exit 1; }
       - id: p
         env:
           WANT: ${{ inputs.repos || 'all' }}
