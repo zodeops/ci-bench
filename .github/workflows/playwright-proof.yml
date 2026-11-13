@@ -27,8 +27,8 @@ jobs:
           done
           exit $fail
       - name: Playwright install and a tiny test
-        working-directory: pwproof
         run: |
+          mkdir -p pwproof && cd pwproof
           npm init -y >/dev/null
           npm install --no-audit --no-fund @playwright/test@1.56.1
           timeout 300 npx playwright install chromium
