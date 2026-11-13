@@ -11,10 +11,6 @@ jobs:
         runner: ${{ fromJSON(inputs.runner == 'both' && '["ubuntu-latest","zode-4x8"]' || format('["{0}"]', inputs.runner)) }}
     runs-on: ${{ matrix.runner }}
     steps:
-      # Zode runners start without HOME until the zoded runner-script fix ships.
-      - name: HOME on Zode
-        if: startsWith(matrix.runner, 'zode')
-        run: echo "HOME=/root" >> "$GITHUB_ENV"
       - name: machine
         run: |
           echo "start $(date -u +%FT%T.%3NZ)"
