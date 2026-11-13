@@ -1,0 +1,2478 @@
+[
+ {
+  "id": "cij_5527ps6cxeuiedyj",
+  "repo": "zodeops/runner-images",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_z5ptngxvdtcg22s2",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_ca4gklodripz5l6g",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_767reejwgjj2e3f5",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_5acqpi72d7v5cbd6",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_bykhc2gpjbamy54k",
+  "repo": "zodeops/docs",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_epeicdrsasygewy7",
+  "repo": "zodeops/zode",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_zerp3fsv63ltgtch",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 56.0,
+  "zode_phase_sum_s": 55.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2458,
+   "dispatch": 32,
+   "sandbox": 21446,
+   "runner_boot": 7465,
+   "assign": 596,
+   "setup": 2000,
+   "steps": 22000,
+   "queue": 32000,
+   "total": 56000
+  }
+ },
+ {
+  "id": "cij_siy43y2b476jzzhp",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_lymedhwaqhbceom3",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_k4zbamir6nz2pvdn",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_dn3djhpgynomuree",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_yyhejlospzqzy5n7",
+  "repo": "zodeops/ci-bench",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_bob2xuhgqphbljtu",
+  "repo": "zodeops/docs",
+  "complete": true,
+  "github_total_s": 37.0,
+  "zode_phase_sum_s": 36.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1213,
+   "dispatch": 20,
+   "sandbox": 1008,
+   "runner_boot": 4595,
+   "assign": 1162,
+   "setup": 2000,
+   "steps": 27000,
+   "queue": 8000,
+   "total": 37000
+  }
+ },
+ {
+  "id": "cij_aufxfmbxciia5qan",
+  "repo": "zodeops/zode",
+  "complete": true,
+  "github_total_s": 74.0,
+  "zode_phase_sum_s": 73.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2501,
+   "dispatch": 14,
+   "sandbox": 901,
+   "runner_boot": 3213,
+   "assign": 1368,
+   "setup": 1000,
+   "steps": 65000,
+   "queue": 8000,
+   "total": 74000
+  }
+ },
+ {
+  "id": "cij_wzqiefrsrl7op2tp",
+  "repo": "zodeops/ci-bench",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_rdpdow4okalj3gif",
+  "repo": "zodeops/runner-images",
+  "complete": true,
+  "github_total_s": 61.0,
+  "zode_phase_sum_s": 60.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3182,
+   "dispatch": 22,
+   "sandbox": 880,
+   "runner_boot": 3390,
+   "assign": 524,
+   "setup": 2000,
+   "steps": 51000,
+   "queue": 8000,
+   "total": 61000
+  }
+ },
+ {
+  "id": "cij_jdhlxanmmacg35w7",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_wzzywqr7xioiiefa",
+  "repo": "zodeops/ci-bench",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_43ardabng7o5lkgd",
+  "repo": "zodeops/ci-bench",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_7jqiwdx52sm4zyny",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_qstqcicspygb7wbx",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_goixkvqmcnba3lxl",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_g6gh4uewysiamqhi",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 481.0,
+  "zode_phase_sum_s": 480.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2710,
+   "dispatch": 288,
+   "sandbox": 20717,
+   "runner_boot": 10052,
+   "assign": 1231,
+   "setup": 5000,
+   "steps": 441000,
+   "queue": 35000,
+   "total": 481000
+  }
+ },
+ {
+  "id": "cij_7pbg4zcsnouiydtv",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_5a77a2ktgzc7i3q7",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 502.0,
+  "zode_phase_sum_s": 501.999,
+  "diff_s": -0.001,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 2971,
+   "dispatch": -204,
+   "sandbox": 22237,
+   "runner_boot": 12187,
+   "assign": 808,
+   "setup": 6000,
+   "steps": 458000,
+   "queue": 38000,
+   "total": 502000
+  }
+ },
+ {
+  "id": "cij_t6yap7mthpgwm4od",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_xepvkb4jqe2ydzkn",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_ok5gry3bukntyaoq",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 523.0,
+  "zode_phase_sum_s": 522.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3410,
+   "dispatch": 23,
+   "sandbox": 18457,
+   "runner_boot": 8690,
+   "assign": 417,
+   "setup": 5000,
+   "steps": 487000,
+   "queue": 31000,
+   "total": 523000
+  }
+ },
+ {
+  "id": "cij_myf54mraijwxkrhd",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_ezftw5niilyhmscy",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 512.0,
+  "zode_phase_sum_s": 511.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1699,
+   "dispatch": 1921,
+   "sandbox": 18363,
+   "runner_boot": 7734,
+   "assign": 1281,
+   "setup": 4000,
+   "steps": 477000,
+   "queue": 31000,
+   "total": 512000
+  }
+ },
+ {
+  "id": "cij_aif7nppcnqmeqyt4",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_l2fj4rdvky4q5tgq",
+  "repo": "zodeops/ci-bench",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_dejafqe5elkgdozk",
+  "repo": "zodeops/ci-bench",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_mq2jknj7zsz6ii35",
+  "repo": "zodeops/ci-proof-enforce",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_yfj5vmtnteqrzggz",
+  "repo": "zodeops/ci-proof-enforce",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_ejv4sffwcrxly5sl",
+  "repo": "zodeops/ci-proof-enforce",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_2v5auyfnijtm3w5c",
+  "repo": "zodeops/ci-bench",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_4e3fhxffjmve4oji",
+  "repo": "zodeops/ci-proof-enforce",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_ltbrhbn74dwkqs2d",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 65.0,
+  "zode_phase_sum_s": 64.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2281,
+   "dispatch": 21,
+   "sandbox": 34518,
+   "runner_boot": 5383,
+   "assign": 795,
+   "setup": 3000,
+   "steps": 19000,
+   "queue": 43000,
+   "total": 65000
+  }
+ },
+ {
+  "id": "cij_lv6qns3zwp5zdaeg",
+  "repo": "zodeops/ci-start-cold-5",
+  "complete": true,
+  "github_total_s": 56.0,
+  "zode_phase_sum_s": 55.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3907,
+   "dispatch": 12,
+   "sandbox": 26465,
+   "runner_boot": 7166,
+   "assign": 1447,
+   "setup": 2000,
+   "steps": 15000,
+   "queue": 39000,
+   "total": 56000
+  }
+ },
+ {
+  "id": "cij_whtegr3yuohb6ncl",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 169.0,
+  "zode_phase_sum_s": 168.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1633,
+   "dispatch": 35,
+   "sandbox": 23010,
+   "runner_boot": 18610,
+   "assign": 709,
+   "setup": 7000,
+   "steps": 118000,
+   "queue": 44000,
+   "total": 169000
+  }
+ },
+ {
+  "id": "cij_eaw5peebnryvbcmj",
+  "repo": "zodeops/bench-jquery",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_dm7757oqq5zgjjjs",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 108.0,
+  "zode_phase_sum_s": 107.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1579,
+   "dispatch": 76,
+   "sandbox": 25229,
+   "runner_boot": 20581,
+   "assign": 1533,
+   "setup": 5000,
+   "steps": 54000,
+   "queue": 49000,
+   "total": 108000
+  }
+ },
+ {
+  "id": "cij_3wv5nq6dy5g7huft",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 178.0,
+  "zode_phase_sum_s": 177.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1634,
+   "dispatch": 13026,
+   "sandbox": 26258,
+   "runner_boot": 15903,
+   "assign": 1176,
+   "setup": 5000,
+   "steps": 115000,
+   "queue": 58000,
+   "total": 178000
+  }
+ },
+ {
+  "id": "cij_pdfi4nrpcpgn4sy2",
+  "repo": "zodeops/bench-excalidraw",
+  "complete": true,
+  "github_total_s": 425.0,
+  "zode_phase_sum_s": 424.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1840,
+   "dispatch": 23,
+   "sandbox": 21834,
+   "runner_boot": 20077,
+   "assign": 1223,
+   "setup": 6000,
+   "steps": 374000,
+   "queue": 45000,
+   "total": 425000
+  }
+ },
+ {
+  "id": "cij_xr7fltkx5tl5twn2",
+  "repo": "zodeops/bench-petclinic",
+  "complete": true,
+  "github_total_s": 213.0,
+  "zode_phase_sum_s": 212.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2766,
+   "dispatch": 19203,
+   "sandbox": 32700,
+   "runner_boot": 19728,
+   "assign": 601,
+   "setup": 5000,
+   "steps": 133000,
+   "queue": 75000,
+   "total": 213000
+  }
+ },
+ {
+  "id": "cij_zbsrv4bsezkgoft2",
+  "repo": "zodeops/bench-jquery",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_ro2zvp4crshc53wz",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 152.0,
+  "zode_phase_sum_s": 151.998,
+  "diff_s": -0.002,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 1517,
+   "dispatch": -29,
+   "sandbox": 18840,
+   "runner_boot": 15155,
+   "assign": 515,
+   "setup": 5000,
+   "steps": 111000,
+   "queue": 36000,
+   "total": 152000
+  }
+ },
+ {
+  "id": "cij_hbiukhpifrduolz3",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 154.0,
+  "zode_phase_sum_s": 153.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1461,
+   "dispatch": 78,
+   "sandbox": 18638,
+   "runner_boot": 16272,
+   "assign": 548,
+   "setup": 5000,
+   "steps": 112000,
+   "queue": 37000,
+   "total": 154000
+  }
+ },
+ {
+  "id": "cij_64pmtdh4iqfispia",
+  "repo": "zodeops/bench-jquery",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_jhyfjmehr4txrcvm",
+  "repo": "zodeops/ci-start-cold-4",
+  "complete": true,
+  "github_total_s": 19.0,
+  "zode_phase_sum_s": 18.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2896,
+   "dispatch": 14,
+   "sandbox": 710,
+   "runner_boot": 3824,
+   "assign": 553,
+   "setup": 2000,
+   "steps": 9000,
+   "queue": 8000,
+   "total": 19000
+  }
+ },
+ {
+  "id": "cij_ongd7qeivz2tvnuf",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 622.0,
+  "zode_phase_sum_s": 621.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1759,
+   "dispatch": 15,
+   "sandbox": 20272,
+   "runner_boot": 11808,
+   "assign": 1144,
+   "setup": 3000,
+   "steps": 584000,
+   "queue": 35000,
+   "total": 622000
+  }
+ },
+ {
+  "id": "cij_jge6i3esholrxqfn",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 160.0,
+  "zode_phase_sum_s": 159.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1964,
+   "dispatch": 32,
+   "sandbox": 22714,
+   "runner_boot": 20996,
+   "assign": 1291,
+   "setup": 3000,
+   "steps": 110000,
+   "queue": 47000,
+   "total": 160000
+  }
+ },
+ {
+  "id": "cij_e5wpd6i35w7gpgls",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 107.0,
+  "zode_phase_sum_s": 106.998,
+  "diff_s": -0.002,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 2232,
+   "dispatch": -324,
+   "sandbox": 18970,
+   "runner_boot": 16418,
+   "assign": 702,
+   "setup": 4000,
+   "steps": 65000,
+   "queue": 38000,
+   "total": 107000
+  }
+ },
+ {
+  "id": "cij_avf7q6vw4if4z7nm",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 162.0,
+  "zode_phase_sum_s": 161.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1885,
+   "dispatch": 373,
+   "sandbox": 22498,
+   "runner_boot": 20428,
+   "assign": 813,
+   "setup": 5000,
+   "steps": 111000,
+   "queue": 46000,
+   "total": 162000
+  }
+ },
+ {
+  "id": "cij_4d5se2jxxrpmpcrx",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 151.0,
+  "zode_phase_sum_s": 150.996,
+  "diff_s": -0.004,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1991,
+   "dispatch": 20,
+   "sandbox": 20565,
+   "runner_boot": 14719,
+   "assign": 701,
+   "setup": 5000,
+   "steps": 108000,
+   "queue": 38000,
+   "total": 151000
+  }
+ },
+ {
+  "id": "cij_wqfwqd25nkcmafxy",
+  "repo": "zodeops/bench-petclinic",
+  "complete": true,
+  "github_total_s": 221.0,
+  "zode_phase_sum_s": 220.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2816,
+   "dispatch": 29,
+   "sandbox": 26277,
+   "runner_boot": 13419,
+   "assign": 456,
+   "setup": 5000,
+   "steps": 173000,
+   "queue": 43000,
+   "total": 221000
+  }
+ },
+ {
+  "id": "cij_3qlsvfm4afinuaat",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_uvezbj7mwdsw463x",
+  "repo": "zodeops/ci-start-cold-3",
+  "complete": true,
+  "github_total_s": 15.0,
+  "zode_phase_sum_s": 14.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1950,
+   "dispatch": 13,
+   "sandbox": 689,
+   "runner_boot": 3178,
+   "assign": 1167,
+   "setup": 1000,
+   "steps": 7000,
+   "queue": 7000,
+   "total": 15000
+  }
+ },
+ {
+  "id": "cij_warka4pcmfiry2ag",
+  "repo": "zodeops/bench-petclinic",
+  "complete": true,
+  "github_total_s": 171.0,
+  "zode_phase_sum_s": 170.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1387,
+   "dispatch": 26,
+   "sandbox": 21880,
+   "runner_boot": 14237,
+   "assign": 467,
+   "setup": 4000,
+   "steps": 129000,
+   "queue": 38000,
+   "total": 171000
+  }
+ },
+ {
+  "id": "cij_fzf6gskqf6a3hfbg",
+  "repo": "zodeops/bench-excalidraw",
+  "complete": true,
+  "github_total_s": 837.0,
+  "zode_phase_sum_s": 836.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3840,
+   "dispatch": 212122,
+   "sandbox": 28174,
+   "runner_boot": 15353,
+   "assign": 509,
+   "setup": 9000,
+   "steps": 568000,
+   "queue": 260000,
+   "total": 837000
+  }
+ },
+ {
+  "id": "cij_jml7e2xphfonhr7u",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 983.0,
+  "zode_phase_sum_s": 982.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2404,
+   "dispatch": 527663,
+   "sandbox": 13478,
+   "runner_boot": 8586,
+   "assign": 867,
+   "setup": 3000,
+   "steps": 427000,
+   "queue": 553000,
+   "total": 983000
+  }
+ },
+ {
+  "id": "cij_xmuo7gr2zymq5en6",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 570.0,
+  "zode_phase_sum_s": 569.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2558,
+   "dispatch": 92282,
+   "sandbox": 12413,
+   "runner_boot": 6905,
+   "assign": 840,
+   "setup": 3000,
+   "steps": 452000,
+   "queue": 115000,
+   "total": 570000
+  }
+ },
+ {
+  "id": "cij_dn6acgtbwpsjjpez",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 768.0,
+  "zode_phase_sum_s": 767.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2121,
+   "dispatch": 327713,
+   "sandbox": 10818,
+   "runner_boot": 6417,
+   "assign": 928,
+   "setup": 2000,
+   "steps": 418000,
+   "queue": 348000,
+   "total": 768000
+  }
+ },
+ {
+  "id": "cij_d22teebnjk6abc2o",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 710.0,
+  "zode_phase_sum_s": 709.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1809,
+   "dispatch": 204384,
+   "sandbox": 15900,
+   "runner_boot": 7239,
+   "assign": 666,
+   "setup": 5000,
+   "steps": 475000,
+   "queue": 230000,
+   "total": 710000
+  }
+ },
+ {
+  "id": "cij_ctd42atkb3fplz4s",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 98.0,
+  "zode_phase_sum_s": 97.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2274,
+   "dispatch": 19,
+   "sandbox": 13240,
+   "runner_boot": 6412,
+   "assign": 1052,
+   "setup": 2000,
+   "steps": 73000,
+   "queue": 23000,
+   "total": 98000
+  }
+ },
+ {
+  "id": "cij_36rkvemi3i6ssdle",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 990.0,
+  "zode_phase_sum_s": 989.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2127,
+   "dispatch": 428519,
+   "sandbox": 15689,
+   "runner_boot": 7618,
+   "assign": 1045,
+   "setup": 4000,
+   "steps": 531000,
+   "queue": 455000,
+   "total": 990000
+  }
+ },
+ {
+  "id": "cij_7qkvpmbnp3gcwfgb",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_47vtep35fukgt4nu",
+  "repo": "zodeops/ci-proof-enforce",
+  "complete": true,
+  "github_total_s": 66.0,
+  "zode_phase_sum_s": 65.996,
+  "diff_s": -0.004,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2812,
+   "dispatch": 12,
+   "sandbox": 11893,
+   "runner_boot": 5932,
+   "assign": 1347,
+   "setup": 1000,
+   "steps": 43000,
+   "queue": 22000,
+   "total": 66000
+  }
+ },
+ {
+  "id": "cij_4xzdxskgxpv4pzz2",
+  "repo": "zodeops/bench-nginx-proxy",
+  "complete": true,
+  "github_total_s": 959.0,
+  "zode_phase_sum_s": 958.999,
+  "diff_s": -0.001,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 2001,
+   "dispatch": -82,
+   "sandbox": 19830,
+   "runner_boot": 10606,
+   "assign": 644,
+   "setup": 3000,
+   "steps": 923000,
+   "queue": 33000,
+   "total": 959000
+  }
+ },
+ {
+  "id": "cij_e6kb4yyivwwhfxea",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 511.0,
+  "zode_phase_sum_s": 510.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1421,
+   "dispatch": 19,
+   "sandbox": 26203,
+   "runner_boot": 14442,
+   "assign": 913,
+   "setup": 5000,
+   "steps": 463000,
+   "queue": 43000,
+   "total": 511000
+  }
+ },
+ {
+  "id": "cij_yna76vmpcb54e3gx",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 207.0,
+  "zode_phase_sum_s": 206.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2737,
+   "dispatch": 90131,
+   "sandbox": 24001,
+   "runner_boot": 17593,
+   "assign": 1535,
+   "setup": 4000,
+   "steps": 67000,
+   "queue": 136000,
+   "total": 207000
+  }
+ },
+ {
+  "id": "cij_ndjxdpzg6ueocjar",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 355.0,
+  "zode_phase_sum_s": 354.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2835,
+   "dispatch": 181108,
+   "sandbox": 26322,
+   "runner_boot": 22471,
+   "assign": 1262,
+   "setup": 5000,
+   "steps": 116000,
+   "queue": 234000,
+   "total": 355000
+  }
+ },
+ {
+  "id": "cij_lon35ssqwp4gyhbp",
+  "repo": "zodeops/bench-jquery",
+  "complete": true,
+  "github_total_s": 309.0,
+  "zode_phase_sum_s": 308.996,
+  "diff_s": -0.004,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2815,
+   "dispatch": 110056,
+   "sandbox": 31769,
+   "runner_boot": 16158,
+   "assign": 1198,
+   "setup": 5000,
+   "steps": 142000,
+   "queue": 162000,
+   "total": 309000
+  }
+ },
+ {
+  "id": "cij_qid44ijbhr6uqxhb",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_psovpdzasoanjpxs",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 162.0,
+  "zode_phase_sum_s": 161.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2615,
+   "dispatch": 99254,
+   "sandbox": 21901,
+   "runner_boot": 7419,
+   "assign": 808,
+   "setup": 2000,
+   "steps": 28000,
+   "queue": 132000,
+   "total": 162000
+  }
+ },
+ {
+  "id": "cij_ga4p67mkv3coig5p",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_6tbuku6lr3zukqr7",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_zh4dcgngydnws2t4",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 106.0,
+  "zode_phase_sum_s": 105.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1804,
+   "dispatch": 38044,
+   "sandbox": 29903,
+   "runner_boot": 4009,
+   "assign": 1237,
+   "setup": 2000,
+   "steps": 29000,
+   "queue": 75000,
+   "total": 106000
+  }
+ },
+ {
+  "id": "cij_ut5vt2wvu6hvd7fv",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 71.0,
+  "zode_phase_sum_s": 70.998,
+  "diff_s": -0.002,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 1879,
+   "dispatch": -186,
+   "sandbox": 27418,
+   "runner_boot": 7318,
+   "assign": 1569,
+   "setup": 2000,
+   "steps": 31000,
+   "queue": 38000,
+   "total": 71000
+  }
+ },
+ {
+  "id": "cij_iuyuwevwoll6huz4",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_f6tqnxckow53nxdw",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 74.0,
+  "zode_phase_sum_s": 73.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1678,
+   "dispatch": 8196,
+   "sandbox": 25103,
+   "runner_boot": 7497,
+   "assign": 524,
+   "setup": 4000,
+   "steps": 27000,
+   "queue": 43000,
+   "total": 74000
+  }
+ },
+ {
+  "id": "cij_4j6qoecha2aainuc",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 729.0,
+  "zode_phase_sum_s": 728.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1635,
+   "dispatch": 78233,
+   "sandbox": 26883,
+   "runner_boot": 14280,
+   "assign": 967,
+   "setup": 4000,
+   "steps": 603000,
+   "queue": 122000,
+   "total": 729000
+  }
+ },
+ {
+  "id": "cij_xaobi4f2k7gxlhkb",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 636.0,
+  "zode_phase_sum_s": 635.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2096,
+   "dispatch": 93221,
+   "sandbox": 19466,
+   "runner_boot": 10971,
+   "assign": 1244,
+   "setup": 7000,
+   "steps": 502000,
+   "queue": 127000,
+   "total": 636000
+  }
+ },
+ {
+  "id": "cij_tj3mjsmd5rvxy6e6",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 557.0,
+  "zode_phase_sum_s": 556.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2175,
+   "dispatch": 13,
+   "sandbox": 15757,
+   "runner_boot": 8948,
+   "assign": 1104,
+   "setup": 5000,
+   "steps": 524000,
+   "queue": 28000,
+   "total": 557000
+  }
+ },
+ {
+  "id": "cij_p6ygu6gn5gcdgtl6",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 654.0,
+  "zode_phase_sum_s": 653.997,
+  "diff_s": -0.003,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 2227,
+   "dispatch": -106,
+   "sandbox": 25698,
+   "runner_boot": 11437,
+   "assign": 741,
+   "setup": 5000,
+   "steps": 609000,
+   "queue": 40000,
+   "total": 654000
+  }
+ },
+ {
+  "id": "cij_jre4ub2ro74saupg",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 794.0,
+  "zode_phase_sum_s": 793.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2410,
+   "dispatch": 106449,
+   "sandbox": 35833,
+   "runner_boot": 19144,
+   "assign": 1162,
+   "setup": 5000,
+   "steps": 624000,
+   "queue": 165000,
+   "total": 794000
+  }
+ },
+ {
+  "id": "cij_2l2xi2qzu7tqxr6e",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_zohdrjkjodn4h3hz",
+  "repo": "zodeops/ci-start-cold-2",
+  "complete": true,
+  "github_total_s": 18.0,
+  "zode_phase_sum_s": 17.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2261,
+   "dispatch": 17,
+   "sandbox": 661,
+   "runner_boot": 3795,
+   "assign": 1263,
+   "setup": 2000,
+   "steps": 8000,
+   "queue": 8000,
+   "total": 18000
+  }
+ },
+ {
+  "id": "cij_zil53ldxhwgjxikt",
+  "repo": "zodeops/bench-alpine",
+  "complete": true,
+  "github_total_s": 616.0,
+  "zode_phase_sum_s": 615.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1909,
+   "dispatch": 33,
+   "sandbox": 14323,
+   "runner_boot": 11597,
+   "assign": 1135,
+   "setup": 3000,
+   "steps": 584000,
+   "queue": 29000,
+   "total": 616000
+  }
+ },
+ {
+  "id": "cij_6qvym5kdldckyvt6",
+  "repo": "zodeops/bench-fzf",
+  "complete": true,
+  "github_total_s": 554.0,
+  "zode_phase_sum_s": 553.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1596,
+   "dispatch": 30,
+   "sandbox": 22402,
+   "runner_boot": 12782,
+   "assign": 1187,
+   "setup": 4000,
+   "steps": 512000,
+   "queue": 38000,
+   "total": 554000
+  }
+ },
+ {
+  "id": "cij_okb7maxcs6kv3xsb",
+  "repo": "zodeops/ci-start-cold-1",
+  "complete": true,
+  "github_total_s": 16.0,
+  "zode_phase_sum_s": 15.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2349,
+   "dispatch": 18,
+   "sandbox": 1023,
+   "runner_boot": 4600,
+   "assign": 1008,
+   "setup": 2000,
+   "steps": 5000,
+   "queue": 9000,
+   "total": 16000
+  }
+ },
+ {
+  "id": "cij_r7pzep5w3xbuxge5",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_v73wjqpgcbl3qiw2",
+  "repo": "zodeops/bench-excalidraw",
+  "complete": true,
+  "github_total_s": 512.0,
+  "zode_phase_sum_s": 511.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1986,
+   "dispatch": 26,
+   "sandbox": 31848,
+   "runner_boot": 22594,
+   "assign": 544,
+   "setup": 7000,
+   "steps": 448000,
+   "queue": 57000,
+   "total": 512000
+  }
+ },
+ {
+  "id": "cij_thmyzsn2qfhbi2ch",
+  "repo": "zodeops/bench-nginx-proxy",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_lznfzbpthoidi6t7",
+  "repo": "zodeops/bench-nginx-proxy",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_ric45yrwhzzjywyf",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 555.0,
+  "zode_phase_sum_s": 554.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2885,
+   "dispatch": 11,
+   "sandbox": 19561,
+   "runner_boot": 12532,
+   "assign": 1008,
+   "setup": 4000,
+   "steps": 515000,
+   "queue": 36000,
+   "total": 555000
+  }
+ },
+ {
+  "id": "cij_k4xjlyeyc2v5zeqr",
+  "repo": "zodeops/bench-helm",
+  "complete": true,
+  "github_total_s": 331.0,
+  "zode_phase_sum_s": 330.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2170,
+   "dispatch": 16,
+   "sandbox": 15308,
+   "runner_boot": 8500,
+   "assign": 1004,
+   "setup": 3000,
+   "steps": 301000,
+   "queue": 27000,
+   "total": 331000
+  }
+ },
+ {
+  "id": "cij_mbtxt3qvd467b5j5",
+  "repo": "zodeops/bench-alpine",
+  "complete": true,
+  "github_total_s": 620.0,
+  "zode_phase_sum_s": 619.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1420,
+   "dispatch": 13,
+   "sandbox": 20915,
+   "runner_boot": 15773,
+   "assign": 876,
+   "setup": 3000,
+   "steps": 578000,
+   "queue": 39000,
+   "total": 620000
+  }
+ },
+ {
+  "id": "cij_bnplsxt5bjsfzkh4",
+  "repo": "zodeops/bench-fzf",
+  "complete": true,
+  "github_total_s": 553.0,
+  "zode_phase_sum_s": 552.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1882,
+   "dispatch": 14,
+   "sandbox": 21319,
+   "runner_boot": 15433,
+   "assign": 1349,
+   "setup": 3000,
+   "steps": 510000,
+   "queue": 40000,
+   "total": 553000
+  }
+ },
+ {
+  "id": "cij_mzmjygsx2ugzok7v",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 571.0,
+  "zode_phase_sum_s": 570.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2464,
+   "dispatch": 110119,
+   "sandbox": 17102,
+   "runner_boot": 10617,
+   "assign": 695,
+   "setup": 3000,
+   "steps": 427000,
+   "queue": 141000,
+   "total": 571000
+  }
+ },
+ {
+  "id": "cij_iaykvwtvezxjqd7q",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 103.0,
+  "zode_phase_sum_s": 102.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2093,
+   "dispatch": 55779,
+   "sandbox": 16335,
+   "runner_boot": 5506,
+   "assign": 1284,
+   "setup": 1000,
+   "steps": 21000,
+   "queue": 81000,
+   "total": 103000
+  }
+ },
+ {
+  "id": "cij_fehhg3gs42dlmm6d",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 50.0,
+  "zode_phase_sum_s": 49.997,
+  "diff_s": -0.003,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 2509,
+   "dispatch": -693,
+   "sandbox": 17175,
+   "runner_boot": 6025,
+   "assign": 981,
+   "setup": 2000,
+   "steps": 22000,
+   "queue": 26000,
+   "total": 50000
+  }
+ },
+ {
+  "id": "cij_blq2kmdekt3r3rdr",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 108.0,
+  "zode_phase_sum_s": 107.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1797,
+   "dispatch": 44798,
+   "sandbox": 23602,
+   "runner_boot": 9471,
+   "assign": 1329,
+   "setup": 2000,
+   "steps": 25000,
+   "queue": 81000,
+   "total": 108000
+  }
+ },
+ {
+  "id": "cij_5hztkxj6zcy3ld6n",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 74.0,
+  "zode_phase_sum_s": 74.0,
+  "diff_s": 0.0,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 2391,
+   "dispatch": -286,
+   "sandbox": 27989,
+   "runner_boot": 8675,
+   "assign": 1231,
+   "setup": 2000,
+   "steps": 32000,
+   "queue": 40000,
+   "total": 74000
+  }
+ },
+ {
+  "id": "cij_dpkcjfed36cgijv7",
+  "repo": "zodeops/bench-alpine",
+  "complete": true,
+  "github_total_s": 771.0,
+  "zode_phase_sum_s": 770.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3175,
+   "dispatch": 199694,
+   "sandbox": 18353,
+   "runner_boot": 14114,
+   "assign": 662,
+   "setup": 3000,
+   "steps": 532000,
+   "queue": 236000,
+   "total": 771000
+  }
+ },
+ {
+  "id": "cij_3n4k6h243hma2zl3",
+  "repo": "zodeops/ci-proof-enforce",
+  "complete": true,
+  "github_total_s": 133.0,
+  "zode_phase_sum_s": 132.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1929,
+   "dispatch": 34744,
+   "sandbox": 18414,
+   "runner_boot": 9039,
+   "assign": 872,
+   "setup": 3000,
+   "steps": 65000,
+   "queue": 65000,
+   "total": 133000
+  }
+ },
+ {
+  "id": "cij_zikxg37fzgbcoptb",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_h52wcywm47toubcz",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 73.0,
+  "zode_phase_sum_s": 72.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2021,
+   "dispatch": 15847,
+   "sandbox": 16001,
+   "runner_boot": 6825,
+   "assign": 1303,
+   "setup": 2000,
+   "steps": 29000,
+   "queue": 42000,
+   "total": 73000
+  }
+ },
+ {
+  "id": "cij_dgsqgrucxet5sugz",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 73.0,
+  "zode_phase_sum_s": 72.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1514,
+   "dispatch": 548,
+   "sandbox": 30613,
+   "runner_boot": 6405,
+   "assign": 917,
+   "setup": 2000,
+   "steps": 31000,
+   "queue": 40000,
+   "total": 73000
+  }
+ },
+ {
+  "id": "cij_57o7tlabqr3cnajn",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 77.0,
+  "zode_phase_sum_s": 76.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2019,
+   "dispatch": 5846,
+   "sandbox": 27705,
+   "runner_boot": 7353,
+   "assign": 1075,
+   "setup": 3000,
+   "steps": 30000,
+   "queue": 44000,
+   "total": 77000
+  }
+ },
+ {
+  "id": "cij_oa5j2s2tpjcn7ysv",
+  "repo": "zodeops/bench-nginx-proxy",
+  "complete": true,
+  "github_total_s": 1099.0,
+  "zode_phase_sum_s": 1098.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1940,
+   "dispatch": 100956,
+   "sandbox": 29960,
+   "runner_boot": 19610,
+   "assign": 531,
+   "setup": 9000,
+   "steps": 937000,
+   "queue": 153000,
+   "total": 1099000
+  }
+ },
+ {
+  "id": "cij_jqgpjmw4xul7uk2w",
+  "repo": "zodeops/bench-nginx-proxy",
+  "complete": true,
+  "github_total_s": 942.0,
+  "zode_phase_sum_s": 941.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2196,
+   "dispatch": 7705,
+   "sandbox": 14068,
+   "runner_boot": 11955,
+   "assign": 1073,
+   "setup": 4000,
+   "steps": 901000,
+   "queue": 37000,
+   "total": 942000
+  }
+ },
+ {
+  "id": "cij_gni4gsim7xrhy5j2",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 108.0,
+  "zode_phase_sum_s": 107.999,
+  "diff_s": -0.001,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 1240,
+   "dispatch": -32312,
+   "sandbox": 29167,
+   "runner_boot": 6273,
+   "assign": 631,
+   "setup": 2000,
+   "steps": 101000,
+   "queue": 5000,
+   "total": 108000
+  }
+ },
+ {
+  "id": "cij_esqii6rm64q2m5or",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 855.0,
+  "zode_phase_sum_s": 854.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1425,
+   "dispatch": 301709,
+   "sandbox": 25974,
+   "runner_boot": 10400,
+   "assign": 490,
+   "setup": 7000,
+   "steps": 508000,
+   "queue": 340000,
+   "total": 855000
+  }
+ },
+ {
+  "id": "cij_dtms5kbtjvvrneky",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 660.0,
+  "zode_phase_sum_s": 659.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1370,
+   "dispatch": 37589,
+   "sandbox": 21001,
+   "runner_boot": 15504,
+   "assign": 533,
+   "setup": 4000,
+   "steps": 580000,
+   "queue": 76000,
+   "total": 660000
+  }
+ },
+ {
+  "id": "cij_ba4pdtc6casubvyz",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 1034.0,
+  "zode_phase_sum_s": 1033.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1418,
+   "dispatch": 423179,
+   "sandbox": 22971,
+   "runner_boot": 16240,
+   "assign": 1189,
+   "setup": 3000,
+   "steps": 566000,
+   "queue": 465000,
+   "total": 1034000
+  }
+ },
+ {
+  "id": "cij_3t34dosm53i3d55s",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_qh75omnswfxu7335",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 65.0,
+  "zode_phase_sum_s": 64.998,
+  "diff_s": -0.002,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 2444,
+   "dispatch": -487,
+   "sandbox": 20595,
+   "runner_boot": 6950,
+   "assign": 496,
+   "setup": 2000,
+   "steps": 33000,
+   "queue": 30000,
+   "total": 65000
+  }
+ },
+ {
+  "id": "cij_otonvbvw4vtnbyv4",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 73.0,
+  "zode_phase_sum_s": 72.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1541,
+   "dispatch": 10,
+   "sandbox": 33133,
+   "runner_boot": 5025,
+   "assign": 289,
+   "setup": 3000,
+   "steps": 30000,
+   "queue": 40000,
+   "total": 73000
+  }
+ },
+ {
+  "id": "cij_etw634hlr4ehdmuu",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_e6inkvag4lnvfzmj",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 573.0,
+  "zode_phase_sum_s": 572.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2031,
+   "dispatch": 17651,
+   "sandbox": 20044,
+   "runner_boot": 11350,
+   "assign": 922,
+   "setup": 9000,
+   "steps": 512000,
+   "queue": 52000,
+   "total": 573000
+  }
+ },
+ {
+  "id": "cij_7odykzkownpzbu5i",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 78.0,
+  "zode_phase_sum_s": 77.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1948,
+   "dispatch": 8476,
+   "sandbox": 29097,
+   "runner_boot": 7819,
+   "assign": 658,
+   "setup": 3000,
+   "steps": 27000,
+   "queue": 48000,
+   "total": 78000
+  }
+ },
+ {
+  "id": "cij_f4hzu2iojmgzx24w",
+  "repo": "zodeops/bench-helm",
+  "complete": true,
+  "github_total_s": 485.0,
+  "zode_phase_sum_s": 484.996,
+  "diff_s": -0.004,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1732,
+   "dispatch": 94982,
+   "sandbox": 26505,
+   "runner_boot": 20954,
+   "assign": 823,
+   "setup": 4000,
+   "steps": 336000,
+   "queue": 145000,
+   "total": 485000
+  }
+ },
+ {
+  "id": "cij_dgnh3tomgzadw575",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 96.0,
+  "zode_phase_sum_s": 95.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1339,
+   "dispatch": 24602,
+   "sandbox": 41573,
+   "runner_boot": 6177,
+   "assign": 307,
+   "setup": 3000,
+   "steps": 19000,
+   "queue": 74000,
+   "total": 96000
+  }
+ },
+ {
+  "id": "cij_7cyypxv7y3ytum6r",
+  "repo": "zodeops/ci-bench",
+  "complete": true,
+  "github_total_s": 83.0,
+  "zode_phase_sum_s": 82.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3325,
+   "dispatch": 4021,
+   "sandbox": 39651,
+   "runner_boot": 5761,
+   "assign": 1240,
+   "setup": 3000,
+   "steps": 26000,
+   "queue": 54000,
+   "total": 83000
+  }
+ },
+ {
+  "id": "cij_huhw77ylz4gjkere",
+  "repo": "zodeops/bench-helm",
+  "complete": true,
+  "github_total_s": 437.0,
+  "zode_phase_sum_s": 436.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 2961,
+   "dispatch": 66750,
+   "sandbox": 22185,
+   "runner_boot": 23127,
+   "assign": 975,
+   "setup": 7000,
+   "steps": 314000,
+   "queue": 116000,
+   "total": 437000
+  }
+ },
+ {
+  "id": "cij_p4xucmz2awbgktmd",
+  "repo": "zodeops/bench-fzf",
+  "complete": true,
+  "github_total_s": 1056.0,
+  "zode_phase_sum_s": 1055.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3690,
+   "dispatch": 469245,
+   "sandbox": 24800,
+   "runner_boot": 17635,
+   "assign": 628,
+   "setup": 4000,
+   "steps": 536000,
+   "queue": 516000,
+   "total": 1056000
+  }
+ },
+ {
+  "id": "cij_nbhyz4fh35xlztf6",
+  "repo": "zodeops/bench-alpine",
+  "complete": true,
+  "github_total_s": 1292.0,
+  "zode_phase_sum_s": 1291.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 30764,
+   "dispatch": 559945,
+   "sandbox": 22251,
+   "runner_boot": 28573,
+   "assign": 1464,
+   "setup": 8000,
+   "steps": 641000,
+   "queue": 643000,
+   "total": 1292000
+  }
+ },
+ {
+  "id": "cij_lok4lf3nsxa2m4p4",
+  "repo": "zodeops/bench-nginx-proxy",
+  "complete": true,
+  "github_total_s": 1258.0,
+  "zode_phase_sum_s": 1257.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 28391,
+   "dispatch": 164537,
+   "sandbox": 31009,
+   "runner_boot": 20708,
+   "assign": 1352,
+   "setup": 6000,
+   "steps": 1006000,
+   "queue": 246000,
+   "total": 1258000
+  }
+ },
+ {
+  "id": "cij_kjlz6m4sffydglpi",
+  "repo": "zodeops/bench-nginx-proxy",
+  "complete": true,
+  "github_total_s": 1132.0,
+  "zode_phase_sum_s": 1131.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 4826,
+   "dispatch": 58112,
+   "sandbox": 26923,
+   "runner_boot": 25167,
+   "assign": 969,
+   "setup": 6000,
+   "steps": 1010000,
+   "queue": 116000,
+   "total": 1132000
+  }
+ },
+ {
+  "id": "cij_fogyjiltzf5ebfdi",
+  "repo": "zodeops/bench-nginx-proxy",
+  "complete": true,
+  "github_total_s": 1761.0,
+  "zode_phase_sum_s": 1760.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 29610,
+   "dispatch": 633326,
+   "sandbox": 28714,
+   "runner_boot": 15431,
+   "assign": 916,
+   "setup": 5000,
+   "steps": 1048000,
+   "queue": 708000,
+   "total": 1761000
+  }
+ },
+ {
+  "id": "cij_bau6fvj5ndkkrerr",
+  "repo": "zodeops/bench-nginx-proxy",
+  "complete": true,
+  "github_total_s": 1104.0,
+  "zode_phase_sum_s": 1103.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3330,
+   "dispatch": 25068,
+   "sandbox": 31738,
+   "runner_boot": 25355,
+   "assign": 507,
+   "setup": 9000,
+   "steps": 1009000,
+   "queue": 86000,
+   "total": 1104000
+  }
+ },
+ {
+  "id": "cij_zula3ijgxhcovctn",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 570.0,
+  "zode_phase_sum_s": 569.998,
+  "diff_s": -0.002,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 3267,
+   "dispatch": -2055,
+   "sandbox": 23981,
+   "runner_boot": 13809,
+   "assign": 996,
+   "setup": 8000,
+   "steps": 522000,
+   "queue": 40000,
+   "total": 570000
+  }
+ },
+ {
+  "id": "cij_w4agwvn5xn2m3pmd",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 636.0,
+  "zode_phase_sum_s": 635.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3394,
+   "dispatch": 23,
+   "sandbox": 30781,
+   "runner_boot": 11923,
+   "assign": 877,
+   "setup": 4000,
+   "steps": 585000,
+   "queue": 47000,
+   "total": 636000
+  }
+ },
+ {
+  "id": "cij_vu7r5ivpg7lkm5aa",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 593.0,
+  "zode_phase_sum_s": 592.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3334,
+   "dispatch": 32,
+   "sandbox": 28345,
+   "runner_boot": 15328,
+   "assign": 958,
+   "setup": 3000,
+   "steps": 542000,
+   "queue": 48000,
+   "total": 593000
+  }
+ },
+ {
+  "id": "cij_sht2pkua5swibpew",
+  "repo": "zodeops/zoded",
+  "complete": false,
+  "missing": [
+   "dispatch",
+   "sandbox",
+   "runner_boot",
+   "assign"
+  ]
+ },
+ {
+  "id": "cij_jduu2odic3dm36r7",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 603.0,
+  "zode_phase_sum_s": 602.997,
+  "diff_s": -0.003,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 3272,
+   "dispatch": 10,
+   "sandbox": 28734,
+   "runner_boot": 14882,
+   "assign": 1099,
+   "setup": 4000,
+   "steps": 551000,
+   "queue": 48000,
+   "total": 603000
+  }
+ },
+ {
+  "id": "cij_dwxoohhtbywkef3b",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 74.0,
+  "zode_phase_sum_s": 73.998,
+  "diff_s": -0.002,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1195,
+   "dispatch": 2155,
+   "sandbox": 29192,
+   "runner_boot": 7215,
+   "assign": 1241,
+   "setup": 2000,
+   "steps": 31000,
+   "queue": 41000,
+   "total": 74000
+  }
+ },
+ {
+  "id": "cij_773wts6kyu6yketn",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 72.0,
+  "zode_phase_sum_s": 71.998,
+  "diff_s": -0.002,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 3325,
+   "dispatch": -28,
+   "sandbox": 27357,
+   "runner_boot": 7375,
+   "assign": 969,
+   "setup": 2000,
+   "steps": 31000,
+   "queue": 39000,
+   "total": 72000
+  }
+ },
+ {
+  "id": "cij_4dxqkznopk3w2yiv",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 81.0,
+  "zode_phase_sum_s": 80.999,
+  "diff_s": -0.001,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 3286,
+   "dispatch": -2079,
+   "sandbox": 36289,
+   "runner_boot": 5774,
+   "assign": 729,
+   "setup": 2000,
+   "steps": 35000,
+   "queue": 44000,
+   "total": 81000
+  }
+ },
+ {
+  "id": "cij_4aks6vjkx5g7wlrd",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 619.0,
+  "zode_phase_sum_s": 618.996,
+  "diff_s": -0.004,
+  "negative": [],
+  "phase_ms": {
+   "webhook": 1197,
+   "dispatch": 2079,
+   "sandbox": 26991,
+   "runner_boot": 16639,
+   "assign": 1090,
+   "setup": 3000,
+   "steps": 568000,
+   "queue": 48000,
+   "total": 619000
+  }
+ },
+ {
+  "id": "cij_b6zjuyfijszre2gy",
+  "repo": "zodeops/zoded",
+  "complete": true,
+  "github_total_s": 162.0,
+  "zode_phase_sum_s": 161.998,
+  "diff_s": -0.002,
+  "negative": [
+   "dispatch"
+  ],
+  "phase_ms": {
+   "webhook": 4285,
+   "dispatch": -2158,
+   "sandbox": 28702,
+   "runner_boot": 7339,
+   "assign": 830,
+   "setup": 2000,
+   "steps": 121000,
+   "queue": 39000,
+   "total": 162000
+  }
+ }
+]
