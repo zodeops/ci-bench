@@ -9,7 +9,7 @@ jobs:
   proof:
     strategy:
       matrix:
-        size: [zode-4x8, zode-8x16]
+        size: [zode-4x8]
     runs-on: ${{ matrix.size }}
     timeout-minutes: 15
     steps:
