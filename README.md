@@ -111,6 +111,22 @@ repository) and `ZODE_TOKEN`.
 `tests/` checks the page data against the runs it came from; it runs on Zode
 with the sample workflow from the docs (`.github/workflows/test.yml`).
 
+## CI pilot readout (13 to 27 Nov 2026)
+
+`scripts/pilot-readout.py` prints the pilot readout for zoded task 47 (docs/ci-pilot.md
+in zodeops/zoded) from the public Zode API: jobs by repository and conclusion,
+P1 candidates, stranded jobs, would-be and real misses, background runs,
+clean Shadow runs toward Enforce, and CI machines at peak. The API lists only
+the newest 200 jobs, so `.github/workflows/pilot.yml` (GitHub-hosted, every
+15 minutes) appends job rows to `results/pilot/jobs.jsonl` as they change;
+that file holds no branch, workflow or job names.
+
+```sh
+scripts/pilot-readout.py --since 2026-11-13T00:00:00Z --until 2026-11-27T23:59:59Z \
+  --jobs results/pilot/jobs.jsonl \
+  --repos zodeops/zoded,zodeops/zode,zodeops/docs,zodeops/ci-bench,zodeops/runner-images
+```
+
 ## Other providers
 
 `PROVIDERS.md`: whose terms allow publishing, who is run, and every other

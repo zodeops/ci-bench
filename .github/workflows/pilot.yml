@@ -1,0 +1,44 @@
+name: pilot
+
+# Zode CI pilot, 13 to 27 Nov 2026 (zoded task 47, docs/ci-pilot.md in
+# zodeops/zoded). GET /v1/ci/jobs answers only the newest 200 jobs, so this
+# keeps every job row of the workspace as it changes, for the day-14
+# readout (scripts/pilot-readout.py). It runs on a GitHub-hosted runner so
+# collecting adds no load to the Zode nodes being measured. Remove after
+# 27 Nov 2026.
+
+on:
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pilot
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect job rows
+        env:
+          ZODE_TOKEN: ${{ secrets.ZODE_TOKEN }}
+        run: python3 scripts/pilot-readout.py --collect results/pilot/jobs.jsonl
+      - name: Commit
+        run: |
+          git diff --quiet && exit 0
+          git config user.name "zode-pilot"
+          git config user.email "ci@zode.dev"
+          git add results/pilot/jobs.jsonl
+          git commit -qm "pilot: job rows $(date -u +%FT%TZ) [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
