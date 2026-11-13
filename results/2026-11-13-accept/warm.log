@@ -1,0 +1,57 @@
+08:27:41 fzf         zode-4x8      cold #1 run 43393392380
+08:27:42 helm        zode-4x8      cold #1 run 43393392353
+08:27:42 alpine      zode-4x8      cold #1 run 43393392440
+08:27:42 nginx-proxy zode-4x8      cold #1 run 43393392709
+08:33:53 helm        zode-4x8      cold #1 success wall 334.657s
+08:33:54 helm        zode-4x8      warm #1 run 43394199185
+08:37:54 fzf         zode-4x8      cold #1 success wall 562.62s
+08:37:54 alpine      zode-4x8      cold #1 success wall 575.618s
+08:37:56 fzf         zode-4x8      warm #1 run 43394729921
+08:37:56 alpine      zode-4x8      warm #1 run 43394729905
+08:38:04 helm        zode-4x8      warm #1 success wall 233.898s
+08:38:06 helm        zode-4x8      cold #2 run 43394752548
+08:44:17 helm        zode-4x8      cold #2 success wall 319.989s
+08:44:19 helm        zode-4x8      warm #2 run 43395566858
+08:44:57 nginx-proxy zode-4x8      cold #1 success wall 977.566s
+08:44:59 nginx-proxy zode-4x8      warm #1 run 43395654288
+08:47:08 fzf         zode-4x8      warm #1 failure wall 527.207s
+08:47:10 fzf         zode-4x8      cold #2 run 43395948184
+08:48:09 alpine      zode-4x8      warm #1 success wall 590.072s
+08:48:11 alpine      zode-4x8      cold #2 run 43396081687
+08:49:29 helm        zode-4x8      warm #2 failure wall 244.522s
+08:49:32 excalidraw  zode-4x8      cold #1 run 43396256184
+08:56:23 fzf         zode-4x8      cold #2 success wall 491.895s
+08:56:24 fzf         zode-4x8      warm #2 run 43397172842
+08:57:43 excalidraw  zode-4x8      cold #1 success wall 466.842s
+08:57:45 excalidraw  zode-4x8      warm #1 run 43397347769
+08:58:24 alpine      zode-4x8      cold #2 success wall 569.32s
+08:58:26 alpine      zode-4x8      warm #2 run 43397434787
+09:01:15 nginx-proxy zode-4x8      warm #1 success wall 953.018s
+09:01:17 nginx-proxy zode-4x8      cold #2 run 43397831251
+09:05:37 fzf         zode-4x8      warm #2 success wall 508.799s
+09:05:39 jquery      zode-4x8      cold #1 run 43398435491
+09:05:58 excalidraw  zode-4x8      warm #1 success wall 435.008s
+09:05:59 excalidraw  zode-4x8      cold #2 run 43398483156
+09:07:38 alpine      zode-4x8      warm #2 success wall 531.724s
+09:07:40 petclinic   zode-4x8      cold #1 run 43398713488
+09:08:49 jquery      zode-4x8      cold #1 success wall 176.546s
+09:08:50 jquery      zode-4x8      warm #1 run 43398870893
+09:12:01 jquery      zode-4x8      warm #1 success wall 168.711s
+09:12:04 jquery      zode-4x8      cold #2 run 43399318972
+09:13:52 petclinic   zode-4x8      cold #1 success wall 308.838s
+09:13:54 petclinic   zode-4x8      warm #1 run 43399568006
+09:15:14 jquery      zode-4x8      cold #2 success wall 151.105s
+09:15:16 jquery      zode-4x8      warm #2 run 43399758152
+09:17:13 excalidraw  zode-4x8      cold #2 success wall 608.559s
+09:17:15 excalidraw  zode-4x8      warm #2 run 43400040563
+09:18:04 petclinic   zode-4x8      warm #1 success wall 206.588s
+09:18:06 petclinic   zode-4x8      cold #2 run 43400155976
+09:18:26 jquery      zode-4x8      warm #2 success wall 141.119s
+09:18:34 nginx-proxy zode-4x8      cold #2 success wall 1004.08s
+09:18:35 nginx-proxy zode-4x8      warm #2 run 43400225344
+09:21:16 petclinic   zode-4x8      cold #2 success wall 144.962s
+09:21:18 petclinic   zode-4x8      warm #2 run 43400606382
+09:25:28 petclinic   zode-4x8      warm #2 success wall 202.469s
+09:26:28 excalidraw  zode-4x8      warm #2 failure wall 543.26s
+09:35:52 nginx-proxy zode-4x8      warm #2 success wall 1021.626s
+09:35:52 done: results/2026-11-13-quiet-warm/runs.jsonl

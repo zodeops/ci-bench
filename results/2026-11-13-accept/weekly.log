@@ -1,0 +1,265 @@
+10:28:58 nginx-proxy zode-4x8      cold #2 run 43409375587
+10:28:58 nginx-proxy zode-4x8      cold #1 run 43409375763
+10:28:58 nginx-proxy ubuntu-24.04  cold #1 run 43409375959
+10:28:58 fzf         zode-4x8      cold #3 run 43409376000
+10:28:58 nginx-proxy ubuntu-24.04  cold #2 run 43409376070
+10:28:58 fzf         zode-4x8      cold #2 run 43409376052
+10:28:58 fzf         zode-4x8      cold #1 run 43409376004
+10:28:58 saleor      zode-4x8      cold #1 run 43409376124
+10:28:58 saleor      ubuntu-24.04  cold #1 run 43409377066
+10:28:59 fzf         ubuntu-24.04  cold #2 run 43409377175
+10:28:59 fzf         ubuntu-24.04  cold #1 run 43409377522
+10:28:59 fzf         ubuntu-24.04  cold #3 run 43409377743
+10:36:02 fzf         ubuntu-24.04  cold #2 success wall 396.502s
+10:37:02 fzf         ubuntu-24.04  cold #1 success wall 442.322s
+10:37:02 fzf         ubuntu-24.04  cold #3 success wall 438.301s
+10:39:11 fzf         zode-4x8      cold #2 success wall 586.082s
+10:39:13 fzf         zode-4x8      warm #2 run 43410722046
+10:39:13 fzf         ubuntu-24.04  warm #2 run 43410722439
+10:40:11 fzf         zode-4x8      cold #3 failure wall 632.099s
+10:40:11 fzf         zode-4x8      cold #1 failure wall 639.097s
+10:40:13 fzf         zode-4x8      warm #3 run 43410851203
+10:40:13 fzf         ubuntu-24.04  warm #3 run 43410851520
+10:40:14 fzf         ubuntu-24.04  warm #1 run 43410851909
+10:40:14 fzf         zode-4x8      warm #1 run 43410852007
+10:41:03 nginx-proxy ubuntu-24.04  cold #1 success wall 704.182s
+10:43:04 nginx-proxy ubuntu-24.04  cold #2 success wall 792.116s
+10:46:16 fzf         ubuntu-24.04  warm #2 success wall 416.881s
+10:47:06 saleor      ubuntu-24.04  cold #1 success wall 1043.472s
+10:47:14 nginx-proxy zode-4x8      cold #1 success wall 1038.181s
+10:47:15 nginx-proxy zode-4x8      cold #2 success wall 1079.139s
+10:47:16 nginx-proxy zode-4x8      warm #1 run 43411782955
+10:47:16 nginx-proxy ubuntu-24.04  warm #1 run 43411782893
+10:47:17 fzf         ubuntu-24.04  warm #3 success wall 399.637s
+10:47:17 fzf         ubuntu-24.04  warm #1 success wall 402.494s
+10:47:17 nginx-proxy ubuntu-24.04  warm #2 run 43411784379
+10:47:17 nginx-proxy zode-4x8      warm #2 run 43411784610
+10:50:26 fzf         zode-4x8      warm #2 success wall 623.011s
+10:50:29 alpine      zode-4x8      cold #3 run 43412214095
+10:50:29 alpine      ubuntu-24.04  cold #3 run 43412214683
+10:51:27 fzf         zode-4x8      warm #3 success wall 660.65s
+10:51:29 saleor      zode-4x8      cold #2 run 43412346254
+10:51:30 saleor      ubuntu-24.04  cold #2 run 43412347040
+10:52:27 fzf         zode-4x8      warm #1 failure wall 683.492s
+10:52:30 alpine      zode-4x8      cold #1 run 43412478179
+10:52:30 alpine      ubuntu-24.04  cold #1 run 43412478166
+10:56:32 alpine      ubuntu-24.04  cold #3 success wall 320.13s
+10:57:32 alpine      ubuntu-24.04  cold #1 success wall 263.231s
+10:59:20 saleor      zode-4x8      cold #1 success wall 1759.152s
+10:59:21 nginx-proxy ubuntu-24.04  warm #1 success wall 668.674s
+10:59:22 saleor      zode-4x8      warm #1 run 43413376501
+10:59:22 nginx-proxy ubuntu-24.04  warm #2 success wall 684.786s
+10:59:22 saleor      ubuntu-24.04  warm #1 run 43413376561
+11:06:33 nginx-proxy zode-4x8      warm #1 success wall 1126.608s
+11:06:36 alpine      ubuntu-24.04  cold #2 run 43414372955
+11:06:36 alpine      zode-4x8      cold #2 run 43414373276
+11:06:36 helm        zode-4x8      cold #1 run 43414373501
+11:06:37 helm        ubuntu-24.04  cold #1 run 43414375366
+11:06:44 alpine      zode-4x8      cold #3 success wall 910.284s
+11:06:46 alpine      ubuntu-24.04  warm #3 run 43414396370
+11:06:46 alpine      zode-4x8      warm #3 run 43414396604
+11:08:35 nginx-proxy zode-4x8      warm #2 success wall 1244.785s
+11:08:37 helm        zode-4x8      cold #3 run 43414657682
+11:08:37 saleor      zode-4x8      cold #3 run 43414657746
+11:08:38 saleor      ubuntu-24.04  cold #3 run 43414659178
+11:08:38 helm        ubuntu-24.04  cold #3 run 43414660145
+11:08:45 alpine      zode-4x8      cold #1 success wall 921.234s
+11:08:47 alpine      zode-4x8      warm #1 run 43414681502
+11:08:47 alpine      ubuntu-24.04  warm #1 run 43414681619
+11:12:38 alpine      ubuntu-24.04  cold #2 success wall 308.227s
+11:12:39 helm        ubuntu-24.04  cold #1 success wall 343.361s
+11:12:49 alpine      ubuntu-24.04  warm #3 success wall 321.723s
+11:13:38 saleor      ubuntu-24.04  cold #2 success wall 1308.232s
+11:14:50 alpine      ubuntu-24.04  warm #1 success wall 330.45s
+11:16:30 saleor      ubuntu-24.04  warm #1 success wall 987.836s
+11:16:42 helm        ubuntu-24.04  cold #3 success wall 479.892s
+11:21:51 alpine      zode-4x8      cold #2 success wall 902.293s
+11:21:53 alpine      zode-4x8      warm #2 run 43416464554
+11:21:53 alpine      ubuntu-24.04  warm #2 run 43416464579
+11:22:02 alpine      zode-4x8      warm #3 success wall 894.668s
+11:22:04 helm        zode-4x8      cold #2 run 43416489941
+11:22:07 helm        ubuntu-24.04  cold #2 run 43416494628
+11:26:04 alpine      zode-4x8      warm #1 success wall 1003.462s
+11:26:46 saleor      ubuntu-24.04  cold #3 success wall 1068.97s
+11:27:54 helm        zode-4x8      cold #1 success wall 1234.246s
+11:27:55 helm        zode-4x8      cold #3 success wall 1093.619s
+11:27:56 helm        ubuntu-24.04  warm #1 run 43417269532
+11:27:56 helm        zode-4x8      warm #1 run 43417269864
+11:27:56 alpine      ubuntu-24.04  warm #2 success wall 324.528s
+11:27:57 helm        ubuntu-24.04  warm #3 run 43417270988
+11:27:57 helm        zode-4x8      warm #3 run 43417271497
+11:29:10 helm        ubuntu-24.04  cold #2 success wall 398.858s
+11:29:54 saleor      zode-4x8      cold #2 success wall 2268.657s
+11:29:57 saleor      ubuntu-24.04  warm #2 run 43417528192
+11:29:57 saleor      zode-4x8      warm #2 run 43417528998
+11:30:58 helm        ubuntu-24.04  warm #1 success wall 142.896s
+11:30:58 helm        ubuntu-24.04  warm #3 success wall 164.223s
+11:32:17 helm        zode-4x8      cold #2 success wall 548.678s
+11:32:20 helm        ubuntu-24.04  warm #2 run 43417861264
+11:32:20 helm        zode-4x8      warm #2 run 43417861336
+11:34:07 alpine      zode-4x8      warm #2 success wall 702.522s
+11:34:09 nginx-proxy ubuntu-24.04  cold #3 run 43418108743
+11:34:09 nginx-proxy zode-4x8      cold #3 run 43418109057
+11:35:21 helm        ubuntu-24.04  warm #2 success wall 152.304s
+11:36:09 helm        zode-4x8      warm #3 success wall 437.306s
+11:36:12 excalidraw  zode-4x8      cold #1 run 43418387296
+11:36:12 excalidraw  ubuntu-24.04  cold #1 run 43418387407
+11:38:48 saleor      zode-4x8      warm #1 success wall 2328.884s
+11:38:51 excalidraw  ubuntu-24.04  cold #2 run 43418729040
+11:38:51 excalidraw  zode-4x8      cold #2 run 43418729166
+11:40:10 helm        zode-4x8      warm #1 success wall 709.859s
+11:40:12 excalidraw  ubuntu-24.04  cold #3 run 43418903259
+11:40:12 excalidraw  zode-4x8      cold #3 run 43418903502
+11:40:32 helm        zode-4x8      warm #2 success wall 434.278s
+11:41:14 excalidraw  ubuntu-24.04  cold #1 success wall 255.442s
+11:42:53 excalidraw  ubuntu-24.04  cold #2 success wall 226.167s
+11:44:03 saleor      ubuntu-24.04  warm #2 success wall 788.666s
+11:44:14 excalidraw  ubuntu-24.04  cold #3 success wall 202.655s
+11:46:02 saleor      zode-4x8      cold #3 success wall 2198.582s
+11:46:05 saleor      ubuntu-24.04  warm #3 run 43419672400
+11:46:05 saleor      zode-4x8      warm #3 run 43419672567
+11:46:14 nginx-proxy ubuntu-24.04  cold #3 success wall 717.542s
+11:47:25 excalidraw  zode-4x8      cold #1 success wall 618.435s
+11:47:27 excalidraw  ubuntu-24.04  warm #1 run 43419849468
+11:47:27 excalidraw  zode-4x8      warm #1 run 43419849588
+11:49:04 excalidraw  zode-4x8      cold #2 success wall 547.023s
+11:49:06 excalidraw  zode-4x8      warm #2 run 43420065743
+11:49:06 excalidraw  ubuntu-24.04  warm #2 run 43420065808
+11:50:25 excalidraw  zode-4x8      cold #3 success wall 570.664s
+11:50:27 excalidraw  zode-4x8      warm #3 run 43420246672
+11:50:28 excalidraw  ubuntu-24.04  warm #3 run 43420246861
+11:52:26 nginx-proxy zode-4x8      cold #3 success wall 1058.508s
+11:52:28 nginx-proxy zode-4x8      warm #3 run 43420510561
+11:52:28 nginx-proxy ubuntu-24.04  warm #3 run 43420510589
+11:52:29 excalidraw  ubuntu-24.04  warm #1 success wall 245.902s
+11:53:08 excalidraw  ubuntu-24.04  warm #2 success wall 196.977s
+11:54:30 excalidraw  ubuntu-24.04  warm #3 success wall 201.445s
+11:57:40 excalidraw  zode-4x8      warm #1 success wall 600.982s
+11:59:19 excalidraw  zode-4x8      warm #2 failure wall 585.961s
+12:00:10 saleor      ubuntu-24.04  warm #3 success wall 812.46s
+12:01:19 saleor      zode-4x8      warm #2 success wall 1859.003s
+12:01:21 jquery      zode-4x8      cold #1 run 43421685955
+12:01:22 jquery      ubuntu-24.04  cold #1 run 43421688369
+12:01:40 excalidraw  zode-4x8      warm #3 success wall 620.505s
+12:03:23 jquery      ubuntu-24.04  cold #1 success wall 76.241s
+12:04:31 jquery      zode-4x8      cold #1 success wall 156.951s
+12:04:32 jquery      ubuntu-24.04  warm #1 run 43422116917
+12:04:32 jquery      zode-4x8      warm #1 run 43422117211
+12:05:33 jquery      ubuntu-24.04  warm #1 success wall 58.734s
+12:05:34 nginx-proxy ubuntu-24.04  warm #3 failure wall 730.065s
+12:07:42 jquery      zode-4x8      warm #1 success wall 161.733s
+12:07:44 jquery      zode-4x8      cold #2 run 43422560738
+12:07:45 jquery      ubuntu-24.04  cold #2 run 43422562037
+12:09:46 jquery      ubuntu-24.04  cold #2 success wall 63.376s
+12:10:54 jquery      zode-4x8      cold #2 success wall 133.928s
+12:10:55 jquery      zode-4x8      warm #2 run 43423000179
+12:10:56 jquery      ubuntu-24.04  warm #2 run 43423000635
+12:11:45 nginx-proxy zode-4x8      warm #3 success wall 1106.073s
+12:12:57 jquery      ubuntu-24.04  warm #2 success wall 60.495s
+12:13:05 jquery      zode-4x8      warm #2 success wall 109.495s
+12:13:06 jquery      zode-4x8      cold #3 run 43423299456
+12:13:07 jquery      ubuntu-24.04  cold #3 run 43423301235
+12:14:26 saleor      zode-4x8      warm #3 success wall 1662.378s
+12:14:28 petclinic   zode-4x8      cold #1 run 43423488517
+12:14:28 petclinic   ubuntu-24.04  cold #1 run 43423490158
+12:15:08 jquery      ubuntu-24.04  cold #3 success wall 60.915s
+12:16:16 jquery      zode-4x8      cold #3 success wall 145.498s
+12:16:18 jquery      zode-4x8      warm #3 run 43423751848
+12:16:18 jquery      ubuntu-24.04  warm #3 run 43423751973
+12:16:30 petclinic   ubuntu-24.04  cold #1 success wall 115.651s
+12:17:19 jquery      ubuntu-24.04  warm #3 success wall 60.215s
+12:18:38 petclinic   zode-4x8      cold #1 success wall 236.467s
+12:18:40 petclinic   zode-4x8      warm #1 run 43424074669
+12:18:40 petclinic   ubuntu-24.04  warm #1 run 43424074979
+12:19:28 jquery      zode-4x8      warm #3 success wall 123.215s
+12:19:30 caddy       zode-4x8      cold #1 run 43424185021
+12:19:30 httpx       zode-4x8      cold #1 run 43424185030
+12:19:30 httpx       ubuntu-24.04  cold #1 run 43424184999
+12:19:30 caddy       ubuntu-24.04  cold #1 run 43424186177
+12:20:31 httpx       ubuntu-24.04  cold #1 failure wall 49.228s
+12:20:41 petclinic   ubuntu-24.04  warm #1 success wall 108.532s
+12:21:32 caddy       ubuntu-24.04  cold #1 success wall 67.247s
+12:22:40 caddy       zode-4x8      cold #1 success wall 162.271s
+12:22:40 httpx       zode-4x8      cold #1 failure wall 124.255s
+12:22:41 httpx       zode-4x8      warm #1 run 43424631127
+12:22:41 caddy       ubuntu-24.04  warm #1 run 43424631052
+12:22:41 caddy       zode-4x8      warm #1 run 43424631262
+12:22:42 httpx       ubuntu-24.04  warm #1 run 43424631652
+12:22:50 petclinic   zode-4x8      warm #1 success wall 182.532s
+12:22:52 petclinic   zode-4x8      cold #2 run 43424657156
+12:22:53 petclinic   ubuntu-24.04  cold #2 run 43424658379
+12:23:43 httpx       ubuntu-24.04  warm #1 failure wall 51.644s
+12:24:43 caddy       ubuntu-24.04  warm #1 success wall 64.722s
+12:24:51 httpx       zode-4x8      warm #1 failure wall 103.644s
+12:24:53 httpx       ubuntu-24.04  cold #2 run 43424938023
+12:24:53 httpx       zode-4x8      cold #2 run 43424938234
+12:24:54 petclinic   ubuntu-24.04  cold #2 success wall 117.345s
+12:25:51 caddy       zode-4x8      warm #1 success wall 127.722s
+12:25:53 caddy       ubuntu-24.04  cold #2 run 43425080509
+12:25:53 caddy       zode-4x8      cold #2 run 43425080777
+12:25:54 httpx       ubuntu-24.04  cold #2 failure wall 47.251s
+12:27:02 httpx       zode-4x8      cold #2 failure wall 107.225s
+12:27:02 petclinic   zode-4x8      cold #2 success wall 192.03s
+12:27:04 httpx       zode-4x8      warm #2 run 43425249933
+12:27:04 httpx       ubuntu-24.04  warm #2 run 43425249901
+12:27:04 petclinic   zode-4x8      warm #2 run 43425250650
+12:27:04 petclinic   ubuntu-24.04  warm #2 run 43425250563
+12:27:54 caddy       ubuntu-24.04  cold #2 success wall 79.911s
+12:28:05 httpx       ubuntu-24.04  warm #2 failure wall 47.265s
+12:29:03 caddy       zode-4x8      cold #2 success wall 161.899s
+12:29:05 caddy       ubuntu-24.04  warm #2 run 43425532692
+12:29:05 caddy       zode-4x8      warm #2 run 43425532767
+12:29:05 petclinic   ubuntu-24.04  warm #2 success wall 90.192s
+12:29:13 httpx       zode-4x8      warm #2 failure wall 108.265s
+12:29:15 httpx       zode-4x8      cold #3 run 43425556926
+12:29:15 httpx       ubuntu-24.04  cold #3 run 43425557211
+12:30:16 httpx       ubuntu-24.04  cold #3 failure wall 47.141s
+12:31:06 caddy       ubuntu-24.04  warm #2 success wall 81.568s
+12:31:14 petclinic   zode-4x8      warm #2 success wall 199.192s
+12:31:16 petclinic   zode-4x8      cold #3 run 43425856385
+12:31:16 petclinic   ubuntu-24.04  cold #3 run 43425857458
+12:31:24 httpx       zode-4x8      cold #3 failure wall 104.154s
+12:31:26 httpx       zode-4x8      warm #3 run 43425878578
+12:31:26 httpx       ubuntu-24.04  warm #3 run 43425878577
+12:32:14 caddy       zode-4x8      warm #2 success wall 149.568s
+12:32:16 caddy       ubuntu-24.04  cold #3 run 43425997484
+12:32:16 caddy       zode-4x8      cold #3 run 43425997620
+12:32:27 httpx       ubuntu-24.04  warm #3 failure wall 48.16s
+12:33:35 httpx       zode-4x8      warm #3 failure wall 104.16s
+12:33:37 starlette   zode-4x8      cold #1 run 43426190622
+12:33:39 starlette   ubuntu-24.04  cold #1 run 43426194801
+12:34:18 caddy       ubuntu-24.04  cold #3 success wall 92.792s
+12:34:18 petclinic   ubuntu-24.04  cold #3 success wall 146.425s
+12:35:26 caddy       zode-4x8      cold #3 success wall 155.734s
+12:35:26 petclinic   zode-4x8      cold #3 success wall 206.105s
+12:35:27 caddy       ubuntu-24.04  warm #3 run 43426461235
+12:35:28 caddy       zode-4x8      warm #3 run 43426461482
+12:35:28 petclinic   ubuntu-24.04  warm #3 run 43426461746
+12:35:28 petclinic   zode-4x8      warm #3 run 43426462157
+12:35:40 starlette   ubuntu-24.04  cold #1 success wall 65.005s
+12:36:47 starlette   zode-4x8      cold #1 success wall 168.047s
+12:36:48 starlette   zode-4x8      warm #1 run 43426655004
+12:36:49 starlette   ubuntu-24.04  warm #1 run 43426655474
+12:37:29 caddy       ubuntu-24.04  warm #3 success wall 84.485s
+12:37:29 petclinic   ubuntu-24.04  warm #3 success wall 106.295s
+12:38:37 caddy       zode-4x8      warm #3 success wall 160.484s
+12:38:50 starlette   ubuntu-24.04  warm #1 success wall 68.508s
+12:39:38 petclinic   zode-4x8      warm #3 success wall 228.294s
+12:39:58 starlette   zode-4x8      warm #1 success wall 159.508s
+12:40:00 starlette   zode-4x8      cold #2 run 43427104227
+12:40:02 starlette   ubuntu-24.04  cold #2 run 43427109040
+12:41:03 starlette   ubuntu-24.04  cold #2 success wall 58.0s
+12:43:10 starlette   zode-4x8      cold #2 success wall 150.876s
+12:43:12 starlette   ubuntu-24.04  warm #2 run 43427550977
+12:43:12 starlette   zode-4x8      warm #2 run 43427551178
+12:44:13 starlette   ubuntu-24.04  warm #2 success wall 59.193s
+12:46:22 starlette   zode-4x8      warm #2 success wall 127.193s
+12:46:24 starlette   zode-4x8      cold #3 run 43428000644
+12:46:26 starlette   ubuntu-24.04  cold #3 run 43428005807
+12:48:27 starlette   ubuntu-24.04  cold #3 success wall 74.268s
+12:49:34 starlette   zode-4x8      cold #3 success wall 146.318s
+12:49:35 starlette   ubuntu-24.04  warm #3 run 43428447722
+12:49:35 starlette   zode-4x8      warm #3 run 43428448217
+12:50:36 starlette   ubuntu-24.04  warm #3 success wall 58.954s
+12:52:45 starlette   zode-4x8      warm #3 success wall 147.954s
+12:52:45 done: results/2026-11-13-quiet/runs.jsonl
