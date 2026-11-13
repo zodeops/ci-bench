@@ -1,0 +1,59 @@
+23:40:19 fzf         zode-4x8      cold #1 run 43330806150
+23:40:19 nginx-proxy zode-4x8      cold #1 run 43330806170
+23:40:19 helm        zode-4x8      cold #1 run 43330806145
+23:40:20 alpine      zode-4x8      cold #1 run 43330806648
+23:52:33 alpine      zode-4x8      cold #1 success wall 690.649s
+23:52:33 fzf         zode-4x8      cold #1 success wall 683.674s
+23:52:34 fzf         zode-4x8      warm #1 run 43332478118
+23:52:34 alpine      zode-4x8      warm #1 run 43332478487
+23:55:34 helm        zode-4x8      cold #1 success wall 858.713s
+23:55:36 helm        zode-4x8      warm #1 run 43332886103
+23:59:35 nginx-proxy zode-4x8      cold #1 success wall 1145.681s
+23:59:37 nginx-proxy zode-4x8      warm #1 run 43333404054
+00:04:48 helm        zode-4x8      warm #1 success wall 500.343s
+00:04:49 helm        zode-4x8      cold #2 run 43334133338
+00:05:48 fzf         zode-4x8      warm #1 success wall 743.733s
+00:05:50 fzf         zode-4x8      cold #2 run 43334274130
+00:06:49 alpine      zode-4x8      warm #1 success wall 803.744s
+00:06:50 alpine      zode-4x8      cold #2 run 43334415736
+00:13:01 helm        zode-4x8      cold #2 success wall 450.493s
+00:13:03 helm        zode-4x8      warm #2 run 43335273025
+00:17:03 fzf         zode-4x8      cold #2 success wall 632.221s
+00:17:04 fzf         zode-4x8      warm #2 run 43335824815
+00:18:03 alpine      zode-4x8      cold #2 success wall 629.477s
+00:18:05 alpine      zode-4x8      warm #2 run 43335957773
+00:19:53 nginx-proxy zode-4x8      warm #1 success wall 1150.021s
+00:19:55 nginx-proxy zode-4x8      cold #2 run 43336201929
+00:22:15 helm        zode-4x8      warm #2 success wall 494.253s
+00:22:17 excalidraw  zode-4x8      cold #1 run 43336519269
+00:28:17 fzf         zode-4x8      warm #2 success wall 650.915s
+00:28:19 jquery      zode-4x8      cold #1 run 43337322432
+00:29:18 alpine      zode-4x8      warm #2 success wall 616.092s
+00:29:20 petclinic   zode-4x8      cold #1 run 43337451076
+00:32:29 jquery      zode-4x8      cold #1 success wall 195.029s
+00:32:29 excalidraw  zode-4x8      cold #1 success wall 583.524s
+00:32:31 jquery      zode-4x8      warm #1 run 43337873338
+00:32:31 excalidraw  zode-4x8      warm #1 run 43337873485
+00:35:31 petclinic   zode-4x8      cold #1 success wall 304.173s
+00:35:32 jquery zode-4x8 run 43337873338: Zode failed (GitHub refused to register a runner; check the app's Administration permission on zodeops/bench-jquery); cancelling
+00:35:33 petclinic   zode-4x8      warm #1 run 43338271885
+00:40:44 jquery      zode-4x8      warm #1 cancelled wall 483.334s
+00:40:45 jquery      zode-4x8      cold #2 run 43338959978
+00:41:44 petclinic   zode-4x8      warm #1 success wall 355.222s
+00:41:46 petclinic   zode-4x8      cold #2 run 43339092441
+00:42:13 nginx-proxy zode-4x8      cold #2 success wall 1286.846s
+00:42:15 nginx-proxy zode-4x8      warm #2 run 43339159107
+00:44:56 jquery      zode-4x8      cold #2 success wall 230.498s
+00:44:57 jquery      zode-4x8      warm #2 run 43339521553
+00:46:58 jquery zode-4x8 run 43339521553: Zode failed (GitHub refused to register a runner; check the app's Administration permission on zodeops/bench-jquery); cancelling
+00:47:56 petclinic   zode-4x8      cold #2 success wall 330.483s
+00:47:58 petclinic   zode-4x8      warm #2 run 43339925074
+00:48:08 jquery      zode-4x8      warm #2 cancelled wall 138.872s
+00:49:48 excalidraw  zode-4x8      warm #1 failure wall 983.163s
+00:49:50 excalidraw  zode-4x8      cold #2 run 43340166362
+00:53:09 petclinic   zode-4x8      warm #2 success wall 287.007s
+00:58:02 excalidraw  zode-4x8      cold #2 success wall 466.166s
+00:58:03 excalidraw  zode-4x8      warm #2 run 43341237376
+01:02:31 nginx-proxy zode-4x8      warm #2 success wall 1180.228s
+01:08:15 excalidraw  zode-4x8      warm #2 success wall 561.939s
+01:08:15 done: results/2026-11-13-warm/runs.jsonl
