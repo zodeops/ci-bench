@@ -1,0 +1,73 @@
+## alpine / build: 6 measured runs, 0 warm
+## excalidraw / test: 6 measured runs, 0 warm
+## fzf / build: 6 measured runs, 0 warm
+## helm / build: 6 measured runs, 0 warm
+## jquery / lint - Node (24.x): 6 measured runs, 6 warm
+   run 43421685955 (cold #1) age 4069s size 3.4 GB
+     Install dependencies                              25s ->   21s  1.2x
+   run 43422117211 (warm #1) age 16s size 3.7 GB
+     Install dependencies                              25s ->   23s  1.1x
+   run 43422560738 (cold #2) age 17s size 3.7 GB
+     Install dependencies                              25s ->   21s  1.2x
+   run 43423000179 (warm #2) age 76s size 3.7 GB
+     Install dependencies                              25s ->   15s  1.7x
+   run 43423299456 (cold #3) age 81s size 3.8 GB
+     Install dependencies                              25s ->   24s  1.0x
+   run 43423751848 (warm #3) age 41s size 3.8 GB
+     Install dependencies                              25s ->   26s  1.0x
+## jquery / test:browserless - Node (20.x): 6 measured runs, 6 warm
+   run 43421685955 (cold #1) age 3808s size 3.3 GB
+     Install dependencies                              17s ->   15s  1.1x
+   run 43422117211 (warm #1) age 100s size 3.5 GB
+     Install dependencies                              17s ->   13s  1.3x
+   run 43422560738 (cold #2) age 18s size 3.7 GB
+     Install dependencies                              17s ->   17s  1.0x
+   run 43423000179 (warm #2) age 56s size 3.7 GB
+     Install dependencies                              17s ->   20s  0.8x
+   run 43423299456 (cold #3) age 41s size 3.8 GB
+     Install dependencies                              17s ->   14s  1.2x
+   run 43423751848 (warm #3) age 50s size 3.8 GB
+     Install dependencies                              17s ->   22s  0.8x
+## jquery / test:browserless - Node (22.x): 6 measured runs, 5 warm
+   run 43421685955 (cold #1) age 4144s size 3.7 GB
+     Install dependencies                              17s ->   21s  0.8x
+   run 43422117211 (warm #1) age 54s size 3.7 GB
+     Install dependencies                              17s ->   16s  1.1x
+   run 43422560738 (cold #2) age 48s size 3.7 GB
+     Install dependencies                              17s ->   14s  1.2x
+   run 43423000179 (warm #2) age 18s size 3.7 GB
+     Install dependencies                              17s ->   23s  0.7x
+   run 43423299456 (cold #3) age 9s size 3.8 GB
+     Install dependencies                              17s ->   19s  0.9x
+## jquery / test:browserless - Node (24.x): 6 measured runs, 6 warm
+   run 43421685955 (cold #1) age 3990s size 3.3 GB
+     Install dependencies                              26s ->   23s  1.1x
+   run 43422117211 (warm #1) age 13s size 3.7 GB
+     Install dependencies                              26s ->   14s  1.9x
+   run 43422560738 (cold #2) age 118s size 3.7 GB
+     Install dependencies                              26s ->   16s  1.6x
+   run 43423000179 (warm #2) age 16s size 3.8 GB
+     Install dependencies                              26s ->   24s  1.1x
+   run 43423299456 (cold #3) age 76s size 3.7 GB
+     Install dependencies                              26s ->   13s  2.0x
+   run 43423751848 (warm #3) age 11s size 3.8 GB
+     Install dependencies                              26s ->   21s  1.2x
+## nginx-proxy / Unit Tests (alpine): 6 measured runs, 0 warm
+## nginx-proxy / Unit Tests (debian): 6 measured runs, 0 warm
+## petclinic / build (17): 6 measured runs, 5 warm
+   run 43424074669 (warm #1) age 30s size 5.5 GB
+     Set up JDK 17                                     24s ->   10s  2.4x
+     Build with Maven Wrapper                         205s ->  121s  1.7x
+   run 43424657156 (cold #2) age 95s size 5.5 GB
+     Set up JDK 17                                     24s ->    8s  3.0x
+     Build with Maven Wrapper                         205s ->  125s  1.6x
+   run 43425250650 (warm #2) age 81s size 5.6 GB
+     Set up JDK 17                                     24s ->    7s  3.4x
+     Build with Maven Wrapper                         205s ->  132s  1.6x
+   run 43425856385 (cold #3) age 70s size 5.6 GB
+     Set up JDK 17                                     24s ->    8s  3.0x
+     Build with Maven Wrapper                         205s ->  126s  1.6x
+   run 43426462157 (warm #3) age 70s size 5.6 GB
+     Set up JDK 17                                     24s ->   12s  2.0x
+     Build with Maven Wrapper                         205s ->  147s  1.4x
+warm measured runs: 28 of 66

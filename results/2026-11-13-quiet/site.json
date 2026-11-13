@@ -1,0 +1,1028 @@
+{
+ "schema": 1,
+ "generated_at": "2026-11-13T12:53:44Z",
+ "results": "results/2026-11-13-quiet",
+ "harness_commit": "6522b35d0ea8e4d18c341fc7528f7695fcfba673",
+ "source": "https://github.com/zodeops/ci-bench",
+ "window": {
+  "from": "2026-11-13T10:28:56Z",
+  "to": "2026-11-13T12:52:02Z"
+ },
+ "runs": 132,
+ "providers": {
+  "github": {
+   "label": "GitHub-hosted",
+   "hardware": "4 vCPU, 16 GB RAM, 14 GB SSD (ubuntu-24.04 on a public repository)",
+   "price": "List price of the same machine on a private repository: the Linux 4-core larger runner at $0.012 a minute, each job rounded up to the minute. Public repositories run free.",
+   "price_source": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+   "hardware_source": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners"
+  },
+  "zode": {
+   "label": "Zode",
+   "hardware": "4 vCPU, 8 GB RAM (zode-4x8) in a microVM on a GCE n2-standard-16 node in europe-west1, nested virtualisation, shared with real CI",
+   "price": "What the run was billed: each job's runner compute from creation to deletion, per second, from the Zode API, at $0.045 an hour for zode-4x8. When a job ran on a runner started for another run, its bill sits on that run, so the price shown is an estimate: the jobs' run time at the list price.",
+   "price_source": "https://zode.dev/#pricing",
+   "hardware_source": "https://docs.zode.dev/ci/benchmark"
+  }
+ },
+ "tally": {
+  "cold": {
+   "win": 0,
+   "loss": 11,
+   "even": 0,
+   "compared": 11
+  },
+  "warm": {
+   "win": 0,
+   "loss": 11,
+   "even": 0,
+   "compared": 11
+  }
+ },
+ "pending": {
+  "selected": "Every run on this page runs the full suite. Test selection is in Shadow on Zode: it runs everything and records what it would have skipped. Selected runs need Enforce, which opens per repository after 200 clean Shadow runs. This column fills then.",
+  "shards": "zode-ci test --shards splits a suite across forks of the job's machine. The benchmark workflows run unchanged, without the wrapper, so their numbers here are single-machine. Sharded numbers follow once the shard proof on saleor is published."
+ },
+ "repos": [
+  {
+   "name": "excalidraw",
+   "upstream": "excalidraw/excalidraw",
+   "commit": "701b901a0f1ba3d0b390d9cdf63d112e25abac4b",
+   "workflow": "test.yml",
+   "lang": "TypeScript",
+   "jobs": 1,
+   "mirror": "zodeops/bench-excalidraw",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 226.2,
+      "queue_s": 2.0,
+      "run_s": 222.0,
+      "run_id": 43418729040,
+      "run_url": "https://github.com/zodeops/bench-excalidraw/actions/runs/43418729040",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:38:49.832Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.048,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 570.7,
+      "queue_s": 31.0,
+      "run_s": 538.0,
+      "run_id": 43418903502,
+      "run_url": "https://github.com/zodeops/bench-excalidraw/actions/runs/43418903502",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:40:11.336Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0053,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 201.4,
+      "queue_s": 1.0,
+      "run_s": 198.0,
+      "run_id": 43420246861,
+      "run_url": "https://github.com/zodeops/bench-excalidraw/actions/runs/43420246861",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:50:26.555Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.048,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 2,
+      "failed_runs_only": false,
+      "wall_s": 601.0,
+      "queue_s": 27.0,
+      "run_s": 572.0,
+      "run_id": 43419849588,
+      "run_url": "https://github.com/zodeops/bench-excalidraw/actions/runs/43419849588",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:47:26.017Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0057,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.4,
+     "result": "loss",
+     "words": "2.5x slower",
+     "both_passed": true
+    },
+    "warm": {
+     "ratio": 0.34,
+     "result": "loss",
+     "words": "3.0x slower",
+     "both_passed": true
+    }
+   }
+  },
+  {
+   "name": "alpine",
+   "upstream": "alpinejs/alpine",
+   "commit": "da60871ea404e23e46938c9e6137f05258614c63",
+   "workflow": "run-tests.yml",
+   "lang": "JavaScript",
+   "jobs": 1,
+   "mirror": "zodeops/bench-alpine",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 308.2,
+      "queue_s": 2.0,
+      "run_s": 304.0,
+      "run_id": 43414372955,
+      "run_url": "https://github.com/zodeops/bench-alpine/actions/runs/43414372955",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:06:34.772Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.072,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 910.3,
+      "queue_s": 238.0,
+      "run_s": 670.0,
+      "run_id": 43412214095,
+      "run_url": "https://github.com/zodeops/bench-alpine/actions/runs/43412214095",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T10:50:27.716Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0067,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 324.5,
+      "queue_s": 2.0,
+      "run_s": 320.0,
+      "run_id": 43416464579,
+      "run_url": "https://github.com/zodeops/bench-alpine/actions/runs/43416464579",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:21:52.471Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.072,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 894.7,
+      "queue_s": 32.0,
+      "run_s": 860.0,
+      "run_id": 43414396604,
+      "run_url": "https://github.com/zodeops/bench-alpine/actions/runs/43414396604",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:06:45.331Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0085,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.34,
+     "result": "loss",
+     "words": "3.0x slower",
+     "both_passed": true
+    },
+    "warm": {
+     "ratio": 0.36,
+     "result": "loss",
+     "words": "2.8x slower",
+     "both_passed": true
+    }
+   }
+  },
+  {
+   "name": "jquery",
+   "upstream": "jquery/jquery",
+   "commit": "feaa9fcdb68cdeadf013d97d8fd40848d4618578",
+   "workflow": "node.js.yml",
+   "lang": "JavaScript",
+   "jobs": 4,
+   "mirror": "zodeops/bench-jquery",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 63.4,
+      "queue_s": 2.0,
+      "run_s": 199.0,
+      "run_id": 43422562037,
+      "run_url": "https://github.com/zodeops/bench-jquery/actions/runs/43422562037",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:07:43.624Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.048,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 145.5,
+      "queue_s": 36.0,
+      "run_s": 388.0,
+      "run_id": 43423299456,
+      "run_url": "https://github.com/zodeops/bench-jquery/actions/runs/43423299456",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:13:05.502Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0039,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 60.2,
+      "queue_s": 3.0,
+      "run_s": 179.0,
+      "run_id": 43423751973,
+      "run_url": "https://github.com/zodeops/bench-jquery/actions/runs/43423751973",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:16:16.784Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.048,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 123.2,
+      "queue_s": 33.0,
+      "run_s": 368.0,
+      "run_id": 43423751848,
+      "run_url": "https://github.com/zodeops/bench-jquery/actions/runs/43423751848",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:16:16.784Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0039,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.44,
+     "result": "loss",
+     "words": "2.3x slower",
+     "both_passed": true
+    },
+    "warm": {
+     "ratio": 0.49,
+     "result": "loss",
+     "words": "2.0x slower",
+     "both_passed": true
+    }
+   }
+  },
+  {
+   "name": "starlette",
+   "upstream": "encode/starlette",
+   "commit": "271c277da0ff64e2048a4d46ecc812b9d61db5f6",
+   "workflow": "main.yml",
+   "lang": "Python",
+   "jobs": 6,
+   "mirror": "zodeops/bench-starlette",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 65.0,
+      "queue_s": 4.0,
+      "run_s": 226.0,
+      "run_id": 43426194801,
+      "run_url": "https://github.com/zodeops/bench-starlette/actions/runs/43426194801",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:33:37.995Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.072,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 150.9,
+      "queue_s": 27.0,
+      "run_s": 432.0,
+      "run_id": 43427104227,
+      "run_url": "https://github.com/zodeops/bench-starlette/actions/runs/43427104227",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:39:59.124Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0046,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 59.2,
+      "queue_s": 3.0,
+      "run_s": 188.0,
+      "run_id": 43427550977,
+      "run_url": "https://github.com/zodeops/bench-starlette/actions/runs/43427550977",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:43:10.806Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.072,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 148.0,
+      "queue_s": 23.0,
+      "run_s": 453.0,
+      "run_id": 43428448217,
+      "run_url": "https://github.com/zodeops/bench-starlette/actions/runs/43428448217",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:49:34.046Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0047,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.43,
+     "result": "loss",
+     "words": "2.3x slower",
+     "both_passed": true
+    },
+    "warm": {
+     "ratio": 0.4,
+     "result": "loss",
+     "words": "2.5x slower",
+     "both_passed": true
+    }
+   }
+  },
+  {
+   "name": "httpx",
+   "upstream": "encode/httpx",
+   "commit": "b5addb64f0161ff6bfe94c124ef76f6a1fba5254",
+   "workflow": "test-suite.yml",
+   "lang": "Python",
+   "jobs": 5,
+   "mirror": "zodeops/bench-httpx",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 0,
+      "failed_runs_only": true,
+      "wall_s": 47.3,
+      "queue_s": 2.0,
+      "run_s": 181.0,
+      "run_id": 43424938023,
+      "run_url": "https://github.com/zodeops/bench-httpx/actions/runs/43424938023",
+      "conclusion": "failure",
+      "dispatched_at": "2026-11-13T12:24:51.748Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.06,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 0,
+      "failed_runs_only": true,
+      "wall_s": 107.2,
+      "queue_s": 27.0,
+      "run_s": 438.0,
+      "run_id": 43424938234,
+      "run_url": "https://github.com/zodeops/bench-httpx/actions/runs/43424938234",
+      "conclusion": "failure",
+      "dispatched_at": "2026-11-13T12:24:51.774Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0044,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 0,
+      "failed_runs_only": true,
+      "wall_s": 48.2,
+      "queue_s": 16.0,
+      "run_s": 179.0,
+      "run_id": 43425878577,
+      "run_url": "https://github.com/zodeops/bench-httpx/actions/runs/43425878577",
+      "conclusion": "failure",
+      "dispatched_at": "2026-11-13T12:31:24.839Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.06,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 0,
+      "failed_runs_only": true,
+      "wall_s": 104.2,
+      "queue_s": 30.0,
+      "run_s": 426.0,
+      "run_id": 43425878578,
+      "run_url": "https://github.com/zodeops/bench-httpx/actions/runs/43425878578",
+      "conclusion": "failure",
+      "dispatched_at": "2026-11-13T12:31:24.840Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0045,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.44,
+     "result": "loss",
+     "words": "2.3x slower",
+     "both_passed": false
+    },
+    "warm": {
+     "ratio": 0.46,
+     "result": "loss",
+     "words": "2.2x slower",
+     "both_passed": false
+    }
+   }
+  },
+  {
+   "name": "saleor",
+   "upstream": "saleor/saleor",
+   "commit": "ea4a69fa6faa22de77a30eaee0447dd7dacaadb3",
+   "workflow": "tests.yaml",
+   "lang": "Python",
+   "jobs": 1,
+   "mirror": "zodeops/bench-saleor",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 1069.0,
+      "queue_s": 2.0,
+      "run_s": 1064.0,
+      "run_id": 43414659178,
+      "run_url": "https://github.com/zodeops/bench-saleor/actions/runs/43414659178",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:08:37.029Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.216,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 2198.6,
+      "queue_s": 36.0,
+      "run_s": 2160.0,
+      "run_id": 43414657746,
+      "run_url": "https://github.com/zodeops/bench-saleor/actions/runs/43414657746",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:08:36.418Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0212,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 812.5,
+      "queue_s": 3.0,
+      "run_s": 807.0,
+      "run_id": 43419672400,
+      "run_url": "https://github.com/zodeops/bench-saleor/actions/runs/43419672400",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:46:03.540Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.168,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 1859.0,
+      "queue_s": 45.0,
+      "run_s": 1812.0,
+      "run_id": 43417528998,
+      "run_url": "https://github.com/zodeops/bench-saleor/actions/runs/43417528998",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:29:55.996Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0178,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.49,
+     "result": "loss",
+     "words": "2.1x slower",
+     "both_passed": true
+    },
+    "warm": {
+     "ratio": 0.44,
+     "result": "loss",
+     "words": "2.3x slower",
+     "both_passed": true
+    }
+   }
+  },
+  {
+   "name": "fzf",
+   "upstream": "junegunn/fzf",
+   "commit": "4499615fe9c06c0651aa5650e5d0d0a5face99a8",
+   "workflow": "linux.yml",
+   "lang": "Go",
+   "jobs": 1,
+   "mirror": "zodeops/bench-fzf",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 438.3,
+      "queue_s": 4.0,
+      "run_s": 432.0,
+      "run_id": 43409377743,
+      "run_url": "https://github.com/zodeops/bench-fzf/actions/runs/43409377743",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T10:28:57.698Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.096,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 1,
+      "failed_runs_only": false,
+      "wall_s": 586.1,
+      "queue_s": 34.0,
+      "run_s": 550.0,
+      "run_id": 43409376052,
+      "run_url": "https://github.com/zodeops/bench-fzf/actions/runs/43409376052",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T10:28:56.918Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0055,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 402.5,
+      "queue_s": 2.0,
+      "run_s": 398.0,
+      "run_id": 43410851909,
+      "run_url": "https://github.com/zodeops/bench-fzf/actions/runs/43410851909",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T10:40:12.506Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.084,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 2,
+      "failed_runs_only": false,
+      "wall_s": 623.0,
+      "queue_s": 39.0,
+      "run_s": 582.0,
+      "run_id": 43410722046,
+      "run_url": "https://github.com/zodeops/bench-fzf/actions/runs/43410722046",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T10:39:11.989Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0058,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.75,
+     "result": "loss",
+     "words": "1.3x slower",
+     "both_passed": true
+    },
+    "warm": {
+     "ratio": 0.65,
+     "result": "loss",
+     "words": "1.5x slower",
+     "both_passed": true
+    }
+   }
+  },
+  {
+   "name": "helm",
+   "upstream": "helm/helm",
+   "commit": "6234f6228f3134e087739e5c2eb79650b2c0b99d",
+   "workflow": "build-test.yml",
+   "lang": "Go",
+   "jobs": 1,
+   "mirror": "zodeops/bench-helm",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 398.9,
+      "queue_s": 2.0,
+      "run_s": 393.0,
+      "run_id": 43416494628,
+      "run_url": "https://github.com/zodeops/bench-helm/actions/runs/43416494628",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:22:04.141Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.084,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 1093.6,
+      "queue_s": 120.0,
+      "run_s": 971.0,
+      "run_id": 43414657682,
+      "run_url": "https://github.com/zodeops/bench-helm/actions/runs/43414657682",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:08:36.381Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0096,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 152.3,
+      "queue_s": 2.0,
+      "run_s": 148.0,
+      "run_id": 43417861264,
+      "run_url": "https://github.com/zodeops/bench-helm/actions/runs/43417861264",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:32:18.695Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.036,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 437.3,
+      "queue_s": 46.0,
+      "run_s": 389.0,
+      "run_id": 43417271497,
+      "run_url": "https://github.com/zodeops/bench-helm/actions/runs/43417271497",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:27:55.694Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.004,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.36,
+     "result": "loss",
+     "words": "2.7x slower",
+     "both_passed": true
+    },
+    "warm": {
+     "ratio": 0.35,
+     "result": "loss",
+     "words": "2.9x slower",
+     "both_passed": true
+    }
+   }
+  },
+  {
+   "name": "nginx-proxy",
+   "upstream": "nginx-proxy/nginx-proxy",
+   "commit": "bff2cddfece8e4f2c6d00b62ba45b8214c4727c5",
+   "workflow": "test.yml",
+   "lang": "Docker",
+   "jobs": 2,
+   "mirror": "zodeops/bench-nginx-proxy",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 717.5,
+      "queue_s": 2.0,
+      "run_s": 1398.0,
+      "run_id": 43418108743,
+      "run_url": "https://github.com/zodeops/bench-nginx-proxy/actions/runs/43418108743",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:34:08.458Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.288,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 1058.5,
+      "queue_s": 34.0,
+      "run_s": 2047.0,
+      "run_id": 43418109057,
+      "run_url": "https://github.com/zodeops/bench-nginx-proxy/actions/runs/43418109057",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T11:34:08.492Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0201,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 2,
+      "failed_runs_only": false,
+      "wall_s": 668.7,
+      "queue_s": 2.0,
+      "run_s": 1306.0,
+      "run_id": 43411782893,
+      "run_url": "https://github.com/zodeops/bench-nginx-proxy/actions/runs/43411782893",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T10:47:15.326Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.276,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 1126.6,
+      "queue_s": 45.0,
+      "run_s": 2149.0,
+      "run_id": 43411782955,
+      "run_url": "https://github.com/zodeops/bench-nginx-proxy/actions/runs/43411782955",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T10:47:15.392Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0212,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.68,
+     "result": "loss",
+     "words": "1.5x slower",
+     "both_passed": true
+    },
+    "warm": {
+     "ratio": 0.59,
+     "result": "loss",
+     "words": "1.7x slower",
+     "both_passed": true
+    }
+   }
+  },
+  {
+   "name": "petclinic",
+   "upstream": "spring-projects/spring-petclinic",
+   "commit": "500158f732419217507c7656904b8e6aa1bcc0d6",
+   "workflow": "maven-build.yml",
+   "lang": "Java",
+   "jobs": 1,
+   "mirror": "zodeops/bench-petclinic",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 117.3,
+      "queue_s": 2.0,
+      "run_s": 113.0,
+      "run_id": 43424658379,
+      "run_url": "https://github.com/zodeops/bench-petclinic/actions/runs/43424658379",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:22:51.654Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.024,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 206.1,
+      "queue_s": 42.0,
+      "run_s": 162.0,
+      "run_id": 43425856385,
+      "run_url": "https://github.com/zodeops/bench-petclinic/actions/runs/43425856385",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:31:14.894Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0018,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 106.3,
+      "queue_s": 2.0,
+      "run_s": 102.0,
+      "run_id": 43426461746,
+      "run_url": "https://github.com/zodeops/bench-petclinic/actions/runs/43426461746",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:35:26.705Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.024,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 199.2,
+      "queue_s": 40.0,
+      "run_s": 157.0,
+      "run_id": 43425250650,
+      "run_url": "https://github.com/zodeops/bench-petclinic/actions/runs/43425250650",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:27:02.807Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0017,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.57,
+     "result": "loss",
+     "words": "1.8x slower",
+     "both_passed": true
+    },
+    "warm": {
+     "ratio": 0.53,
+     "result": "loss",
+     "words": "1.9x slower",
+     "both_passed": true
+    }
+   }
+  },
+  {
+   "name": "caddy",
+   "upstream": "caddyserver/caddy",
+   "commit": "v2.8.4",
+   "workflow": "bench.yml",
+   "lang": "Go",
+   "jobs": 1,
+   "mirror": "zodeops/ci-bench",
+   "full": {
+    "cold": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 79.9,
+      "queue_s": 3.0,
+      "run_s": 75.0,
+      "run_id": 43425080509,
+      "run_url": "https://github.com/zodeops/ci-bench/actions/runs/43425080509",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:25:52.088Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.024,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 161.9,
+      "queue_s": 25.0,
+      "run_s": 135.0,
+      "run_id": 43425080777,
+      "run_url": "https://github.com/zodeops/ci-bench/actions/runs/43425080777",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:25:52.101Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0014,
+      "price_kind": "billed"
+     }
+    },
+    "warm": {
+     "github": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 81.6,
+      "queue_s": 2.0,
+      "run_s": 77.0,
+      "run_id": 43425532692,
+      "run_url": "https://github.com/zodeops/ci-bench/actions/runs/43425532692",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:29:03.431Z",
+      "runner": "ubuntu-24.04",
+      "price_usd": 0.024,
+      "price_kind": "list"
+     },
+     "zode": {
+      "runs": 3,
+      "passed": 3,
+      "failed_runs_only": false,
+      "wall_s": 149.6,
+      "queue_s": 25.0,
+      "run_s": 122.0,
+      "run_id": 43425532767,
+      "run_url": "https://github.com/zodeops/ci-bench/actions/runs/43425532767",
+      "conclusion": "success",
+      "dispatched_at": "2026-11-13T12:29:03.432Z",
+      "runner": "zode-4x8",
+      "price_usd": 0.0013,
+      "price_kind": "billed"
+     }
+    }
+   },
+   "verdict": {
+    "cold": {
+     "ratio": 0.49,
+     "result": "loss",
+     "words": "2.0x slower",
+     "both_passed": true
+    },
+    "warm": {
+     "ratio": 0.55,
+     "result": "loss",
+     "words": "1.8x slower",
+     "both_passed": true
+    }
+   }
+  }
+ ],
+ "conditions": "Run by hand on 13 Nov 2026, 10:29 to 12:53 UTC, with no other Zode benchmark or proof lane running: the Zode nodes carried this benchmark (at most 8 Zode jobs at once), Zode's own CI and one customer's CI (40 jobs). Zode runner image ci-ubuntu-24.04 20261113.12, published at 08:13 UTC the same day."
+}

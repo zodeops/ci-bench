@@ -210,9 +210,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("results")
     ap.add_argument("--out", default=None, help="also write here (site/ci.json)")
+    ap.add_argument("--conditions", default=None,
+                    help="how the run was measured, shown on the page (default: <results>/CONDITIONS if present)")
     a = ap.parse_args()
     meta = json.load(open(os.path.join(HERE, "repos.json")))["repos"]
     data = build(a.results, meta)
+    cond = a.conditions
+    cpath = os.path.join(a.results, "CONDITIONS")
+    if cond is None and os.path.exists(cpath):
+        cond = open(cpath).read().strip()
+    if cond:
+        data["conditions"] = cond
     body = json.dumps(data, indent=1) + "\n"
     with open(os.path.join(a.results, "site.json"), "w") as f:
         f.write(body)
