@@ -53,10 +53,11 @@ def zode(path, tok):
             time.sleep(2 + attempt * 3)
 
 
-def dispatch(repo, runner, width):
+def dispatch(repo, runner, width, io=False):
     """Dispatch the workflow; GitHub returns the run id (return_run_details)."""
     body = json.dumps({"ref": "main", "return_run_details": True,
-                       "inputs": {"runner": runner, "matrix": json.dumps(list(range(1, width + 1)))}})
+                       "inputs": {"runner": runner, "matrix": json.dumps(list(range(1, width + 1))),
+                                  **({"io": "1"} if io else {})}})
     out = subprocess.run(["gh", "api", "-X", "POST", f"repos/{repo}/actions/workflows/start.yml/dispatches",
                           "--input", "-"], input=body, capture_output=True, text=True)
     if out.returncode != 0:
@@ -80,6 +81,7 @@ def main():
     ap.add_argument("--timeout", type=float, default=900, help="give up on a run after this many seconds")
     ap.add_argument("--out", required=True, help="JSON lines file (appended)")
     ap.add_argument("--label", default="active", help="free-form tag written on every line")
+    ap.add_argument("--io", action="store_true", help="each job also writes 1 GB (first heavy I/O)")
     a = ap.parse_args()
     tok = token()
     done = 0
@@ -89,7 +91,7 @@ def main():
             width = min(a.width, a.jobs - done)
             t0 = time.time()
             try:
-                run_id = dispatch(a.repo, a.runner, width)
+                run_id = dispatch(a.repo, a.runner, width, a.io)
             except Exception as e:  # noqa: BLE001 - log and try again
                 log("dispatch failed:", e)
                 time.sleep(30)

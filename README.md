@@ -106,3 +106,23 @@ started); `run_s_sum` is the jobs' summed run time.
   `dispatch` phase (waiting for room), not as runner time.
 - No Zode warm snapshot exists yet (task 37), so on Zode warm differs from
   cold only by the Actions cache, as on GitHub.
+
+## Start time (REQ-051, zoded task 36)
+
+`scripts/start-load.py` measures queued to first step on the private
+dispatch-only fixture `zodeops/ci-start`, whose job only prints its
+runner: it dispatches a matrix of `--width` jobs on `--runner`, waits for
+it, waits `--gap` seconds (so standby runners can refill), and writes each
+job's REQ-050 phases and runner source as one JSON line. `--io` adds a 1 GB
+write to time a fresh VM's first heavy I/O. `scripts/start-report.py`
+gives p50/p95 per size and runner source.
+
+```sh
+scripts/start-load.py --runner zode-2x4 --width 2 --jobs 500 --gap 25 --out results/<date>/start/zode-2x4.jsonl
+scripts/start-report.py --md results/<date>/start/*.jsonl
+```
+
+Results of 12-13 Nov 2026 are in `results/2026-11-12/start/` (the
+`-before-incident` and `-share025` files are the runs cut short by the
+zode-api restart loop and by the standby RAM share change); the summary is
+zoded `docs/ci-acceptance.md`.
