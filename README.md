@@ -1,7 +1,8 @@
 # ci-bench
 
-The repeatable benchmark every Zode CI speed task is measured against (PRD
-REQ-050, task 35; the public page of REQ-062 grows from it). The same
+The public, repeatable CI benchmark behind [zode.dev/benchmark](https://zode.dev/benchmark),
+and the one every Zode CI speed task is measured against (PRD REQ-050,
+REQ-062). The same
 workflow at the same commit runs on GitHub-hosted `ubuntu-24.04` and on Zode
 `zode-<size>`, cold and warm, 5 runs each, and every run is written as JSON.
 
@@ -74,6 +75,60 @@ Zode runs need a Zode API token of the workspace that owns the zodeops GitHub
 installation, in `$ZODE_TOKEN` or `~/.config/zode/ci-bench-token`; the
 harness reads the job's phase timings from `GET /v1/ci/jobs`
 (zoded `docs/ci-contract.md`, "Phases"). It never prints the token.
+
+## Every week
+
+`.github/workflows/weekly.yml` runs the whole set every Sunday at 02:00 UTC
+(and on demand: Actions, weekly, Run workflow), 3 runs per provider and mode,
+one matrix job per repository, four repositories at a time and two Zode jobs
+per repository, so the benchmark never holds more than eight Zode runners.
+The last job concatenates the runs into `results/<date>/runs.jsonl`, writes
+`report.md` and `summary.json` (`scripts/report.py`) and the page data
+(`scripts/site-data.py`, into `results/<date>/site.json` and `site/ci.json`),
+and commits them to `main`. zode.dev/benchmark reads `site/ci.json` from
+this repository, so the page follows the newest week without a deploy.
+`site/index.json` lists every published week.
+
+`scripts/site-data.py` picks, for each repository, provider and mode, the
+median run by wall time (the lower middle one when the count is even) and
+shows that run's own wall, queue, run time and price with its link, so every
+number on the page is one real run. Runs that passed come first; a cell with
+no passed run says so. GitHub's price is the list price of the same machine
+for a private repository (Linux 4-core larger runner, $0.012 a minute, each
+job rounded up to the minute; public repositories run free). Zode's is what
+the run was billed, from the Zode API; when a job ran on a runner started
+for another run its bill sits there, and the cell shows an estimate from
+run time at $0.045 an hour instead.
+
+Selected-test runs and sharded runs are separate columns on the page and
+stay pending until Enforce (task 43) and the shard proof (task 41) exist:
+every run here is the full suite on one machine.
+
+Secrets for the weekly job: `BENCH_GH_TOKEN` (a GitHub token with Actions
+write and contents write on the `zodeops/bench-*` mirrors and this
+repository) and `ZODE_TOKEN`.
+
+`tests/` checks the page data against the runs it came from; it runs on Zode
+with the sample workflow from the docs (`.github/workflows/test.yml`).
+
+## Other providers
+
+`PROVIDERS.md`: whose terms allow publishing, who is run, and every other
+provider's own claims, cited as self-reported with links.
+
+## Rerun one repository yourself
+
+```sh
+git clone https://github.com/zodeops/ci-bench && cd ci-bench
+export BENCH_OWNER=<your GitHub account>
+scripts/mirror.sh helm                      # your own public mirror, <you>/bench-helm
+scripts/bench.py --repos helm --runners ubuntu-24.04 --runs 3 --out results/mine
+scripts/site-data.py results/mine
+```
+
+GitHub-hosted runs need only `gh`. Zode runs need a Zode workspace with the
+Zode GitHub App on the mirror and its token in `ZODE_TOKEN`. The published
+median should land within 15% of yours.
 
 ## Output
 

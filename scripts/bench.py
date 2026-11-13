@@ -154,7 +154,7 @@ def ensure_branch(mirror, base, branch):
 
 
 def run_one(repo, runner, mode, iteration, out, tok, split=False):
-    mirror = repo.get("mirror") or "zodeops/bench-" + repo["name"]
+    mirror = repo.get("mirror") or "%s/bench-%s" % (os.environ.get("BENCH_OWNER", "zodeops"), repo["name"])
     own = repo.get("own_workflow", False)
     branch = "main" if own else "bench-" + provider_of(runner)
     if split and not own:

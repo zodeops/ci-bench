@@ -22,7 +22,7 @@ if r.get("own_workflow"):
 print(r["upstream"], r["commit"], r["workflow"], r.get("tag", "-"))
 PY
 )
-mirror="zodeops/bench-$name"
+mirror="${BENCH_OWNER:-zodeops}/bench-$name"
 work=$(mktemp -d)
 trap 'rm -rf "$work"' EXIT
 cd "$work"
