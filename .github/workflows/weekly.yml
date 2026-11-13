@@ -1,0 +1,127 @@
+# The public CI benchmark (PRD REQ-062): every Sunday the whole set runs on
+# GitHub-hosted ubuntu-24.04 and on Zode at the pinned commits, cold and warm.
+# The results land in results/<date>/ and site/ci.json, which zode.dev/benchmark
+# reads. The harness polls GitHub once a minute per run (scripts/bench.py).
+#
+# Secrets: BENCH_GH_TOKEN (dispatch, cancel and cache rights on the
+# zodeops/bench-* mirrors) and ZODE_TOKEN (read the jobs' phases and cost).
+name: weekly
+on:
+  schedule:
+    - cron: "0 2 * * 0"
+  workflow_dispatch:
+    inputs:
+      repos:
+        description: "comma-separated names from repos.json, or all"
+        default: all
+      runs:
+        description: "runs per provider and mode"
+        default: "3"
+      publish:
+        description: "commit the results and update site/ci.json (off for a trial run)"
+        type: boolean
+        default: true
+permissions:
+  contents: read
+concurrency:
+  group: weekly
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      repos: ${{ steps.p.outputs.repos }}
+      date: ${{ steps.p.outputs.date }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        env:
+          WANT: ${{ inputs.repos || 'all' }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          names = [r["name"] for r in json.load(open("repos.json"))["repos"]]
+          want = os.environ["WANT"]
+          if want != "all":
+              names = [n for n in names if n in want.split(",")]
+          print("repos=" + json.dumps(names))
+          PY
+          echo "date=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+  bench:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        repo: ${{ fromJSON(needs.plan.outputs.repos) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: bench ${{ matrix.repo }}
+        env:
+          GH_TOKEN: ${{ secrets.BENCH_GH_TOKEN }}
+          ZODE_TOKEN: ${{ secrets.ZODE_TOKEN }}
+          REPO: ${{ matrix.repo }}
+          RUNS: ${{ inputs.runs || '3' }}
+        # Two Zode jobs at a time per repository and four repositories at
+        # once keep the benchmark to eight Zode runners, so real CI keeps room.
+        # Long suites run their iterations side by side on their own branches.
+        run: |
+          split=""
+          case "$REPO" in saleor|nginx-proxy|alpine|fzf|helm|excalidraw) split="--split $REPO" ;; esac
+          scripts/bench.py --repos "$REPO" --runs "$RUNS" --zode-jobs 2 --parallel 1 $split --out out
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: runs-${{ matrix.repo }}
+          path: out/
+          if-no-files-found: ignore
+  publish:
+    needs: [plan, bench]
+    if: ${{ always() && needs.plan.result == 'success' }}
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: runs-*
+          path: parts
+      - name: results, report and site data
+        env:
+          DATE: ${{ needs.plan.outputs.date }}
+        run: |
+          out="results/$DATE"
+          mkdir -p "$out"
+          cat parts/*/runs.jsonl > "$out/runs.jsonl"
+          test -s "$out/runs.jsonl" || { echo "no runs recorded"; exit 1; }
+          scripts/report.py "$out"
+          scripts/site-data.py "$out" --out site/ci.json
+          python3 - "$out" <<'PY'
+          import json, os, sys
+          idx = "site/index.json"
+          weeks = json.load(open(idx))["weeks"] if os.path.exists(idx) else []
+          d = os.path.basename(sys.argv[1])
+          weeks = sorted(set(weeks + [d]), reverse=True)
+          json.dump({"latest": "site/ci.json", "weeks": weeks}, open(idx, "w"), indent=1)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: results
+          path: |
+            results/${{ needs.plan.outputs.date }}
+            site
+      - name: commit
+        if: ${{ github.event_name == 'schedule' || inputs.publish }}
+        env:
+          DATE: ${{ needs.plan.outputs.date }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          git config user.name "ci-bench"
+          git config user.email "ci-bench@users.noreply.github.com"
+          git add "results/$DATE" site
+          git commit -m "Weekly results $DATE" -m "From $RUN_URL" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1
